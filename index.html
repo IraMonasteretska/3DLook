@@ -19,15 +19,20 @@
 	<!-- <link rel="shortcut icon" href=""> -->
 	<title>3DLook</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./assets/fonts/Mark/font.css">
+	<link rel="stylesheet" type="text/css" href="./assets/fonts/HelveticaNeue/font.css">
+	<link rel="stylesheet" type="text/css" href="./assets/icons/fontello/style.css">
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="./assets/fonts/mark/font.css">
 	<link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+	<!-- This script is used for DomContentLoaded -->
+	<!-- Example to use: onLoaded.push({ YOUR_CODE }); -->
+	<script>var onLoaded = [];</script>
 </head>
 <body>
 <header>
 	<div class="wrap">
 		<a class="logo" href="">
-			<img src="./assets/img/logo.png">
+			<img src="./assets/img/logo.svg">
 		</a>
 		<div id="top-center">
 			<nav id="top-nav">
@@ -39,7 +44,7 @@
 			<div id="search-wrap" class="">
 				<form>
 					<input id="search-input" type="text" placeholder="Search..." name="search">
-					<button id="search" class="ico-search" type="submit">⛶</button>
+					<button id="search" class="icon-search" type="submit"></button>
 					<button id="search-clean" class="close" type="button"></button>
 				</form>
 			</div>
@@ -89,7 +94,47 @@
 		<div id="fip-switch-bg"></div>
 		<div id="fip-switch-slider">
 			<div id="fip-left">
+				<div class="fip-bg"></div>
+			</div>
+			<div id="fip-center">
+				<div class="fip-bg"></div>
+				<div id="fip-title">Skinny Jeans</div>
+				<div id="fip-phone">
+					<div id="fip-phone-bg"></div>
+					<div id="fip-phone-title">Your recommended size</div>
+					<div id="fip-phone-sizes">
+						<div id="fip-phone-slider">
 
+							<div class="fip-phone-size">23</div>
+							<div class="fip-phone-size active">24</div>
+							<div class="fip-phone-size">25</div>
+							<div class="fip-phone-size">26</div>
+							<div class="fip-phone-size">27</div>
+				
+						</div>
+					</div>
+					<div id="fip-phone-img"></div>
+					<div class="btn black">Select this size</div>
+				</div>
+				<div id="fip-tag">
+					<div id="fip-tag-text">Purchased size</div>
+					<div id="fip-tag-bg">
+						<div id="fip-tag-nums">
+							<div id="fip-tag-slider">
+
+								<div class="fip-tag-num">23</div>
+								<div class="fip-tag-num">24</div>
+								<div class="fip-tag-num">25</div>
+								<div class="fip-tag-num">26</div>
+								<div class="fip-tag-num">27</div>
+							
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="fip-right">
+				<div class="fip-bg"></div>
 			</div>
 		</div>
 	</div>
@@ -229,7 +274,7 @@
 			</div>
 
 		</div>
-		<button class="btnr black bg-arrow-w" type="button" id="cp-load-more">More</button>
+		<button class="btnr black icon-arr-b" type="button" id="cp-load-more">More</button>
 		<div class="block">
 			<div class="block-title">Fit is the number one reason for returns.</div>
 			<div class="block-descr">We remove the guesswork that your customers face around measurements and size charts</div>
@@ -242,8 +287,8 @@
 		<h2>Meet Us</h2>
 		<div class="ms-slider-wrap">
 			<div class="slider-arrows">
-				<div class="slider-arrow" id="ms-next"></div>
-				<div class="slider-arrow arrow-p" id="ms-prev"></div>
+				<div class="slider-arrow icon-arr-r" id="ms-next"></div>
+				<div class="slider-arrow icon-arr-l" id="ms-prev"></div>
 			</div>
 			<div class="ms-slider-hider">
 				<div class="ms-slider">
@@ -310,21 +355,72 @@
 </section>
 
 <footer>
+	<div id="footer-msg">
+		<div class="btnr icon-intercom" id="f-msg"></div>
+		<div class="btnr black icon-arr-t" id="f-arr"></div>
+	</div>
 	<div class="wrap">
-		<div class="col">
+		<div class="col" id="footer-1">
 			<a class="logo" href="">
-				<img src="./assets/img/logo.png">
+				<img src="./assets/img/logo.svg">
 			</a>
+			<div class="address">
+				<label>Office:</label>
+				<address>55 East 3rd Avenue San Mateo, CA 94401</address>
+			</div>
+			<div class="address">
+				<label>Email:</label>
+				<a href="mailto:hello@3dlook.me">hello@3dlook.me</a>
+			</div>
+			<button class="btn transparent" type="button">Request a Quote</button>
+			<div id="copyright">© 2019 3DLOOK.ME, design by <a href="https://deco.agency/uk/">deco.agency</a></div>
 		</div>
-		<div class="col">
-			
-		<div class="socials">
-			<a class="social ico-facebook" href="" target="_blank">⛶</a>
-			<a class="social ico-instagram" href="" target="_blank">⛶</a>
-			<a class="social ico-twitter" href="" target="_blank">⛶</a>
-			<a class="social ico-linkedin" href="" target="_blank">⛶</a>
-			<a class="social ico-youtube" href="" target="_blank">⛶</a>
+		<div class="col" id="footer-2">
+			<div class="footer-rlnks">
+				<div class="grid">
+					<a href="">Body data platform</a>
+					<a href="">Resources</a>
+					<a href="">Technology</a>
+					<a href="">About Us</a>
+				</div>
+			</div>
+			<div class="socials">
+				<a class="social icon-fb" href="" target="_blank"></a>
+				<a class="social icon-insta" href="" target="_blank"></a>
+				<a class="social icon-tw" href="" target="_blank"></a>
+				<a class="social icon-in" href="" target="_blank"></a>
+				<a class="social icon-youtube" href="" target="_blank"></a>
+			</div>
+			<div class="row">
+				<a href="">Privacy</a>
+				<a href="">Terms and conditions</a>
+			</div>
 		</div>
+		<div class="col" id="footer-3">
+			<div class="footer-title">Blog Posts</div>
+			<div class="footer-blog">
+				<div class="footer-blog-title">Reuters</div>
+				<div class="footer-blog-text">The Technology 202: This venture capitalist is warning Congress not to hurt startups in its antirust crusade</div>
+			</div>
+			<div class="footer-blog">
+				<div class="footer-blog-title">Reuters</div>
+				<div class="footer-blog-text">The Technology 202: This venture capitalist is warning Congress not to hurt startups in</div>
+			</div>
+			<div class="footer-blog">
+				<div class="footer-blog-title">Reuters</div>
+				<div class="footer-blog-text">The Technology 202: This venture capitalist is warning Congress not to hurt startups in</div>
+			</div>
+		</div>
+		<div class="col" id="footer-4">
+			<div class="footer-title">Newsletter</div>
+			<form>
+				<div class="input">
+					<input type="text" name="email" placeholder="E-mail">
+				</div>
+				<button class="btn red" type="submit">SUBSCRIBE</button>
+			</form>
+			<p>3DLOOK INC. is a company located outside of the European Union. In order to comply with Art. 27 EU GDPR, GDPR-Rep.eu has been nominated as our represenative in the European Union.</p>
+			<p>If you want to make use of your data privacy rights, please visit: <a href="">Our public Privacy dashboard</a></p>
 		</div>
 	</div>
 </footer>

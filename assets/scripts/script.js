@@ -1,38 +1,52 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 	initSearch();
 	initReviews();
+	initDemo();
 	initMainPageSlick();
+	if (onLoaded.length != 0) {
+		for (var i = 0; i < onLoaded.length; i++) {
+			onLoaded[i]();
+		}
+	}
 });
 
 function initSearch() {
-	var input = document.getElementById("search-input");
+	// var input = document.getElementById("search-input");
 	var parent = document.getElementById("search-wrap");
 	var clean = document.getElementById("search-clean");
 	var search = document.getElementById("search");
-	var visibleClean = false;
-	input.onfocus = function() {
-		parent.classList.add("focus");
-	}
-	input.onblur = function() {
+	var opened = false;
+	// var visibleClean = false;
+	// input.onfocus = function() {
+	// 	parent.classList.add("focus");
+	// }
+	// input.onblur = function() {
+	// 	parent.classList.remove("focus");
+	// }
+	// input.onkeyup = function() {
+	// 	if (this.value == "" && visibleClean) {
+	// 		clean.classList.remove("visible");
+	// 		visibleClean = false;
+	// 	} else if (this.value != "" && !visibleClean) {
+	// 		clean.classList.add("visible");
+	// 		visibleClean = true;
+	// 	}
+	// }
+	clean.onclick = function() {
+		// input.value = "";
+		// this.classList.remove("visible");
+		// visibleClean = false;
 		parent.classList.remove("focus");
+		opened = false;
+
 	}
-	input.onkeyup = function() {
-		if (this.value == "" && visibleClean) {
-			clean.classList.remove("visible");
-			visibleClean = false;
-		} else if (this.value != "" && !visibleClean) {
-			clean.classList.add("visible");
-			visibleClean = true;
+	search.onclick = function(e) {
+		if (!opened) {
+			e.preventDefault();
+			parent.classList.add("focus");
+			opened = true;
 		}
 	}
-	clean.onclick = function() {
-		input.value = "";
-		this.classList.remove("visible");
-		visibleClean = false;
-	}
-	// search.onclick = function(e) {
-	// 	e.preventDefault();
-	// }
 }
 
 
@@ -55,14 +69,12 @@ function initReviews() {
 			CP[row] = col;
 		}
 		elem.onmouseover = function() {
-			console.log("focus")
 			if(CP[row] != col) {
 				this.parentNode.getElementsByClassName("cp-detail")[CP[row]].classList.remove("active");
 				this.parentNode.getElementsByClassName("cp-detail")[col].classList.add("active");
 			}
 		}
 		elem.onmouseout = function() {
-			console.log("blur")
 			if(CP[row] != col) {
 				this.parentNode.getElementsByClassName("cp-detail")[CP[row]].classList.add("active");
 				this.parentNode.getElementsByClassName("cp-detail")[col].classList.remove("active");
@@ -86,4 +98,38 @@ function initMainPageSlick() {
 		swipeToSlide: true,
 		slidesToShow: 3,
 	});
+}
+
+function initDemo() {
+	var isRight = false;
+	var slider = document.getElementById("fip-switch");
+	// var bg = document.getElementById("fip-switch-bg");
+	var left = document.getElementById("fip-left");
+	var right = document.getElementById("fip-right");
+
+	var phoneSlider = document.getElementById("fip-phone-slider");
+	var phoneSliderElems = document.getElementsByClassName("fip-phone-size");
+	var tagSlider = document.getElementById("fip-tag-slider");
+	tagSlider.style.transform = "translateX(" + (-1 * 76) + "px)";
+
+	left.onclick = function() {
+		if (isRight) {
+			slider.classList.remove("right");
+			phoneSlider.style.transform = "translateX(" + (0 * 31) + "px)";
+			phoneSliderElems[1].classList.add("active");
+			phoneSliderElems[3].classList.remove("active");
+			tagSlider.style.transform = "translateX(" + (-1 * 77) + "px)";
+			isRight = false;
+		}
+	}
+	right.onclick = function() {
+		if (!isRight) {
+			slider.classList.add("right");
+			phoneSlider.style.transform = "translateX(" + (-2 * 31) + "px)";
+			phoneSliderElems[1].classList.remove("active");
+			phoneSliderElems[3].classList.add("active");
+			tagSlider.style.transform = "translateX(" + (-3 * 77) + "px)";
+			isRight = true;
+		}
+	}
 }
