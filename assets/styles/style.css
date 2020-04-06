@@ -1100,10 +1100,10 @@ header .btn {
 	transition: background-color 0.3s ease;
 	display: flex;
 }
-.cp-img {
+.cp-img img {
 	margin: auto;
-	max-width: 100%;
-	max-width: 100%;
+	max-width: 80%;
+	max-width: 80%;
 	object-position: center;
 	object-fit: contain;
 }
@@ -1332,6 +1332,18 @@ header .btn {
 	transform: translate(-50%, -50%);
 	filter: grayscale(1);
 	transition: filter 0.3s ease;
+	width: 52.632%;
+	padding-top: 52.632%;
+}
+
+.d-elem-shop-img img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	object-fit: contain;
+	object-position: center;
 }
 
 .d-elem-shop-text {

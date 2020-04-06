@@ -424,7 +424,10 @@
 		box-shadow: 0.156vw 0.417vw 1.563vw rgba(0, 0, 0, 0.046);
 	}
 	.cp-elem:nth-child(2) {
-		margin: 0 1.042vw 0 0;
+		margin: 0 0 0 1.0417vw;
+	}
+	.cp-reviews-row:nth-child(2n) .cp-elem:nth-child(2) {
+		margin: 0 1.0417vw 0 0;
 	}
 	.cp-elem:before {
 		border-radius: 1.042vw;
@@ -492,6 +495,9 @@
 
 
 	/*-b-fitno-------------------------*/
+	.fitno {
+		padding: 0 0 60px;
+	}
 	.fitno .block {
 		padding: 4.115vw 29.167vw 4.063vw 5.677vw;
 	}
