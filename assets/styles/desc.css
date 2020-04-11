@@ -1,6 +1,9 @@
 @media screen and (min-width: 769px) {
+	html {
+		font-size: 0.052083333vw;
+	}
 	body {
-		font-size: 0.8333vw;
+		font-size: 16rem;
 	}
 	h1 {
 		margin: 0 0 1.51vw;
@@ -1287,3 +1290,8 @@
 	/*-e-solution-----------------------------*/
 	/*----------------------------------------*/
 }
+@media screen and (min-width: 1921px) {
+	html {
+	  font-size: 1px;
+	}
+  }
