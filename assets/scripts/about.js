@@ -11,6 +11,7 @@ var HWG = {
 		elems: false,
 		elem: false,
 		h: false,
+		normalH: 0,
 	},
 	which: {
 		pre: 0,
@@ -38,6 +39,14 @@ onLoaded.push(function() {
 		return;
 	}
 	hwgResize();
+	for (var i = 0; i < HWG.which.count; i++) {
+		const ci = i;
+		if (ci == 0) {
+			HWG.timeline.elem[ci].classList.remove("opacity");
+		} else {
+			HWG.timeline.elem[ci].classList.add("opacity");
+		}
+	}
 	HWG.more.elem.onclick = function() {
 		hwgNext();
 	}
@@ -45,19 +54,7 @@ onLoaded.push(function() {
 		hwgNext();
 	}
 	HWG.years.prev.onclick = function() {
-		if (HWG.which.now > 0) {
-			HWG.which.now -= 1;
-			HWG.years.elem[HWG.which.pre].classList.remove("active");
-			HWG.years.elem[HWG.which.now].classList.add("active");
-			HWG.which.pre = HWG.which.now;
-			if (HWG.which.now + 1 < HWG.which.count) {
-				HWG.years.next.classList.remove("hidden");
-			}
-			if (HWG.which.now == 0) {
-				HWG.years.prev.classList.add("hidden");
-			}
-			hwgTransform();
-		}
+		hwgPrev();
 	}
 	for (var i = 0; i < HWG.years.elem.length; i++) {
 		const ci = i;
@@ -65,7 +62,6 @@ onLoaded.push(function() {
 			HWG.which.now = ci;
 			HWG.years.elem[HWG.which.pre].classList.remove("active");
 			HWG.years.elem[HWG.which.now].classList.add("active");
-			HWG.which.pre = HWG.which.now;
 			if (HWG.which.now + 1 == HWG.which.count) {
 				HWG.years.next.classList.add("hidden");
 			} else {
@@ -80,6 +76,34 @@ onLoaded.push(function() {
 		}
 	}
 })
+function hwgPrev() {
+	if (HWG.which.now > 0) {
+		HWG.which.now -= 1;
+		HWG.years.elem[HWG.which.pre].classList.remove("active");
+		HWG.years.elem[HWG.which.now].classList.add("active");
+		if (HWG.which.now + 1 < HWG.which.count) {
+			HWG.years.next.classList.remove("hidden");
+		}
+		if (HWG.which.now == 0) {
+			HWG.years.prev.classList.add("hidden");
+		}
+		hwgTransform();
+	}
+}
+function hwgNext() {
+	if (HWG.which.now + 1 < HWG.which.count) {
+		HWG.which.now += 1;
+		HWG.years.elem[HWG.which.pre].classList.remove("active");
+		HWG.years.elem[HWG.which.now].classList.add("active");
+		if (HWG.which.now + 1 == HWG.which.count) {
+			HWG.years.next.classList.add("hidden");
+		}
+		if (HWG.which.now != 0) {
+			HWG.years.prev.classList.remove("hidden");
+		}
+		hwgTransform();
+	}
+}
 
 onResize.push(hwgResize)
 function hwgResize() {
@@ -88,7 +112,13 @@ function hwgResize() {
 		HWG.timeline.h[ci] = HWG.timeline.elem[ci].getBoundingClientRect().height;
 		// HWG.timeline.h[ci] -= 130;
 	}
-	HWG.years.nw = HWG.years.w * (Info.vw / 1920);
+	if (Info.mob) {
+		HWG.years.nw = HWG.years.w;
+		HWG.timeline.normalH = 3321;
+	} else {
+		HWG.years.nw = HWG.years.w * (Info.vw / 1920);
+		HWG.timeline.normalH = 2068 * (Info.vw / 1920);
+	}
 	hwgTransform();
 }
 
@@ -103,22 +133,10 @@ function hwgTransform(){
 		HWG.more.elem.classList.add("hidden");
 	} else {
 		HWG.more.elem.classList.remove("hidden");
+		HWG.timeline.hider.style.height = HWG.timeline.normalH + "px";
 	}
+	HWG.timeline.elem[HWG.which.now].classList.remove("opacity");
+	HWG.timeline.elem[HWG.which.pre].classList.add("opacity");
 	HWG.timeline.elems.style.transform = "translateY(" + (-h) + "px)";
-}
-
-function hwgNext() {
-	if (HWG.which.now + 1 < HWG.which.count) {
-		HWG.which.now += 1;
-		HWG.years.elem[HWG.which.pre].classList.remove("active");
-		HWG.years.elem[HWG.which.now].classList.add("active");
-		HWG.which.pre = HWG.which.now;
-		if (HWG.which.now + 1 == HWG.which.count) {
-			HWG.years.next.classList.add("hidden");
-		}
-		if (HWG.which.now != 0) {
-			HWG.years.prev.classList.remove("hidden");
-		}
-		hwgTransform();
-	}
+	HWG.which.pre = HWG.which.now;
 }
