@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<!-- Open Graph -->
+	<meta name="og:type" content="website">
+	<meta name="og:title" content="3DLook">
+	<meta name="og:description" content="">
+	<meta name="og:url" content="">
+	<meta name="og:site_name" content="3DLook">
+	<meta name="og:locale" content="uk_UA">
+	<!-- <meta name="og:image" content="url"> -->
+	<!-- Open Graph -->
+	<!-- <meta name="theme-color" content="#000000"> -->
+	<!-- <link rel="shortcut icon" href=""> -->
+	<title>3DLook</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+	<!-- <link rel="stylesheet" type="text/css" href="./assets//fonts/Mark/font.css"> -->
+	<link rel="stylesheet" type="text/css" href="./assets//fonts/HelveticaNeue/font.css">
+	<link rel="stylesheet" type="text/css" href="./assets//icons/fontello/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="./assets//styles/style.css">
+	<link rel="stylesheet" type="text/css" href="./assets//styles/desc.css">
+	<link rel="stylesheet" type="text/css" href="./assets//styles/media.css">
+
+	<!-- Bogdan styles -->
+	<!-- <link rel="stylesheet" type="text/css" href="./assets//styles/b_styles.css"> -->
+	
+	<!-- This script is used for DomContentLoaded -->
+	<!-- Example to use: onLoaded.push({ YOUR_CODE }); -->
+	<script>var onLoaded=[],onResize=[];</script>
+</head>
+<body>
+<!-- mobile top menu -->
+<div id="mob-top" class="">
+	<button type="button" class="cross" id="close-mob-top"></button>
+	<span id="mob-top-title">Homescreen</span>
+	<nav id="mob-top-nav">
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">Solutions</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">3d Model Generation</a></li>
+			</ul>
+		</div>
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">Technology</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">1Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">1Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">13d Model Generation</a></li>
+			</ul>
+		</div>
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">Resources</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">2Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">2Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">33d Model Generation</a></li>
+			</ul>
+		</div>
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">Careers</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">3Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">3Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">33d Model Generation</a></li>
+			</ul>
+		</div>
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">About</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">4Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">4Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">43d Model Generation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<button type="button" class="btn red">Request a Demo</button>
+</div>
+
+<!-- eclipse -->
+<div id="eclipse"></div>
+
+<!-- search-result -->
+<div id="search-result" class="">
+	<span id="search-result-title">Search results: <span>11</span></span>
+	<button type="button" class="btn black icon-arr-t">View more</button>
+</div>
+
+<!-- body -->
+<header>
+	<div class="wrap">
+		<a class="logo" href="">
+			<img src="./assets//img/logo.svg">
+		</a>
+		<div id="top-center">
+			<nav id="top-nav">
+				<a href="">Body data platform</a>
+				<a href="">Technology</a>
+				<a href="">Resources</a>
+				<a href="">About us</a>
+			</nav>
+			<div id="search-wrap" class="">
+				<form>
+					<input id="search-input" type="text" placeholder="Search..." name="search">
+					<button id="search" class="icon-search" type="submit"></button>
+					<button id="search-clean" class="close" type="button"></button>
+				</form>
+			</div>
+		</div>
+		<div id="header-mob">
+			<a class="icon-googleplay" href=""></a>
+			<a class="icon-appstore" href=""></a>
+			<button type="button" class="burger" id="open-mob-top">
+				<span class="burger-el bel1"></span>
+				<span class="burger-el bel2"></span>
+				<span class="burger-el bel3"></span>
+			</button>
+		</div>
+		<button class="btn transparent red" type="button" id="h-req-quote">Request a Quote</button>
+	</div>
+</header>
+
+
+
+
+
+
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+
+
+<section class="main-oval blog">
+	<div class="bg">
+		<div class="bg1"></div>
+	</div>
+	<div class="wrap">
+		<h1>Blog</h1>
+		<p>We are result-oriented enthusiasts who work tirelessly to build technology which has the potential to transform the fashion industry and how we shop online</p>
+		<button type="button" class="btn red">Try it Now</button>
+	</div>
+</section>
+
+
+<section class="blockswitch blog-blsw">
+	<div class="bg">
+		<div class="bg1"></div>
+	</div>
+	<div class="blockswitch-btns">
+		<div class="blockswitch-btns-mob">
+			<button type="button" class="blockswitch-btn active">All</button>
+			<button type="button" class="blockswitch-btn">Insights</button>
+			<button type="button" class="blockswitch-btn">Product</button>
+			<button type="button" class="blockswitch-btn">Technology</button>
+			<button type="button" class="blockswitch-btn">resources</button>
+			<button type="button" class="blockswitch-btn">3DLOOK News</button>
+		</div>
+		<form class="blockswitch-input">
+			<input type="search" name="searcs" placeholder="I'm looking for...">
+			<button class="icon-search" type="submit"></button>
+		</form>
+	</div>
+
+	<div class="blockswitch-wrap">
+
+		<!-- begin - blockswitch-elem -->
+		<div class="blockswitch-elem active">
+			
+			<div class="blog-blsw-title-window">
+				<div class="blog-blsw-title-elem">
+					<span class="bbte-blck">Top Stories</span>
+					<span class="bbte-wht">Insights</span>
+				</div>
+			</div>
+
+			<div class="blog-blsw-slider-wrapper">
+				<div class="blog-blsw-slider-hider">
+					<div class="blog-blsw-slider">
+						
+						<!-- slider-elem -->
+						<div class="blog-blsw-elem">
+							<img class="blog-blsw-img-l" src="" alt="">
+							<div class="blog-blsw-elem-flex">
+								<img class="blog-blsw-elem-flex-img">
+								<div class="blog-blsw-elem-col">
+									<span class="blog-blsw-elem-sup">Insights</span>
+									<span class="blog-blsw-elem-title">Bringing it All Together: Introducing Our All-in-One Marketing platform</span>
+									<p class="blog-blsw-elem-p">Mailchimp`s officially an all-in-one Marketing Platform, and CEO shares what we`ve been building over the last two years. Mailchimp`s officially an all-in-one Marketing Platform.</p>
+								</div>
+							</div>
+							<img class="blog-blsw-img-r" src="" alt="">
+						</div>
+						<!-- slider-elem -->
+
+						<div class="blog-blsw-elem">
+							<img class="blog-blsw-img-l" src="" alt="">
+							<div class="blog-blsw-elem-flex">
+								<img class="blog-blsw-elem-flex-img">
+								<div class="blog-blsw-elem-col">
+									<span class="blog-blsw-elem-sup">Insights</span>
+									<span class="blog-blsw-elem-title">Bringing it All Together: Introducing Our All-in-One Marketing platform</span>
+									<p class="blog-blsw-elem-p">Mailchimp`s officially an all-in-one Marketing Platform, and CEO shares what we`ve been building over the last two years. Mailchimp`s officially an all-in-one Marketing Platform.</p>
+								</div>
+							</div>
+							<img class="blog-blsw-img-r" src="" alt="">
+						</div>
+						
+						<div class="blog-blsw-elem">
+							<img class="blog-blsw-img-l" src="" alt="">
+							<div class="blog-blsw-elem-flex">
+								<img class="blog-blsw-elem-flex-img">
+								<div class="blog-blsw-elem-col">
+									<span class="blog-blsw-elem-sup">Insights</span>
+									<span class="blog-blsw-elem-title">Bringing it All Together: Introducing Our All-in-One Marketing platform</span>
+									<p class="blog-blsw-elem-p">Mailchimp`s officially an all-in-one Marketing Platform, and CEO shares what we`ve been building over the last two years. Mailchimp`s officially an all-in-one Marketing Platform.</p>
+								</div>
+							</div>
+							<img class="blog-blsw-img-r" src="" alt="">
+						</div>
+
+					</div>
+				</div>
+				<div class="slider-dots-num" id="ms-dots"></div>
+				<div class="slider-arrows mob">
+					<div class="slider-arrow icon-arr-r" id="ms-next"></div>
+					<div class="slider-arrow icon-arr-l" id="ms-prev"></div>
+				</div>
+			</div>
+			
+		</div>
+		<!-- end - blockswitch-elem -->
+
+		<!-- begin - blockswitch-elem -->
+		<div class="blockswitch-elem">
+			
+			<div class="blog-blsw-title-window">
+				<div class="blog-blsw-title-elem">
+					<span class="bbte-blck">Top Stories</span>
+					<span class="bbte-wht">Insights</span>
+				</div>
+			</div>
+
+			<div class="blog-blsw-slider-wrapper">
+				<div class="blog-blsw-slider-hider">
+					<div class="blog-blsw-slider">
+						
+						<!-- slider-elem -->
+						<div class="blog-blsw-elem">
+							<img class="blog-blsw-img-l" src="" alt="">
+							<div class="blog-blsw-elem-flex">
+								<img class="blog-blsw-elem-flex-img">
+								<div class="blog-blsw-elem-col">
+									<span class="blog-blsw-elem-sup">Insights</span>
+									<span class="blog-blsw-elem-title">Bringing it All Together: Introducing Our All-in-One Marketing platform</span>
+									<p class="blog-blsw-elem-p">Mailchimp`s officially an all-in-one Marketing Platform, and CEO shares what we`ve been building over the last two years. Mailchimp`s officially an all-in-one Marketing Platform.</p>
+								</div>
+								<img class="blog-blsw-img-r" src="" alt="">
+							</div>
+						</div>
+						<!-- slider-elem -->
+
+						<div class="blog-blsw-elem">
+							<img class="blog-blsw-img-l" src="" alt="">
+							<div class="blog-blsw-elem-flex">
+								<img class="blog-blsw-elem-flex-img">
+								<div class="blog-blsw-elem-col">
+									<span class="blog-blsw-elem-sup">Insights</span>
+									<span class="blog-blsw-elem-title">Bringing it All Together: Introducing Our All-in-One Marketing platform</span>
+									<p class="blog-blsw-elem-p">Mailchimp`s officially an all-in-one Marketing Platform, and CEO shares what we`ve been building over the last two years. Mailchimp`s officially an all-in-one Marketing Platform.</p>
+								</div>
+								<img class="blog-blsw-img-r" src="" alt="">
+							</div>
+						</div>
+						
+						<div class="blog-blsw-elem">
+							<img class="blog-blsw-img-l" src="" alt="">
+							<div class="blog-blsw-elem-flex">
+								<img class="blog-blsw-elem-flex-img">
+								<div class="blog-blsw-elem-col">
+									<span class="blog-blsw-elem-sup">Insights</span>
+									<span class="blog-blsw-elem-title">Bringing it All Together: Introducing Our All-in-One Marketing platform</span>
+									<p class="blog-blsw-elem-p">Mailchimp`s officially an all-in-one Marketing Platform, and CEO shares what we`ve been building over the last two years. Mailchimp`s officially an all-in-one Marketing Platform.</p>
+								</div>
+								<img class="blog-blsw-img-r" src="" alt="">
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="slider-dots-num" id="ms-dots"></div>
+				<div class="slider-arrows mob">
+					<div class="slider-arrow icon-arr-r" id="ms-next"></div>
+					<div class="slider-arrow icon-arr-l" id="ms-prev"></div>
+				</div>
+			</div>
+			
+		</div>
+		<!-- end - blockswitch-elem -->
+
+	</div>
+
+</section>
+
+
+<section>
+	<div class="grid blog_tag__grid">
+		<div class="g-elem g2">
+			<div class="g-img"
+				style="background-image: url('./assets//img/blog_tag/post_1.png');"
+			></div>
+			<div class="tw_pos">
+				<div>
+					<span class="tw_tag">Technology</span>
+				</div>
+				<div class="tw_title">
+					Bringing it All Together: Introducing Our All-in-One Marketing platform
+				</div>
+				<div class="tw_more">
+					<span>Learn more</span> <img src="./assets//img/thank/go.svg" alt="">
+				</div>
+			</div>
+		</div>
+		<a href="#" class="g-elem g2">
+			<div class="g-img"
+				style="background-image: url('./assets//img/blog_tag/post_2.png');"
+			></div>
+			<div class="tw_pos">
+				<div>
+					<span class="tw_tag">Technology</span>
+				</div>
+				<div class="tw_title">
+					The enormous impact of daily physiological changes on the accuracy of our body measurements
+				</div>
+				<div class="tw_more">
+					<span>Learn more</span> <img src="./assets//img/thank/go.svg" alt="">
+				</div>
+			</div>
+		</a>
+		<div class="g-elem g2">
+			<div class="g-img"
+				style="background-image: url('./assets//img/blog_tag/post_3.png');"
+			></div>
+			<div class="tw_pos">
+				<div>
+					<span class="tw_tag">Technology</span>
+				</div>
+				<div class="tw_title">
+					3DLOOK joins La Maison des Startups LVMH at Station F
+				</div>
+				<div class="tw_more">
+					<span>Learn more</span> <img src="./assets//img/thank/go.svg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="g-elem g3">
+			<div class="g-img"
+				style="background-image: url('./assets//img/blog_tag/post_4.png');"
+			></div>
+			<div class="tw_pos">
+				<div>
+					<span class="tw_tag">Technology</span>
+				</div>
+				<div class="tw_title">
+					SAIA Perfect Fit now available on Shopify  App Store!
+				</div>
+				<div class="tw_more">
+					<span>Learn more</span> <img src="./assets//img/thank/go.svg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="g-elem g3">
+			<div class="g-img"
+				style="background-image: url('./assets//img/blog_tag/post_5.png');"
+			></div>
+			<div class="tw_pos">
+				<div>
+					<span class="tw_tag">Technology</span>
+				</div>
+				<div class="tw_title">
+					The Evolution of Body Measuring: How advances in technology are driving the future of made to measure fashion
+				</div>
+				<div class="tw_more">
+					<span>Learn more</span> <img src="./assets//img/thank/go.svg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<div class="blog_banner">
+	<div class="wrapl">
+
+		<div class="blog_banner_wrap">
+			<h2 class="h2_title">
+				Personalization 2.0
+			</h2>
+			<div class="p_subtitle">
+				Why brands and retailers should integrate advanced technologies to drive personalization and sales 
+			</div>
+			<a href="#" class="btn btn_orange icon-download">
+				<span>Download</span>
+			</a>
+		</div>
+
+	</div>
+</div>
+
+
+
+<section>
+	<div class="grid blog_tag__grid">
+		<div class="g-elem g2">
+			<div class="g-img"
+				style="background-image: url('./assets//img/blog_tag/post_1.png');"
+			></div>
+			<div class="tw_pos">
+				<div>
+					<span class="tw_tag">Technology</span>
+				</div>
+				<div class="tw_title">
+					Bringing it All Together: Introducing Our All-in-One Marketing platform
+				</div>
+				<div class="tw_more">
+					<span>Learn more</span> <img src="./assets//img/thank/go.svg" alt="">
+				</div>
+			</div>
+		</div>
+		<a href="#" class="g-elem g2">
+			<div class="g-img"
+				style="background-image: url('./assets//img/blog_tag/post_2.png');"
+			></div>
+			<div class="tw_pos">
+				<div>
+					<span class="tw_tag">Technology</span>
+				</div>
+				<div class="tw_title">
+					The enormous impact of daily physiological changes on the accuracy of our body measurements
+					The enormous impact of daily physiological changes on the accuracy of our body
+				</div>
+				<div class="tw_more">
+					<span>Learn more</span> <img src="./assets//img/thank/go.svg" alt="">
+				</div>
+			</div>
+		</a>
+		<div class="g-elem g2">
+			<div class="g-img"
+				style="background-image: url('./assets//img/blog_tag/post_3.png');"
+			></div>
+			<div class="tw_pos">
+				<div>
+					<span class="tw_tag">Technology</span>
+				</div>
+				<div class="tw_title">
+					3DLOOK joins La Maison des Startups LVMH at Station F
+				</div>
+				<div class="tw_more">
+					<span>Learn more</span> <img src="./assets//img/thank/go.svg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="g-elem g3">
+			<div class="g-img"
+				style="background-image: url('./assets//img/blog_tag/post_4.png');"
+			></div>
+			<div class="tw_pos">
+				<div>
+					<span class="tw_tag">Technology</span>
+				</div>
+				<div class="tw_title">
+					SAIA Perfect Fit now available on Shopify  App Store!
+				</div>
+				<div class="tw_more">
+					<span>Learn more</span> <img src="./assets//img/thank/go.svg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="g-elem g3">
+			<div class="g-img"
+				style="background-image: url('./assets//img/blog_tag/post_5.png');"
+			></div>
+			<div class="tw_pos">
+				<div>
+					<span class="tw_tag">Technology</span>
+				</div>
+				<div class="tw_title">
+					The Evolution of Body Measuring: How advances in technology are driving the future of made to measure fashion
+				</div>
+				<div class="tw_more">
+					<span>Learn more</span> <img src="./assets//img/thank/go.svg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#" class="btn btn_more">
+		View More <i class="icon-arr-b"></i>
+	</a>
+</section>
+
+<section class="wrapl">
+	<div class="blog_tag__bottom_baner">
+		<h2>Subscribe to our Newsletter</h2>
+
+		<div class="blog_tag__bottom_baner_box">
+			<div class="banner_text">
+				Your source for the leading fashion tech industry tips, tricks and news delivered bi-weekly to your inbox
+			</div>
+			<form class="b_form">
+				<label class="b_style label_email">
+					<input type="text" placeholder="Email">
+				</label>
+				<button class="btn btn_orange">
+					Subscribe
+				</button>
+			</form>
+		</div>
+	</div>
+</section>
+
+
+
+
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+
+
+
+<footer>
+	<div id="footer-msg">
+		<div class="btnr blue icon-intercom" id="f-msg"></div>
+		<div class="btnr black icon-arr-t" id="f-arr"></div>
+	</div>
+	<div class="wrap">
+		<div class="col" id="footer-1">
+			<a class="logo" href="">
+				<img src="./assets//img/logo.svg">
+			</a>
+			<div class="address">
+				<label>Office:</label>
+				<address>55 East 3rd Avenue San Mateo, CA 94401</address>
+			</div>
+			<div class="address">
+				<label>Email:</label>
+				<a href="mailto:hello@3dlook.me">hello@3dlook.me</a>
+			</div>
+			<button class="btn transparent red" type="button">Request a Quote</button>
+		</div>
+		<div id="copyright">© 2019 3DLOOK.ME<span>, design by <a href="https://deco.agency/uk/">deco.agency</a></span></div>
+		<div class="col" id="footer-2">
+			<div class="footer-rlnks">
+				<div class="grid">
+					<a href="">Body data platform</a>
+					<a href="">Resources</a>
+					<a href="">Technology</a>
+					<a href="">About Us</a>
+				</div>
+			</div>
+			<div class="socials">
+				<a class="social icon-fb" href="" target="_blank"></a>
+				<a class="social icon-insta" href="" target="_blank"></a>
+				<a class="social icon-tw" href="" target="_blank"></a>
+				<a class="social icon-in" href="" target="_blank"></a>
+				<a class="social icon-youtube" href="" target="_blank"></a>
+			</div>
+		</div>
+		<div id="footer-pptc">
+			<a href="">Privacy</a>
+			<a href="">Terms and conditions</a>
+		</div>
+		<div class="col" id="footer-3">
+			<div class="footer-title">Blog Posts</div>
+			<div class="footer-blog">
+				<div class="footer-blog-title">Reuters</div>
+				<div class="footer-blog-text">The Technology 202: This venture capitalist is warning Congress not to hurt startups in its antirust crusade</div>
+			</div>
+			<div class="footer-blog">
+				<div class="footer-blog-title">Reuters</div>
+				<div class="footer-blog-text">The Technology 202: This venture capitalist is warning Congress not to hurt startups in</div>
+			</div>
+			<div class="footer-blog">
+				<div class="footer-blog-title">Reuters</div>
+				<div class="footer-blog-text">The Technology 202: This venture capitalist is warning Congress not to hurt startups in</div>
+			</div>
+		</div>
+		<div class="col" id="footer-4">
+			<div class="footer-title">Newsletter</div>
+			<form>
+				<div class="input">
+					<input type="text" name="email" placeholder="E-mail">
+				</div>
+				<button class="btn red" type="submit">SUBSCRIBE</button>
+			</form>
+			<p>3DLOOK INC. is a company located outside of the European Union. In order to comply with Art. 27 EU GDPR, GDPR-Rep.eu has been nominated as our represenative in the European Union.</p>
+			<p>If you want to make use of your data privacy rights, please visit: <a href="">Our public Privacy dashboard</a></p>
+		</div>
+	</div>
+</footer>
+<!--b-scripts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="./assets/scripts/blog.js"></script>
+<script src="./assets/scripts/script.js"></script>
+
+<!-- Bogdan scripts -->
+	<script src="./assets/scripts/b_script.js"></script>
+	<!-- BrowserSync -->
+<!--  -->
+
+<!--e-scripts-->
+</body>
+</html>
+
+
+
+

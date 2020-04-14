@@ -6,7 +6,6 @@ onLoaded.push(function() {
 	for (var i = 0; i < amount; i++) {
 		const ci = i;
 		blockswitch[ci].onclick = function() {
-			console.log(ci, whichActive);
 			if (whichActive != ci) {
 				for (let j = 0; j < amount; j++) {
 					const cj = j;
@@ -22,7 +21,6 @@ onLoaded.push(function() {
 });
 
 onLoaded.push(function() {
-	console.log("asdsad")
 	var checked = true;
 	var triggerWrap = document.getElementsByClassName("trigger-wrap")[0];
 	var trigger = document.getElementsByClassName("trigger-bg")[0];
@@ -51,7 +49,6 @@ onLoaded.push(function() {
 
 onLoaded.push(function() {
 	if (Info.mob) {
-		console.log("sadsa")
 		var faqElem = document.getElementsByClassName("faq-elem");
 		var h = 0;
 		for (var i = 0; i < 3; i++) {
@@ -59,7 +56,6 @@ onLoaded.push(function() {
 			h += faqElem[ci].getBoundingClientRect().height;			
 		}
 		h += 60;
-		console.log(h)
 		document.getElementsByClassName("faq")[0].getElementsByClassName("wrapl")[0].style.height = h + "px";
 		document.getElementById("show-all-faq").onclick = function() {
 			document.getElementsByClassName("faq")[0].getElementsByClassName("wrapl")[0].style.height = "auto";
