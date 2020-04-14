@@ -1,4 +1,12 @@
 @media screen and (min-width: 769px) {
+	#header-mob {
+		display: none;
+	}
+	#mob-top {
+		display: none;
+	}
+}
+@media screen and (min-width: 769px) and (max-width: 1920px) {
 	html {
 		font-size: 0.052083333vw;
 	}
@@ -135,12 +143,6 @@
 	}
 	header .btn {
 		font-size: 0.729vw;
-	}
-	#header-mob {
-		display: none;
-	}
-	#mob-top {
-		display: none;
 	}
 	/*-e-header---------------------*/
 
@@ -1842,6 +1844,102 @@
 	/*----------------------------------------------------------------*/
 	/*----------------------------------------------------------------*/
 	/*----------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+	
+	/*-b-thanks-------------------------------*/
+	/*-b-thanks-------------------------------*/
+	.thank__title {
+		font-size: 1.7708333333vw;
+		letter-spacing: -0.0833333333vw;
+		line-height: 2.0833333333vw;
+		margin-bottom: 2.0833333333vw;
+	}
+
+	.thank__wrap {
+		max-width: 61.4583333333vw;
+		margin-bottom: 3.125vw;
+	}
+
+	.thank__post {
+		width: calc((100% / 3) - 1.0416666667vw);
+		margin: 0.5208333333vw;
+	}
+	.thank__post .tw_pos {
+		padding: 1.8229166667vw 1.5625vw;
+	}
+	.thank__post .tw_s {
+		font-size: 0.625vw;
+		letter-spacing: -0.0208333333vw;
+		line-height: 1.0416666667vw;
+		margin-bottom: 0.7291666667vw;
+	}
+	.thank__post .tw_title {
+		font-size: 1.25vw;
+		letter-spacing: -0.0208333333vw;
+		line-height: 1.3541666667vw;
+		margin-bottom: 1.4583333333vw;
+	}
+	.thank__post .icon-arr-r {
+		padding-right: 0.2083vw;
+		font-size: 0.7292vw;
+		letter-spacing: -0.0156vw;
+		line-height: 0.7292vw;
+	}
+	.thank__post .icon-arr-r:before {
+		font-size: 0.5208vw;
+		margin: 0.1563vw 0 auto 0.1042vw;
+	}
+
+	.thank__post:hover .tw_pos {
+		padding: 2.34375vw 1.5625vw;
+	}
+	.thank__post:hover .tw_title {
+		margin-bottom: 2.2916666667vw;
+	}
+
+
+	.thank__baner .block {
+		height: 7.8125vw;
+	}
+	#thanks-banner-form {
+		margin: auto 5.3125vw auto auto;
+	}
+	#thanks-banner-form label {
+		margin: 0 0.4167vw;
+		max-width: 30.2083vw;
+	}
+	#thanks-banner-form label:before {
+		left: 0.9375vw;
+		width: 0.9375vw;
+		background-size: 0.9375vw;
+	}
+	#thanks-banner-form input {
+		width: 30.2083vw;
+		border-radius: 0.1042vw;
+		height: 2.6042vw;
+		font-size: 0.7813vw;
+		line-height: 0.7813vw;
+		padding-left: 2.2917vw;
+	}
+	#thanks-banner-form input::placeholder {
+		font-size: 0.7813vw;
+		font-weight: 400;
+		letter-spacing: -0.0104vw;
+	}
+	.banner form .btn {
+		height: 2.6042vw;
+		font-size: 0.7292vw;
+		letter-spacing: -0.0156vw;
+	}
+	/*-e-thanks-------------------------------*/
+	/*-e-thanks-------------------------------*/
 }
 @media screen and (min-width: 1921px) {
 	html {

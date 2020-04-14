@@ -2267,7 +2267,7 @@
 	.banner {
 		padding: 0 0 76px;
 	}
-	.banner .btn {
+	.banner .block > .btn {
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -2275,7 +2275,7 @@
 		color: transparent;
 		background-color: transparent;
 	}
-	.banner .btn:hover {
+	.banner .block .btn:hover {
 		background-color: transparent;
 	}
 	/*-e-technology---------------------------*/
@@ -2657,4 +2657,154 @@
 	/*----------------------------------------------------------------*/
 	/*----------------------------------------------------------------*/
 	/*----------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+	/*-b-thanks-------------------------------*/
+	/*-b-thanks-------------------------------*/
+	.thankspage.main-oval {
+		padding-bottom: 182px;
+	}
+	.thankspage h1 {
+		margin-top: 0;
+	}
+	.thank__title {
+		/* font-size: 1.7708333333vw; */
+		/* letter-spacing: -0.0833333333vw; */
+		/* line-height: 2.0833333333vw; */
+		margin: 0 auto 30px;
+		max-width: 340px;
+	}
+	.tw-slider-hider {
+		max-width: 375px;
+		overflow: hidden;
+		display: flex;
+		position: relative;
+		margin: 0 auto;
+	}
+	.thank__wrap {
+		position: relative;
+		left: 10px;
+		width: 640px;
+		margin-bottom: 60px;
+	}
+
+	.thank__post {
+		width: 300px !important;
+		height: 410px;
+		margin: 0 10px;
+	}
+	.thank__post .tw_pos,
+	.thank__post:hover .tw_pos {
+		padding: 20px 15px;
+		transition: unset;
+	}
+	
+	.thank__post .tw_s,
+	.thank__post:hover .tw_s {
+		font-size: 12px;
+		letter-spacing: -0.4px;
+		line-height: 20px;
+		margin-bottom: 14px;
+		opacity: 1;
+		transition: unset;
+	}
+	.thank__post .tw_title,
+	.thank__post:hover .tw_title {
+		letter-spacing: -0.4px;
+		margin-bottom: 0;
+		transition: unset;
+	}
+	 {
+		margin-bottom: 44px;
+	}
+
+	.thank__post .icon-arr-r {
+		display: none;
+	}
+	.tw_hover {display: none;}
+
+
+	.thanks-second .slider-arrows {
+		bottom: unset;
+		left: calc(50% + 166px);
+		top: 119px;
+		z-index: 2;
+	}
+	.thanks-second .slider-arrow:first-child {
+		margin-bottom: 10px;
+	}
+
+
+	.thank__baner .block {
+		height: 150px;
+		background-image: linear-gradient(116deg, #FB2059 0%, #8138E9 52%, #12CAF9 100%);
+	}
+	#thanks-banner-form {
+		margin: 310px auto auto;
+		flex-direction: column;
+	}
+	#thanks-banner-form label {
+		margin: 0;
+		max-width: 260px;
+	}
+	#thanks-banner-form label:before {
+		left: 18px;
+		width: 18px;
+		background-size: 18px;
+	}
+	#thanks-banner-form input {
+		width: 260px;
+		border-radius: 2px;
+		height: 50px;
+		font-size: 15px;
+		line-height: 15px;
+		padding-left: 44px;
+	}
+	#thanks-banner-form input::placeholder {
+		font-size: 15px;
+		font-weight: 400;
+		letter-spacing: -0.2px;
+	}
+	.banner form .btn {
+		width: 260px;
+		margin-top: 12px;
+		height: 50px;
+		font-size: 14px;
+		letter-spacing: -0.3px;
+	}
+	.block-text {
+		position: absolute;
+		top: 90px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 260px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		text-align: center;
+	}
+	.block-title {
+		font-family: "Mark";
+		font-size: 24px;
+		line-height: 27px;
+		letter-spacing: -0.4px;
+		margin-bottom: 15px;
+	}
+	.block-descr {
+		font-family: 'PT Mono', monospace;
+		font-size: 16px;
+		line-height: 22px;
+		letter-spacing: -0.3px;
+	}
+	/*-e-thanks-------------------------------*/
+	/*-e-thanks-------------------------------*/
 }
