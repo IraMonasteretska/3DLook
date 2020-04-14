@@ -9,7 +9,7 @@ onLoaded.push(function() {
 			// centerPadding: "10px",
 			// speed: 300,
 			swipeToSlide: true,
-			slidesToShow: 3,
+			slidesToShow: 1,
 		});
 	}
 })

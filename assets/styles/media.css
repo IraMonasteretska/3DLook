@@ -1865,8 +1865,8 @@
 		margin-bottom: 60px;
 	}
 	.rtstart .btn {
-		width: 260.0006px;
-		height: 63.9994px;
+		width: 260px;
+		height: 64px;
 	}
 	.rtstart span {
 		margin-bottom: 30px;
@@ -2029,5 +2029,253 @@
 		margin: 0 0 4px;
 	}
 	/*-e-about--------------------------------*/
+	/*----------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+	/*----------------------------------------*/
+	/*-b-technology---------------------------*/
+	/*-b-main-technology------------*/
+	.technology.main-oval {
+		padding: 70px 0 60px;
+	}
+	/*-t-elem-*/
+	.technology .slider:before {
+		display: none;
+	}
+	.t-elem {
+		margin: 0 auto;
+		display: flex !important;
+		align-items: center;
+	}
+	.t-elem-img-b {
+		height: 483px;
+	}
+	.t-elem-img-l {
+		margin: 52px auto 29px;
+	}
+	.t-elem-img-l:before {
+		top: -5px;
+		left: -16px;
+		width: 48px;
+		height: 48px;
+	}
+	.t-elem-img-l img {
+		width: 64px;
+		height: 64px;
+	}
+	.t-title {
+		font-size: 24px;
+		line-height: 26px;
+		letter-spacing: -0.4px;
+		margin-bottom: 10px;
+	}
+	.t-text {
+		line-height: 22px;
+		width: 280px;
+	}
+	.technology.main-oval .slider-hider {
+		margin-top: 25px;
+	}
+	.technology .slider-arrows {
+		bottom: unset;
+		width: unset;
+		top: 153px;
+		left: calc(50% + 103px);
+		transform: unset;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 130px;
+		z-index: 3;
+	}
+	/*-e-main-technology------------*/
+
+	/*-b-arcomp---------------------*/
+	.arcomp {
+		padding: 0 0 74px;
+	}
+	.arcomp h2 {
+		font-size: 40px;
+		line-height: 46px;
+		letter-spacing: -1.5px;
+		margin: 0 0 55px;
+	}
+	.arcomp .video {
+		width: 209px;
+		height: 452px;
+	}
+	/*-e-arcomp---------------------*/
+
+	/*-b-inop-----------------------*/
+	.s-ins.inop {
+		padding: 40px 0 98px;
+	}
+	.s-ins.inop h2 {
+		max-width: 300px;
+	}
+	.s-ins.inop p {
+		max-width: 280px;
+	}
+	.inop-elem {
+		width: 340px;
+		height: 194px;
+		border-radius: 4px;
+		margin: 0 0 10px;
+	}
+	.inop .flex {
+		flex-direction: column;
+	}
+	.inop-title {
+		margin: auto;
+		font-size: 48px;
+		line-height: 54px;
+		letter-spacing: -2px;
+	}
+	.inop-elem .btnr {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 0;
+		background-color: transparent;
+	}
+	.inop-elem .btnr:hover {
+		background-color: transparent;
+	}
+	.inop-elem .btnr:before {
+		display: none;
+	}
+	/*-e-inop-----------------------*/
+
+	/*-b-tech-----------------------*/
+	/*display:none*/
+	/*-e-tech-----------------------*/
+
+	/*-b-evus-----------------------*/
+	.evus {
+		padding: 60px 0;
+	}
+	.evus .wrapl {
+		max-width: 763px;
+	}
+	.evus h2 {
+		font-size: 40px;
+		line-height: 46px;
+		letter-spacing: -1.5px;
+		margin: 0 0 20px;
+	}
+	.evus .rating {
+		width: 114px;
+		height: 34px;
+		padding: 0 0 0 32px;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 20px;
+		margin: 0 0 53px;
+	}
+	.evus .rating:before {
+		border-radius: 17px;
+	}
+	.evus .rating:after {
+		top: 9px;
+		left: 14px;
+		width: 14px;
+		height: 14px;
+		border-radius: 17px;
+	}
+
+	.evus .flex {
+		flex-direction: column;
+	}
+	.evus .col {
+		align-items: center;
+	}
+	.evus .col:first-child {
+		padding: 0 0 60px;
+	}
+	.evus .col:first-child img {
+		width: 210px;
+		height: 420px;
+		margin: 0 auto 40px;
+	}
+	.evus .col:first-child .btn {
+		width: 150px;
+		height: 50px;
+		margin-right: 6px;
+		font-size: 12px;
+		letter-spacing: -0.4px;
+	}
+	.evus .icon-googleplay {
+		padding-left: 47px;
+	}
+	.evus .icon-appstore {
+		padding-left: 59px;
+	}
+	.evus .icon-googleplay:before {
+		font-size: 23px;
+		top: 14px;
+		left: 18px;
+	}
+	.evus .icon-appstore:before {
+		font-size: 24px;
+		top: 12px;
+		left: 25px;
+	}
+
+	.evus .col:last-child {
+		padding: 0;
+	}
+	.form-title {
+		font-size: 24px;
+		line-height: 26px;
+		letter-spacing: -0.4px;
+		margin: auto auto 20px;
+	}
+	.input-warning {
+		top: -10px;
+		font-size: 10px;
+	}
+	form input {
+		border: 1px solid rgba(153, 162, 189, 0.3);
+		padding: 12px 17px 13px;
+		font-size: 16px;
+		line-height: 23px;
+	}
+	.evus input {
+		width: 335px;
+		margin-bottom: 10px;
+	}
+	.evus form .btn {
+		margin: 10px auto 0 0;
+		font-size: 14px;
+		width: 180px;
+	}
+	/*-e-evus-----------------------*/
+
+	.banner {
+		padding: 0 0 76px;
+	}
+	.banner .btn {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		color: transparent;
+		background-color: transparent;
+	}
+	.banner .btn:hover {
+		background-color: transparent;
+	}
+	/*-e-technology---------------------------*/
 	/*----------------------------------------*/
 }
