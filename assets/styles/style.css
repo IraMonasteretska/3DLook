@@ -2193,8 +2193,6 @@ h4 {
 }
 .whiteblock .block {
 	background-color: var(--gray);
-	padding-left: 130px;
-	background-image: url(../img/MGroup4.svg);
 }
 .whiteblock .block-title,
 .whiteblock .block-descr {
@@ -6066,6 +6064,7 @@ background-color: #999;
 	font-size: 8px;
 }
 
+/*-b-form-banner-----------------*/
 .blog_tag__bottom_baner {
 	width: 100%;
 	box-sizing: border-box;
@@ -6075,7 +6074,7 @@ background-color: #999;
 	width: 100%;
 	display: block;
 	text-align: center;
-}
+} 
 
 .blog_tag__bottom_baner_box {
 	width: 100%;
@@ -6161,6 +6160,7 @@ label.b_style input::placeholder {
 	padding-right: 30px;
 	text-transform: none;
 }
+/*-e-form-banner-----------------*/
 
 /* */
 /* BLOG */
@@ -6173,7 +6173,7 @@ label.b_style input::placeholder {
 	margin-bottom: 50px;
 }
 
-.blog_banner_wrap {
+/* .blog_banner_wrap {
 	width: 45%;
 	height: 660px;
 	display: flex;
@@ -6209,7 +6209,7 @@ label.b_style input::placeholder {
 	position: absolute;
 	right: 18px;
 	font-size: 0.6em;
-}
+} */
 /*-e-blog---------------------------------*/
 /*--------------------------------------------------------------------------------*/
 
