@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<!-- Open Graph -->
+	<meta name="og:type" content="website">
+	<meta name="og:title" content="3DLook">
+	<meta name="og:description" content="">
+	<meta name="og:url" content="">
+	<meta name="og:site_name" content="3DLook">
+	<meta name="og:locale" content="uk_UA">
+	<!-- <meta name="og:image" content="url"> -->
+	<!-- Open Graph -->
+	<!-- <meta name="theme-color" content="#000000"> -->
+	<!-- <link rel="shortcut icon" href=""> -->
+	<title>3DLook</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+	<!-- <link rel="stylesheet" type="text/css" href="./assets/fonts/Mark/font.css"> -->
+	<link rel="stylesheet" type="text/css" href="./assets/fonts/HelveticaNeue/font.css">
+	<link rel="stylesheet" type="text/css" href="./assets/icons/fontello/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/desc.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/media.css">
+
+	<!-- Bogdan styles -->
+	<link rel="stylesheet" type="text/css" href="./assets/styles/b_styles.css">
+	
+	<!-- This script is used for DomContentLoaded -->
+	<!-- Example to use: onLoaded.push({ YOUR_CODE }); -->
+	<script>var onLoaded=[],onResize=[];</script>
+</head>
+<body>
+<!-- mobile top menu -->
+<div id="mob-top" class="">
+	<button type="button" class="cross" id="close-mob-top"></button>
+	<span id="mob-top-title">Homescreen</span>
+	<nav id="mob-top-nav">
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">Solutions</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">3d Model Generation</a></li>
+			</ul>
+		</div>
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">Technology</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">1Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">1Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">13d Model Generation</a></li>
+			</ul>
+		</div>
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">Resources</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">2Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">2Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">33d Model Generation</a></li>
+			</ul>
+		</div>
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">Careers</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">3Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">3Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">33d Model Generation</a></li>
+			</ul>
+		</div>
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">About</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">4Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">4Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">43d Model Generation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<button type="button" class="btn red">Request a Demo</button>
+</div>
+
+<!-- eclipse -->
+<div id="eclipse"></div>
+
+<!-- search-result -->
+<div id="search-result" class="">
+	<span id="search-result-title">Search results: <span>11</span></span>
+	<button type="button" class="btn black icon-arr-t">View more</button>
+</div>
+
+<!-- body -->
+<header>
+	<div class="wrap">
+		<a class="logo" href="">
+			<img src="./assets/img/logo.svg">
+		</a>
+		<div id="top-center">
+			<nav id="top-nav">
+				<a href="">Body data platform</a>
+				<a href="">Technology</a>
+				<a href="">Resources</a>
+				<a href="">About us</a>
+			</nav>
+			<div id="search-wrap" class="">
+				<form>
+					<input id="search-input" type="text" placeholder="Search..." name="search">
+					<button id="search" class="icon-search" type="submit"></button>
+					<button id="search-clean" class="close" type="button"></button>
+				</form>
+			</div>
+		</div>
+		<div id="header-mob">
+			<a class="icon-googleplay" href=""></a>
+			<a class="icon-appstore" href=""></a>
+			<button type="button" class="burger" id="open-mob-top">
+				<span class="burger-el bel1"></span>
+				<span class="burger-el bel2"></span>
+				<span class="burger-el bel3"></span>
+			</button>
+		</div>
+		<button class="btn transparent red" type="button" id="h-req-quote">Request a Quote</button>
+	</div>
+</header>
+
+
+
+<div class="b_container">
+
+	<div class="tag_wrapper">
+		<span class="span-tag">Blog</span>
+	</div>
+
+	<h2 class="h-2">
+		The Evolution of Body Measuring: How advances in technology are driving the future of made to measure fashion
+	</h2>
+
+	<div class="blog_article__share_wrapper">
+		<div class="blog_article__share_date">
+			11 February, 2019
+		</div>
+		<div class="blog_article__share">
+			<div class="blog_srticle__share_text">
+				SHARE:
+			</div>
+			<a href="" class="social icon-fb"></a>
+			<a href="" class="social icon-tw"></a>
+			<a href="" class="social icon-in"></a>
+		</div>
+	</div>
+
+	<div class="blog_article__main_img">
+		<div class="bg-linear-gradient"></div>
+		<img src="./assets/img/article/main.png" alt="">
+	</div>
+
+</div>
+
+<div class="blog_article__container">
+
+	<p class="p-4">
+		Tailoring is about individually made clothes. Looking back in history, the desired fit of bespoke clothing was achieved through many long fittings where master tailors would painstakingly adjust patterns based on many measurements to achieve the incredible fit and handwork that warranted the high cost of bespoke clothing.
+	</p>
+	<p class="p-4">
+		Today there is an evident resurgence of bespoke and made to measure companies in the fashion industry partly driven by size inclusivity and a desire to find clothing representative of a consumer’s own unique taste, and partly driven by a new generation who is focused on sustainable practices. As the genuine demand for custom clothing continues to grow, optimizing many of the traditional practices using technology to bring efficiency to the supply chain is making it possible for brands to offer high quality and customized products at prices that consumers can afford.
+	</p>
+	<p class="p-4">
+		This article is devoted to one of the first stages – taking measurements, with the spotlight on technological advances to replace the manual, time-consuming, and costly process of hand measurements using a measuring tape.
+	</p>
+
+	<div class="blog_article__img">
+
+		<img src="./assets/img/article/blog1.png" alt="">
+
+		<div class="figcaption">photo: The Evolution of Body Measuring</div>
+
+	</div>
+
+	<div class="subtitle">
+		The Evolution of Body Measuring
+	</div>
+
+	<h4 class="h-4-1">
+		The history of the measuring tape
+	</h4>
+
+	<p class="p-4">
+		The first measuring tapes as we know them today came into use in the early 1800s. They were considered revolutionary at the time as they enabled tailors to calculate the proportions between different body measurements, and allowed for the development of drafting systems. With the introduction of cutting systems and then the sewing machine, machine-based clothing systems paved the way for ready to wear.
+	</p>
+	<p class="p-4">
+		Over the course of the 19th and 20th centuries, the rise of machine-made clothing, casual lifestyles, and shopping malls contributed to the decline of custom and bespoke clothing and true bespoke was an art that came with a high price tag and long lead times with many fittings that only a few could afford.
+	</p>
+	<p class="p-4"> 
+		The rise of fast fashion led to the incredible growth of mass-market retailers over the last two decades. In the early 2000s, as consumers began to turn to the internet to shop, this business model created a sizing and fit monster which last year resulted in over $150 billion in returned clothing. Today consumers are frustrated with the complexities of buying clothing online and fashion companies are struggling with understanding what consumer body shapes look like. Add to this a tremendous focus on size inclusivity and a spotlight on the industry’s contribution to environmental waste. As a result, we are seeing a resurrection of the made to measure business model. Advancements in technology are allowing innovative companies to tailor individual garments to the customer’s size, body type and preference.
+	</p>
+
+	<h4 class="h-4-1">
+		The Disruption of Manual Measurements
+	</h4>
+
+	<p class="p-4">
+		Measuring a customer is only as accurate as the person who is using the measuring tape. Deploying professional tailors to clients’ homes or places of business is both time-consuming and costly. For businesses looking to scale this process, this means hiring an army of tailors nationally or internationally which is cost-prohibitive and also creates inefficiencies in measuring standards. Precision can’t always be perfect, even for the most seasoned professionals.
+	</p>
+	<p class="p-4">
+		Some companies ask customers to measure themselves and have implemented lengthy video tutorials or measuring guides into their checkout process. Still, these methods expect that a consumer has a measuring tape at home and can learn how to use it properly. This leaves the opportunity for a huge margin of error.
+	</p>
+	<p class="p-4">
+		As the demand for well fitted and customized clothing increases, made to measure and bespoke companies are turning to advances in technology to help optimize costs and efficiency and deliver a better experience for their customers.
+	</p>
+	
+	<div class="blog_article__twoboxes">
+		<div class="blog_article__box b_green">
+			<div class="blog_article__box_title">
+				Benefits:
+			</div>
+			<div class="blog_article__box_list">
+				<div class="blog_article__box_item">
+					<span><img src="./assets/img/article/check.svg" alt=""></span> Accurate
+				</div>
+				<div class="blog_article__box_item">
+					<span><img src="./assets/img/article/check.svg" alt=""></span> Easy-to-buy
+				</div>
+			</div>
+		</div>
+		<div class="blog_article__box b_red">
+			<div class="blog_article__box_title">
+				Drawbacks:
+			</div>
+			<div class="blog_article__box_list">
+				<div class="blog_article__box_item">
+					<img src="./assets/img/article/i__draw.svg" alt=""> Time-consuming
+				</div>
+				<div class="blog_article__box_item">
+					<img src="./assets/img/article/i__draw.svg" alt=""> Costly
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div>
+
+		<div class="figcaption">The Disruption of Manual Measurements</div>
+
+	</div>
+
+	<h4 class="h-4-1">
+		3D Body Scanners
+	</h4>
+
+	<p class="p-4">
+		3D body scanners are designed to provide the full body of an individual in three dimensions. The result is a specific 3D model that shows the exact body shape and offers precise information concerning the body measurements, posture analysis, and different properties of the human body. The scanners usually look like a closed booth – a cabin with 
+		<a href="#" title="">cameras and sensors.</a> 
+		A client stands in the middle of the cabin and holds a pose for the time of scanning. The 3D software reconstructs the final 3D model by “stitching” the images together.
+	</p>
+
+	<div class="blog_article__video">
+
+		<video src="" poster="./assets/img/article/video.png"></video>
+
+	</div>
+	<div>
+
+		<div class="figcaption">3D body scanners</div>
+
+	</div>
+
+	<h4 class="h-4-1">
+		Mobile Body Scanning
+	</h4>
+
+	<p class="p-4">
+		Recent advances in AI-powered technologies such as computer vision and deep learning models have enabled next-gen mobile body scanning solutions. Most body scanning solutions ask the customer to take several photos of themselves and deliver the body data within seconds or minutes back to the business. These solutions deliver significant benefits to made to measure businesses and their customers including convenience, portability, and lower costs.
+	</p>
+
+	<h4 class="h-4-1">
+		Our vacancies
+	</h4>
+
+	<div class="blog_article__vacancies">
+		<a href="#" class="blog_article__vacancies_item">
+			<div class="ba_v_title">
+				Business Development Manager
+			</div>
+			<div class="ba_v_time">
+				FULL TIME
+			</div>
+			<div class="ba_v_address">
+				Paris,France
+			</div>
+			<div class="ba_v_apply_now">
+				Apply now
+			</div>
+		</a>
+		<a href="#" class="blog_article__vacancies_item">
+			<div class="ba_v_title">
+				Creative Team Lead
+			</div>
+			<div class="ba_v_time">
+				FULL TIME
+			</div>
+			<div class="ba_v_address">
+				Paris,France
+			</div>
+			<div class="ba_v_apply_now">
+				Apply now
+			</div>
+		</a>
+		<a class="blog_article__vacancies_item">
+			<div class="ba_v_title">
+				3D Developer
+			</div>
+			<div class="ba_v_time">
+				FULL TIME
+			</div>
+			<div class="ba_v_address">
+				Odessa/Kiev,Ukraine
+			</div>
+			<div class="ba_v_apply_now">
+				Apply now
+			</div>
+		</a>
+		<a class="blog_article__vacancies_item">
+			<div class="ba_v_title">
+				Frontend Developer
+			</div>
+			<div class="ba_v_time">
+				FULL TIME
+			</div>
+			<div class="ba_v_address">
+				New York,USA
+			</div>
+			<div class="ba_v_apply_now">
+				Apply now
+			</div>
+		</a>
+		<a class="blog_article__vacancies_item">
+			<div class="ba_v_title">
+				QA Engineer
+			</div>
+			<div class="ba_v_time">
+				FULL TIME
+			</div>
+			<div class="ba_v_address">
+				Odessa,Ukraine
+			</div>
+			<div class="ba_v_apply_now">
+				Apply now
+			</div>
+		</a>
+	</div>
+
+	<p class="p-4">
+		Recent advances in AI-powered technologies such as computer vision and deep learning models have enabled next-gen mobile body scanning solutions. Most body scanning solutions ask the customer to take several photos of themselves and deliver the body data within seconds or minutes back to the business. These solutions deliver significant benefits to made to measure businesses and their customers including convenience, portability, and lower costs.
+	</p>
+
+	<div class="blog_article__quote_wrapper">
+		<div class="ba_q_a">
+			<img src="./assets/img/article/quote_avtor.png" alt="">
+		</div>
+		<div class="ba_q_text">
+			<img src="./assets/img/article/i__quote.svg" alt="">
+			<p class="p-subtitle">
+				We have built our mobile-first body scanning and measuring technology which enables a simple exchange of measurement and shape data between your business and your customers to help optimize processes and save costs
+			</p>
+		</div>
+	</div>
+	<div class="blog_article__quote_avtor">
+		<h4 class="h-4-1">
+			Vadim Rogovskiy
+		</h4>
+		<p class="p-short">
+			CEO, Co-Founder
+		</p>
+	</div>
+
+	<p class="p-4">
+		Mobile body scanning will disrupt the current broken size system and help to reposition the made to measure sector to provide perfectly fitting clothes to tech-savvy customers who understand their bodies, are fed-up with the hassle of returns, and care about the environment. 
+	</p>
+
+	<div class="blog_article__last_box">
+		<div class="ba-l-slider-hider">
+			<div class="ba-l-slider">
+
+				<!-- мітка IMG1 -->
+				<div class="ba-l-slider-elem">
+					<img src="" alt="">
+				</div>
+				<div class="ba-l-slider-elem">
+					<img src="" alt="">
+				</div>
+				<div class="ba-l-slider-elem">
+					<img src="" alt="">
+				</div>
+				<div class="ba-l-slider-elem">
+					<img src="" alt="">
+				</div>
+				<div class="ba-l-slider-elem">
+					<img src="" alt="">
+				</div>
+
+			</div>
+		</div>
+		<div class="ba__l_b_slider">
+			<div class="slider-arrow icon-arr-l" id="ms-next"></div>
+			<div class="ba__lb_slider_hider">
+				<div class="ba__l_b_slides">
+
+					<!-- тут така ж картинка як і в мітці IMG1 -->
+					<!-- Так меньше трафіку -->
+					<div class="ba__l_b_slide">
+						<img src="" alt="">
+					</div>
+					<div class="ba__l_b_slide">
+						<img src="" alt="">
+					</div>
+					<div class="ba__l_b_slide">
+						<img src="" alt="">
+					</div>
+					<div class="ba__l_b_slide">
+						<img src="" alt="">
+					</div>
+					<div class="ba__l_b_slide">
+						<img src="" alt="">
+					</div>
+
+				</div>
+			</div>
+			<div class="slider-arrow icon-arr-r" id="ms-prev"></div>
+		</div>
+
+		<div class="figcaption">
+			Interior Store magazine, 2019
+		</div>
+		<div class="ba__l_b_count-hider">
+			<div class="ba__l_b_count">
+				<span id="ba__l_count-1">2</span>
+				<span id="ba__l_count-2">10</span>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="blog_article__bottom_share">
+		
+		<div class="blog_article__share_wrapper">
+			<div class="blog_article__share_tags">
+				<span>Insights</span>
+				<span>Product</span>
+				<span>Technology</span>
+			</div>
+			<div class="blog_article__share">
+				<div class="blog_srticle__share_text">
+					SHARE:
+				</div>
+				<a href="" class="social icon-fb"></a>
+				<a href="" class="social icon-tw"></a>
+				<a href="" class="social icon-in"></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="blog_article__subtitle">
+		Related posts
+	</div>
+
+	<div class="blog_article__related_posts-hider">
+		<div class="slider-arrows mob">
+			<div class="slider-arrow icon-arr-r" id="rp-next"></div>
+			<div class="slider-arrow icon-arr-l" id="rp-prev"></div>
+		</div>
+		<div class="blog_article__related_posts">
+	
+			<div class="blog_article__related_post">
+				<div class="b_a__r_p_image">
+					<img src="" alt="">
+				</div>
+				<div class="b_a__r_p_text">
+					<div class="b_a__r_p_categoty">
+						Insights
+					</div>
+					<div class="b_a__r_p_title">
+						Bringing it All Together: Introducing Our All-in-One Marketing platform
+					</div>
+				</div>
+			</div>
+	
+			<div class="blog_article__related_post">
+				<div class="b_a__r_p_image">
+					<img src="" alt="">
+				</div>
+				<div class="b_a__r_p_text">
+					<div class="b_a__r_p_categoty">
+						Product
+					</div>
+					<div class="b_a__r_p_title">
+						Bringing it All Together: Introducing Our All-in-One Marketing platform
+					</div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div class="blog_article__subtitle">
+		Leave a Reply
+	</div>
+
+	<form action="" class="blog_form">
+		<textarea name="" id="" placeholder="My comment is…"></textarea>
+
+		<div class="blog_form_inputs">
+
+			<div>
+				<input type="text" placeholder="Name">
+			</div>
+			<div>
+				<input type="text" placeholder="Email">
+			</div>
+			<div>
+				<input type="text" placeholder="Website">
+			</div>
+
+		</div>
+
+		<div class="form__row">
+
+			<div class="form__left">
+				<input type="checkbox" id="checkbox_confirm">
+				<label for="checkbox_confirm">
+					Save my name, email, and website in this browser for the next time I comment.
+				</label>
+			</div>
+
+			<div class="form__right">
+				<button class="btn a-btn">Submit Comment</button>
+			</div>
+
+		</div>
+	</form>
+
+	<div class="blog_article__subtitle">
+		Comments <span class="b_a__s_count">(3)</span>
+	</div>
+
+	<div class="blog_article__comments_wrapper">
+		<div class="blog_article__comment">
+			<div class="blog_article__comment_avtor">
+				<span class="b_a__c_a_avtor">
+					Nicholas
+				</span>
+				<span class="b_a__c_a_date">
+					Today, 3:51 PM
+				</span>
+			</div>
+			<div class="b_a__c_a_text">
+				<p class="p-medium">
+					It’s classified how to utilize free classified ad sites to boost business
+				</p>
+			</div>
+			<a class="b_a__c_a_reply_link" href="#">
+				Reply
+			</a>
+
+		</div>
+		<div class="blog_article__comment">
+			<div class="blog_article__comment_avtor">
+				<span class="b_a__c_a_avtor">
+					Mollie Simon
+				</span>
+				<span class="b_a__c_a_date">
+					5 days ago, 3:51 PM
+				</span>
+			</div>
+			<div class="b_a__c_a_text">
+				<p class="p-medium">
+					How great is the strength of your belief
+				</p>
+			</div>
+			<a class="b_a__c_a_reply_link" href="#">
+				Reply
+			</a>
+			
+			<div class="blog_article__comment comment_reply">
+
+				<div class="blog_article__comment_avtor">
+					<span class="b_a__c_a_avtor">
+						Mollie Simon
+					</span>
+					<span class="b_a__c_a_date">
+						5 days ago, 3:51 PM
+					</span>
+				</div>
+				<div class="b_a__c_a_text">
+					<p class="p-medium">
+						Nailing it on the head with free internet advertising
+					</p>
+				</div>
+				<a class="b_a__c_a_reply_link" href="#">
+					Reply
+				</a>
+					
+				<div class="blog_article__comment comment_reply">
+
+					<div class="blog_article__comment_avtor">
+						<span class="b_a__c_a_avtor">
+							Mollie Simon
+						</span>
+						<span class="b_a__c_a_date">
+							5 days ago, 3:51 PM
+						</span>
+					</div>
+					<div class="b_a__c_a_text">
+						<p class="p-medium">
+							Nailing it on the head with free internet advertising
+						</p>
+					</div>
+					<a class="b_a__c_a_reply_link" href="#">
+						Reply
+					</a>
+		
+				</div>
+	
+			</div>
+
+		</div>
+
+		
+		<div class="blog_article__comment">
+			<div class="blog_article__comment_avtor">
+				<span class="b_a__c_a_avtor">
+					Nicholas
+				</span>
+				<span class="b_a__c_a_date">
+					Today, 3:51 PM
+				</span>
+			</div>
+			<div class="b_a__c_a_text">
+				<p class="p-medium">
+					It’s classified how to utilize free classified ad sites to boost business
+				</p>
+			</div>
+			<a class="b_a__c_a_reply_link" href="#">
+				Reply
+			</a>
+
+		</div>
+	</div>
+
+</div>
+<footer>
+	<div id="footer-msg">
+		<div class="btnr blue icon-intercom" id="f-msg"></div>
+		<div class="btnr black icon-arr-t" id="f-arr"></div>
+	</div>
+	<div class="wrap">
+		<div class="col" id="footer-1">
+			<a class="logo" href="">
+				<img src="./assets/img/logo.svg">
+			</a>
+			<div class="address">
+				<label>Office:</label>
+				<address>55 East 3rd Avenue San Mateo, CA 94401</address>
+			</div>
+			<div class="address">
+				<label>Email:</label>
+				<a href="mailto:hello@3dlook.me">hello@3dlook.me</a>
+			</div>
+			<button class="btn transparent red" type="button">Request a Quote</button>
+		</div>
+		<div id="copyright">© 2019 3DLOOK.ME<span>, design by <a href="https://deco.agency/uk/">deco.agency</a></span></div>
+		<div class="col" id="footer-2">
+			<div class="footer-rlnks">
+				<div class="grid">
+					<a href="">Body data platform</a>
+					<a href="">Resources</a>
+					<a href="">Technology</a>
+					<a href="">About Us</a>
+				</div>
+			</div>
+			<div class="socials">
+				<a class="social icon-fb" href="" target="_blank"></a>
+				<a class="social icon-insta" href="" target="_blank"></a>
+				<a class="social icon-tw" href="" target="_blank"></a>
+				<a class="social icon-in" href="" target="_blank"></a>
+				<a class="social icon-youtube" href="" target="_blank"></a>
+			</div>
+		</div>
+		<div id="footer-pptc">
+			<a href="">Privacy</a>
+			<a href="">Terms and conditions</a>
+		</div>
+		<div class="col" id="footer-3">
+			<div class="footer-title">Blog Posts</div>
+			<div class="footer-blog">
+				<div class="footer-blog-title">Reuters</div>
+				<div class="footer-blog-text">The Technology 202: This venture capitalist is warning Congress not to hurt startups in its antirust crusade</div>
+			</div>
+			<div class="footer-blog">
+				<div class="footer-blog-title">Reuters</div>
+				<div class="footer-blog-text">The Technology 202: This venture capitalist is warning Congress not to hurt startups in</div>
+			</div>
+			<div class="footer-blog">
+				<div class="footer-blog-title">Reuters</div>
+				<div class="footer-blog-text">The Technology 202: This venture capitalist is warning Congress not to hurt startups in</div>
+			</div>
+		</div>
+		<div class="col" id="footer-4">
+			<div class="footer-title">Newsletter</div>
+			<form>
+				<div class="input">
+					<input type="text" name="email" placeholder="E-mail">
+				</div>
+				<button class="btn red" type="submit">SUBSCRIBE</button>
+			</form>
+			<p>3DLOOK INC. is a company located outside of the European Union. In order to comply with Art. 27 EU GDPR, GDPR-Rep.eu has been nominated as our represenative in the European Union.</p>
+			<p>If you want to make use of your data privacy rights, please visit: <a href="">Our public Privacy dashboard</a></p>
+		</div>
+	</div>
+</footer>
+<!--b-scripts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="./assets/scripts/blog_article.js"></script>
+<script src="./assets/scripts/script.js"></script>
+
+<!-- Bogdan scripts -->
+	<script src="./assets/scripts/b_script.js"></script>
+<!--  -->
+
+<!--e-scripts-->
+</body>
+</html>
