@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<!-- Open Graph -->
+	<meta name="og:type" content="website">
+	<meta name="og:title" content="3DLook">
+	<meta name="og:description" content="">
+	<meta name="og:url" content="">
+	<meta name="og:site_name" content="3DLook">
+	<meta name="og:locale" content="uk_UA">
+	<!-- <meta name="og:image" content="url"> -->
+	<!-- Open Graph -->
+	<!-- <meta name="theme-color" content="#000000"> -->
+	<!-- <link rel="shortcut icon" href=""> -->
+	<title>3DLook</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./assets/fonts/Mark/font.css">
+	<link rel="stylesheet" type="text/css" href="./assets/fonts/HelveticaNeue/font.css">
+	<link rel="stylesheet" type="text/css" href="./assets/icons/fontello/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/desc.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/media.css">
+	
+	<!-- This script is used for DomContentLoaded -->
+	<!-- Example to use: onLoaded.push({ YOUR_CODE }); -->
+	<script>var onLoaded=[],onResize=[];</script>
+</head>
+<body>
+<!-- mobile top menu -->
+<div id="mob-top" class="">
+	<button type="button" class="cross" id="close-mob-top"></button>
+	<span id="mob-top-title">Homescreen</span>
+	<nav id="mob-top-nav">
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">Solutions</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">3d Model Generation</a></li>
+			</ul>
+		</div>
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">Technology</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">1Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">1Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">13d Model Generation</a></li>
+			</ul>
+		</div>
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">Resources</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">2Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">2Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">33d Model Generation</a></li>
+			</ul>
+		</div>
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">Careers</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">3Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">3Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">33d Model Generation</a></li>
+			</ul>
+		</div>
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">About</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">4Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">4Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">43d Model Generation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<button type="button" class="btn red">Request a Demo</button>
+</div>
+
+<!-- eclipse -->
+<div id="eclipse"></div>
+
+<!-- search-result -->
+<div id="search-result" class="">
+	<span id="search-result-title">Search results: <span>11</span></span>
+	<button type="button" class="btn black icon-arr-t">View more</button>
+</div>
+
+<!-- body -->
+<header>
+	<div class="wrap">
+		<a class="logo" href="">
+			<img src="./assets/img/logo.svg">
+		</a>
+		<div id="top-center">
+			<nav id="top-nav">
+				<a href="">Body data platform</a>
+				<a href="">Technology</a>
+				<a href="">Resources</a>
+				<a href="">About us</a>
+			</nav>
+			<div id="search-wrap" class="">
+				<form>
+					<input id="search-input" type="text" placeholder="Search..." name="search">
+					<button id="search" class="icon-search" type="submit"></button>
+					<button id="search-clean" class="close" type="button"></button>
+				</form>
+			</div>
+		</div>
+		<div id="header-mob">
+			<a class="icon-googleplay" href=""></a>
+			<a class="icon-appstore" href=""></a>
+			<button type="button" class="burger" id="open-mob-top">
+				<span class="burger-el bel1"></span>
+				<span class="burger-el bel2"></span>
+				<span class="burger-el bel3"></span>
+			</button>
+		</div>
+		<button class="btn transparent red" type="button" id="h-req-quote">Request a Quote</button>
+	</div>
+</header>
+
+<section class="main-oval cr__head_bg">
+	<div class="bg">
+		<div class="bg1"></div>
+	</div>
+	<div class="wrap">
+		<h1>You’re gonna love it here!  </h1>
+		<p>The heart of our company is, first and foremost, our employees. We combine expertise and experience, and work together to deliver outstanding results for our clients</p>
+		<!-- <span class="mark">Get <span class="att">2 month for free if</span> billed yearly</span>
+		<button type="button" class="btn red">Try it Now</button> -->
+		<a href="#" class="btn red">View Openings</a>
+	</div>
+</section>
+
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!-- МАЄ БУТИ ІНШИЙ background-image -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+
+
+
+<section class="cr_video_wrap" id="cr_video">
+
+	<iframe
+		id="cr_bg_video"
+		src="https://www.youtube.com/embed/zBKei6Ji_WI?rel=0" 
+		frameborder="0" 
+		allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+		allowfullscreen>
+	</iframe>
+
+	<div class="cr_video_play">
+		<img src="./assets/img/cr/play-btn.svg" alt="">
+		WATCH NOW
+	</div>
+
+</section>
+
+<section class="cr__why">
+	
+	<div class="center">
+		<h2>Why work at 3DLOOK?</h2>
+		<p>We strive to ensure that each of our employees can influence the way 3DLOOK is developing and evolving.</p>	
+	</div>
+
+	<div class="grid job_page__info">
+		<div class="g-el g2">
+			<div class="job_page__info_box">
+				<div class="j_p__i_img">
+					<img src="./assets/img/cr/Combined Shape.svg" alt="">
+				</div>
+
+				<h4 class="h_4">
+					Unique product
+				</h4>
+
+				<div class="p_short">
+					You will take part in the development of the unique product that has no equivalents in the world and will be used by millions of people
+				</div>
+			</div>
+		</div>
+		<div class="g-el g2">
+			<div class="job_page__info_box">
+				<div class="j_p__i_img">
+					<img src="./assets/img/cr/Combined Shape(1).svg" alt="">
+				</div>
+
+				<h4 class="h_4">
+					Education
+				</h4>
+
+				<div class="p_short">
+					We provide free language lessons and courses for our employees
+				</div>
+			</div>
+		</div>
+		<div class="g-el g2">
+			<div class="job_page__info_box">
+				<div class="j_p__i_img">
+					<img src="./assets/img/cr/Combined Shape(2).svg" alt="">
+				</div>
+
+				<h4 class="h_4">
+					Stock Option Plan
+				</h4>
+
+				<div class="p_short">
+					The stock option plan is available for everyone in the company regardless of the position
+				</div>
+			</div>
+		</div>
+		<div class="g-el g2">
+			<div class="job_page__info_box">
+				<div class="j_p__i_img">
+					<img src="./assets/img/cr/Combined Shape(3).svg" alt="">
+				</div>
+
+				<h4 class="h_4">
+					Remote days
+				</h4>
+
+				<div class="p_short">
+					We value work/life balance. With us, you can work remotely 5 days a month
+				</div>
+			</div>
+		</div>
+		<div class="g-el g2">
+			<div class="job_page__info_box">
+				<div class="j_p__i_img">
+					<img src="./assets/img/cr/Combined Shape(4).svg" alt="">
+				</div>
+
+				<h4 class="h_4">
+					Flexible Working Hours
+				</h4>
+
+				<div class="p_short">
+					Some of us are morning people, some of us are night owls. We focus on results, not at what time you arrive
+				</div>
+			</div>
+		</div>
+		<div class="g-el g2">
+			<div class="job_page__info_box">
+				<div class="j_p__i_img">
+					<img src="./assets/img/cr/Combined Shape(5).svg" alt="">
+				</div>
+
+				<h4 class="h_4">
+					Parties & Events
+				</h4>
+
+				<div class="p_short">
+					We work hard, but we also relax. Our events help our employees to take their minds off work
+				</div>
+			</div>
+		</div>
+		<div class="g-el g2">
+			<div class="job_page__info_box">
+				<div class="j_p__i_img">
+					<img src="./assets/img/cr/Combined Shape(6).svg" alt="">
+				</div>
+
+				<h4 class="h_4">
+					Active Life
+				</h4>
+
+				<div class="p_short">
+					We are constantly involved in sport competitions and other activities, from soccer to carting
+				</div>
+			</div>
+		</div>
+		<div class="g-el g2">
+			<div class="job_page__info_box">
+				<div class="j_p__i_img">
+					<img src="./assets/img/cr/Combined Shape(7).svg" alt="">
+				</div>
+
+				<h4 class="h_4">
+					Self-realization
+				</h4>
+
+				<div class="p_short">
+					From paid workshops to cross-department transfers, we do our best to let you fulfill your potential
+				</div>
+			</div>
+		</div>
+		<div class="g-el g2">
+			<div class="job_page__info_box">
+				<div class="j_p__i_img">
+					<img src="./assets/img/cr/Combined Shape(8).svg" alt="">
+				</div>
+
+				<h4 class="h_4">
+					Change The World
+				</h4>
+
+				<div class="p_short">
+					But most importantly we are working on technology to change the world of fashion for the better
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="fayniy_text">
+		This is <span>#LifeAt3DLOOK</span>
+	</div>
+
+	
+	<div class="grid job_page__info">
+		<div class="g-el g2 brdl1px">
+			<div class="job_page__info_box">
+				<div class="j_s__i_img">
+					<img src="./assets/img/cr/2-layers.svg" alt="">
+				</div>
+
+				<h4 class="h_4 h_4_s">
+					@LifeAt3DLook
+				</h4>
+
+			</div>
+		</div>
+		<div class="g-el g2 brdl1px">
+			<div class="job_page__info_box">
+				<div class="j_s__i_img">
+					<img src="./assets/img/cr/Group 382.svg" alt="">
+				</div>
+
+				<h4 class="h_4 h_4_s">
+					#LifeAt3DLook
+				</h4>
+
+			</div>
+		</div>
+		<div class="g-el g2 brdl1px">
+			<div class="job_page__info_box">
+				<div class="j_s__i_img">
+					<img src="./assets/img/cr/6-layers.svg" alt="">
+				</div>
+
+				<h4 class="h_4 h_4_s">
+					#LifeAt3DLook
+				</h4>
+
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<section class="tut_maye_buty_slayder"></section>
+
+
+<section class="cr__career">
+	
+	<div class="center">
+		<h2>Career Opportunities</h2>
+		
+	</div>
+
+	<div class="pinter_counts_wrap">
+		<div class="pinter_counts">31 open positions</div>
+	</div>
+
+	<div class="cr__select_wrap">
+		<select class="outline_select">
+			<option value="NY" selected>All Departments</option>
+			<option value="NY1">New York,USA</option>
+			<option value="NY2">New York,USA</option>
+			<option value="NY3">New York,USA</option>
+		</select>
+		<select class="outline_select">
+			<option value="NY" selected>All Locations</option>
+			<option value="NY1">New York,USA</option>
+			<option value="NY2">New York,USA</option>
+			<option value="NY3">New York,USA</option>
+		</select>
+	</div>
+
+	<div class="wrapl">
+		<div class="blog_article__vacancies_wrap">
+			<div class="cr__analitics">
+				Analytics
+			</div>
+			<div class="blog_article__vacancies">
+				<a href="#" class="blog_article__vacancies_item">
+					<div class="ba_v_title">
+						Business Development Manager
+					</div>
+					<div class="ba_v_time">
+						FULL TIME
+					</div>
+					<div class="ba_v_address">
+						Paris,France
+					</div>
+					<div class="ba_v_apply_nw">
+						Apply now
+					</div>
+				</a>
+				<a href="#" class="blog_article__vacancies_item">
+					<div class="ba_v_title">
+						Creative Team Lead
+					</div>
+					<div class="ba_v_time">
+						FULL TIME
+					</div>
+					<div class="ba_v_address">
+						Paris,France
+					</div>
+					<div class="ba_v_apply_nw">
+						Apply now
+					</div>
+				</a>
+				<a class="blog_article__vacancies_item">
+					<div class="ba_v_title">
+						3D Developer
+					</div>
+					<div class="ba_v_time">
+						FULL TIME
+					</div>
+					<div class="ba_v_address">
+						Odessa/Kiev,Ukraine
+					</div>
+					<div class="ba_v_apply_nw">
+						Apply now
+					</div>
+				</a>
+				<a class="blog_article__vacancies_item">
+					<div class="ba_v_title">
+						Frontend Developer
+					</div>
+					<div class="ba_v_time">
+						FULL TIME
+					</div>
+					<div class="ba_v_address">
+						New York,USA
+					</div>
+					<div class="ba_v_apply_nw">
+						Apply now
+					</div>
+				</a>
+				<a class="blog_article__vacancies_item">
+					<div class="ba_v_title">
+						QA Engineer
+					</div>
+					<div class="ba_v_time">
+						FULL TIME
+					</div>
+					<div class="ba_v_address">
+						Odessa,Ukraine
+					</div>
+					<div class="ba_v_apply_nw">
+						Apply now
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="center_more_btn">
+		<button class="btnr black icon-arr-b" type="button" id="cp-load-more">More</button>
+	</div>
+
+	
+</section>
+
+
+
+<div class="wrapl">
+	<div class="step_baner">
+
+		<div class="step_banner_wrap">
+			<div class="h3_title">
+				One step closer to a sustainable future. 
+			</div>
+			<div class="p_subtitle">
+				With body data, you can make your manufacturing and distribution processes more sustainable
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+<br><br>
+<footer>
+	<div id="footer-msg">
+		<div class="btnr blue icon-intercom" id="f-msg"></div>
+		<div class="btnr black icon-arr-t" id="f-arr"></div>
+	</div>
+	<div class="wrap">
+		<div class="col" id="footer-1">
+			<a class="logo" href="">
+				<img src="./assets/img/logo.svg">
+			</a>
+			<div class="address">
+				<label>Office:</label>
+				<address>55 East 3rd Avenue San Mateo, CA 94401</address>
+			</div>
+			<div class="address">
+				<label>Email:</label>
+				<a href="mailto:hello@3dlook.me">hello@3dlook.me</a>
+			</div>
+			<button class="btn transparent red" type="button">Request a Quote</button>
+		</div>
+		<div id="copyright">© 2019 3DLOOK.ME<span>, design by <a href="https://deco.agency/uk/">deco.agency</a></span></div>
+		<div class="col" id="footer-2">
+			<div class="footer-rlnks">
+				<div class="grid">
+					<a href="">Body data platform</a>
+					<a href="">Resources</a>
+					<a href="">Technology</a>
+					<a href="">About Us</a>
+				</div>
+			</div>
+			<div class="socials">
+				<a class="social icon-fb" href="" target="_blank"></a>
+				<a class="social icon-insta" href="" target="_blank"></a>
+				<a class="social icon-tw" href="" target="_blank"></a>
+				<a class="social icon-in" href="" target="_blank"></a>
+				<a class="social icon-youtube" href="" target="_blank"></a>
+			</div>
+		</div>
+		<div id="footer-pptc">
+			<a href="">Privacy</a>
+			<a href="">Terms and conditions</a>
+		</div>
+		<div class="col" id="footer-3">
+			<div class="footer-title">Blog Posts</div>
+			<div class="footer-blog">
+				<div class="footer-blog-title">Reuters</div>
+				<div class="footer-blog-text">The Technology 202: This venture capitalist is warning Congress not to hurt startups in its antirust crusade</div>
+			</div>
+			<div class="footer-blog">
+				<div class="footer-blog-title">Reuters</div>
+				<div class="footer-blog-text">The Technology 202: This venture capitalist is warning Congress not to hurt startups in</div>
+			</div>
+			<div class="footer-blog">
+				<div class="footer-blog-title">Reuters</div>
+				<div class="footer-blog-text">The Technology 202: This venture capitalist is warning Congress not to hurt startups in</div>
+			</div>
+		</div>
+		<div class="col" id="footer-4">
+			<div class="footer-title">Newsletter</div>
+			<form>
+				<div class="input">
+					<input type="text" name="email" placeholder="E-mail">
+				</div>
+				<button class="btn red" type="submit">SUBSCRIBE</button>
+			</form>
+			<p>3DLOOK INC. is a company located outside of the European Union. In order to comply with Art. 27 EU GDPR, GDPR-Rep.eu has been nominated as our represenative in the European Union.</p>
+			<p>If you want to make use of your data privacy rights, please visit: <a href="">Our public Privacy dashboard</a></p>
+		</div>
+	</div>
+</footer>
+<!--b-scripts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="./assets/scripts/careers.js"></script>
+<script src="./assets/scripts/script.js"></script>
+
+<!-- Bogdan scripts -->
+	<script src="./assets/scripts/b_script.js"></script>
+<!--  -->
+
+<!--e-scripts-->
+</body>
+</html>
+
+
+
+

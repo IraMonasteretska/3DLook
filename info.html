@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<!-- Open Graph -->
+	<meta name="og:type" content="website">
+	<meta name="og:title" content="3DLook">
+	<meta name="og:description" content="">
+	<meta name="og:url" content="">
+	<meta name="og:site_name" content="3DLook">
+	<meta name="og:locale" content="uk_UA">
+	<!-- <meta name="og:image" content="url"> -->
+	<!-- Open Graph -->
+	<!-- <meta name="theme-color" content="#000000"> -->
+	<!-- <link rel="shortcut icon" href=""> -->
+	<title>3DLook</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./assets/fonts/Mark/font.css">
+	<link rel="stylesheet" type="text/css" href="./assets/fonts/HelveticaNeue/font.css">
+	<link rel="stylesheet" type="text/css" href="./assets/icons/fontello/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/desc.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/media.css">
+    
+	<!-- This script is used for DomContentLoaded -->
+	<!-- Example to use: onLoaded.push({ YOUR_CODE }); -->
+	<script>var onLoaded=[],onResize=[];</script>
+</head>
+<body>
+<!-- mobile top menu -->
+<div id="mob-top" class="">
+	<button type="button" class="cross" id="close-mob-top"></button>
+	<span id="mob-top-title">Homescreen</span>
+	<nav id="mob-top-nav">
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">Solutions</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">3d Model Generation</a></li>
+			</ul>
+		</div>
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">Technology</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">1Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">1Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">13d Model Generation</a></li>
+			</ul>
+		</div>
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">Resources</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">2Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">2Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">33d Model Generation</a></li>
+			</ul>
+		</div>
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">Careers</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">3Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">3Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">33d Model Generation</a></li>
+			</ul>
+		</div>
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">About</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">4Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">4Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">43d Model Generation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<button type="button" class="btn red">Request a Demo</button>
+</div>
+
+<!-- eclipse -->
+<div id="eclipse"></div>
+
+<!-- search-result -->
+<div id="search-result" class="">
+	<span id="search-result-title">Search results: <span>11</span></span>
+	<button type="button" class="btn black icon-arr-t">View more</button>
+</div>
+
+<!-- body -->
+<header>
+	<div class="wrap">
+		<a class="logo" href="">
+			<img src="./assets/img/logo.svg">
+		</a>
+		<div id="top-center">
+			<nav id="top-nav">
+				<a href="">Body data platform</a>
+				<a href="">Technology</a>
+				<a href="">Resources</a>
+				<a href="">About us</a>
+			</nav>
+			<div id="search-wrap" class="">
+				<form>
+					<input id="search-input" type="text" placeholder="Search..." name="search">
+					<button id="search" class="icon-search" type="submit"></button>
+					<button id="search-clean" class="close" type="button"></button>
+				</form>
+			</div>
+		</div>
+		<div id="header-mob">
+			<a class="icon-googleplay" href=""></a>
+			<a class="icon-appstore" href=""></a>
+			<button type="button" class="burger" id="open-mob-top">
+				<span class="burger-el bel1"></span>
+				<span class="burger-el bel2"></span>
+				<span class="burger-el bel3"></span>
+			</button>
+		</div>
+		<button class="btn transparent red" type="button" id="h-req-quote">Request a Quote</button>
+	</div>
+</header>
+
+
+<section class="main-oval info__pp_main_bg">
+	<div class="bg">
+		<div class="bg_info__pp"></div>
+	</div>
+	<div class="wrap">
+        <h1>#Technology</h1>
+        <div class="info__pp_updated">
+            <div>Last updated:</div>
+            <div>December 26, 2018</div>
+        </div>
+		<!-- <p>We are result-oriented enthusiasts who work tirelessly to build technology which has the potential to transform the fashion industry and how we shop online</p> -->
+		<!-- <span class="mark">Get <span class="att">2 month for free if</span> billed yearly</span>
+		<button type="button" class="btn red">Try it Now</button> -->
+	</div>
+</section>
+
+<section class="info_pp__content">
+
+
+    <p>
+        This Privacy Policy describes how 3DLOOK Inc registered by the following address – 55 East 3rd Avenue, San Mateo, CA 94401 (“3DLOOK”, “Company” or “we” hereby) stores, uses and discloses information that is collected by us or provided by you when you visit and/or register on Our Website located at <u><a href="#">3dlook.me (“Our Website”)</a></u> as well as mobile applications available on Apple Store and Google Play markets (herein and after referred to as Applications), and any person that downloads and uses 3DLOOK’s Applications or 3DLOOK’s website in any possible for usage way (herein and after referred to as “you”, “your”, “user”). This Privacy Policy is part of our Terms and Conditions located at <a href="#">3dlook.me</a>, and in cases some subjects are not highlighted inhere, please, consider provisions of the mentioned Terms and Conditions.
+    </p>
+
+    <p>
+        By accessing Our Website  or using our Application or Services, you become subject to this Privacy Policy and voluntarily give us your consent for as well as grand us all rights for processing, collecting, transmitting (to the extent permitted by applicable law or Regulation) and storing of your Personal Data and Non-Personal Data in order to provide you with the most efficient services and user experience, improving of our Application, Services and Our Website, track the behavior of users during their use or browsing through our Application, Services and Our Website, statistical purposes, providing your Personal Data to our partners and affiliates for the purposes of performing our obligations to you (e.g. Agreements etc.) and other purposes pointed herein as well as to the other governmental and non-governmental authorities whenever they have the right to demand disclosure of such information (including Personal Data – if this is permitted and to the extent permitted by applicable law or Regulation), as well as for our use of Cookies. As well, you agree to all the conditions pointed herein and give us your free unambiguous consent to act with your Personal Data as pointed in this Privacy Policy.
+    </p>
+
+    <p></p>
+
+    <p>
+        We are the sole owners of the information collected on this Our Website, through the Application or Services. We only have access to/collect information that you voluntarily give us.  Unless you ask us not to, we may contact you via email in the future to tell you about specials, new products or services.
+    </p>
+
+    <p></p>
+
+    <h4>Definitions</h4>
+    
+    <div class="text_bg">
+        <div>
+            <b>“Anonymisation”</b> – processing data with the aim of irreversibly preventing the identification of the individual to whom it relates.
+        </div>
+        <div>
+            <b>“Application”</b> – mobile applications owned by us and available on Apple Store and Google Play markets (e.g. “3DLOOK: get an exact 3D model of yourself and play with your body, outfit and masks”, “Starlook” etc.).
+        </div>
+        <div>
+            <b>“Cookies”</b> – small files that Our Website, web-based Application services or service provider transfers to your computer’s hard drive through your Web browser (if you allow) that enables the Website’s or service provider’s systems to recognize your browser and capture and remember certain information.
+        </div>
+        <div>
+            <b>“Law”</b> – data protection and other laws and regulations of state of California, USA applicable to the subject matter, and Regulation as determined above.
+        </div>
+        <div>
+            <b>“Non-Personal Data”</b> – data in a form that does not, on its own, permit direct association with any specific individual.
+        </div>
+        <div>
+            <b>“Personal Data”</b> – data that directly, or when used in conjunction with other provided data, enables the identification of a specific individual.
+        </div>
+        <div>
+            <b>“Pseudonymisation”</b> – replacing any identifying characteristics of data with a pseudonym, or, in other words, a value which does not allow the data subject to be directly identified.
+        </div>
+        <div>
+            <b>“Regulation”</b> – Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 (General Data Protection Regulation).
+        </div>
+        <div>
+            <b>“Services”</b> – access to some functionality that the user receives when using our Application.
+        </div>
+    </div>
+
+    <h4>Types of information collected</h4>
+
+    <div class="text_list">
+        User’s Information. 3DLOOK collects the content and other information a User provides when he uses Applications. In order to use Application, a User is required to provide photos of a User for body measurement process performed using a camera of a smartphone or other device a User owns, sex, height, IP address, Mobile ID.
+    </div>
+    <div class="text_list">
+        Contact Information. Different forms on Our Website or in Application may also collect your name, email, phone number, company name, country, age, area, zip code, address, password or other data to help you with your experience. Providing of such data is voluntary, unless in the relevant forms pointed that this data is necessary for use of Our Website or Application.
+    </div>
+    <div class="text_list">
+        Device Information and Cookies: We may use Cookies, web beacons and other technical means to collect and analyze certain information about how you and other visitors use Our Website and/or This technical information includes Internet Protocol (IP) addresses, mobile ID, browser information, operating systems, location and the preceding and succeeding websites you have visited, among other things. We may also keep a record of which pages of Our Website you visit, and how long you spend on each page. Cookies can also be used to help us understand your preferences based on previous or current Our Website and/or Application activity, which enables us to provide you with improved Services. We also use Cookies to help us compile aggregate data about Our Website traffic and Our Website interaction so that we can offer better Our Website experiences and tools.
+    </div>
+
+    <p></p>
+
+    <p>
+        You may set your browser to notify you or decline the receipt of Cookies; however, certain features of Our Website and Application may not function properly or be available if your browser is configured to disable Cookies and/or other technical means that allow to receive data pointed above.
+    </p>
+
+    <p>
+        These technologies help us better understand user behavior, tell us which parts of Our Website you have visited, and facilitate and measure the effectiveness of advertisements and web searches. We treat information collected by cookies and other technologies as Non-Personal Data. However, to the extent that Internet Protocol (IP) addresses or similar identifiers are considered Personal Data by law or Regulation, we also treat these identifiers as Personal Data. Similarly, to the extent that Non-Personal Data is combined with Personal Data, we treat the combined information as Personal Data for the purposes of this Privacy Policy and compliance with law and Regulation.
+    </p>
+    
+    <div class="text_list">
+        Billing information: when using Application and accompanying Services, you may be required to provide additional information that may include a credit card number, account number, beneficiary’s name and details, account holder, bank name, pay pal information, pay pal account details or other banking and payment information, as well as information necessary to secure your transactions, including the whitelist of IP addresses. This information is required by us to verify your identity, and invoice you for the relevant payment (if any). The user signing in the Application warrants that he is a legal representative of the business entity and is entitled to provide this kind of information regarding such entity.
+    </div>
+
+    <p></p>
+
+    <div class="subtitle">
+        For Data Subjects in the EU:
+    </div>
+
+    <p class="p_text_limit">
+        We appointed GDPR-Rep.eu as representative according to Art 27 GDPR. If you want to make use of your GDPR data privacy rights, please visit: 
+        <br>
+        <a href="https://www.goldmansachs.com/insights/pages/technology-driving-innovation-folder/virtual-and-augmented-reality/report.pdf">
+            https://www.goldmansachs.com/insights/pages/technology-driving-innovation-folder/virtual-and-augmented-reality/report.pdf
+        </a>
+    </p>
+
+    <div class="subtitle">
+        Contact GDPR-Rep.eu
+    </div>
+
+    <div class="text_contact">
+        <span>GDPR-Rep.eu</span>
+        <span>iuro | Dr. Andreas Mätzler</span>
+        <span>Attorney at Law</span>
+        <span>c/o 3DLOOK INC.</span>
+        <span>Schellinggasse 3/10</span>
+        <span>1010 Vienna, Austria</span>
+        <span>Email: <a>office@gdpr-rep.eu</a></span>
+        <span>Website: <a>https://www.gdpr-rep.eu</a></span>
+    </div>
+    <div class="text_contact">
+        <span>Please add the following subject to</span>
+        <span>all correspondence:</span>
+        <span>GDPR-REP ID: 12970373</span>
+    </div>
+
+    <p></p>
+
+</section>
+
+
+
+
+
+<section class="banner">
+	<div class="wrapl">
+		<div class="block">
+			<img src="" alt="" class="desc">
+			<img src="" alt="" class="mob">
+			<a href="" class="btn red">Subscribe</a>
+		</div>
+	</div>
+</section>
+
+
+<footer>
+	<div id="footer-msg">
+		<div class="btnr blue icon-intercom" id="f-msg"></div>
+		<div class="btnr black icon-arr-t" id="f-arr"></div>
+	</div>
+	<div class="wrap">
+		<div class="col" id="footer-1">
+			<a class="logo" href="">
+				<img src="./assets/img/logo.svg">
+			</a>
+			<div class="address">
+				<label>Office:</label>
+				<address>55 East 3rd Avenue San Mateo, CA 94401</address>
+			</div>
+			<div class="address">
+				<label>Email:</label>
+				<a href="mailto:hello@3dlook.me">hello@3dlook.me</a>
+			</div>
+			<button class="btn transparent red" type="button">Request a Quote</button>
+		</div>
+		<div id="copyright">© 2019 3DLOOK.ME<span>, design by <a href="https://deco.agency/uk/">deco.agency</a></span></div>
+		<div class="col" id="footer-2">
+			<div class="footer-rlnks">
+				<div class="grid">
+					<a href="">Body data platform</a>
+					<a href="">Resources</a>
+					<a href="">Technology</a>
+					<a href="">About Us</a>
+				</div>
+			</div>
+			<div class="socials">
+				<a class="social icon-fb" href="" target="_blank"></a>
+				<a class="social icon-insta" href="" target="_blank"></a>
+				<a class="social icon-tw" href="" target="_blank"></a>
+				<a class="social icon-in" href="" target="_blank"></a>
+				<a class="social icon-youtube" href="" target="_blank"></a>
+			</div>
+		</div>
+		<div id="footer-pptc">
+			<a href="">Privacy</a>
+			<a href="">Terms and conditions</a>
+		</div>
+		<div class="col" id="footer-3">
+			<div class="footer-title">Blog Posts</div>
+			<div class="footer-blog">
+				<div class="footer-blog-title">Reuters</div>
+				<div class="footer-blog-text">The Technology 202: This venture capitalist is warning Congress not to hurt startups in its antirust crusade</div>
+			</div>
+			<div class="footer-blog">
+				<div class="footer-blog-title">Reuters</div>
+				<div class="footer-blog-text">The Technology 202: This venture capitalist is warning Congress not to hurt startups in</div>
+			</div>
+			<div class="footer-blog">
+				<div class="footer-blog-title">Reuters</div>
+				<div class="footer-blog-text">The Technology 202: This venture capitalist is warning Congress not to hurt startups in</div>
+			</div>
+		</div>
+		<div class="col" id="footer-4">
+			<div class="footer-title">Newsletter</div>
+			<form>
+				<div class="input">
+					<input type="text" name="email" placeholder="E-mail">
+				</div>
+				<button class="btn red" type="submit">SUBSCRIBE</button>
+			</form>
+			<p>3DLOOK INC. is a company located outside of the European Union. In order to comply with Art. 27 EU GDPR, GDPR-Rep.eu has been nominated as our represenative in the European Union.</p>
+			<p>If you want to make use of your data privacy rights, please visit: <a href="">Our public Privacy dashboard</a></p>
+		</div>
+	</div>
+</footer>
+<!--b-scripts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="./assets/scripts/info.js"></script>
+<script src="./assets/scripts/script.js"></script>
+
+<!-- Bogdan scripts -->
+    <script src="./assets/scripts/b_script.js"></script>
+<!--  -->
+
+<!--e-scripts-->
+</body>
+</html>
+
+
+
+
