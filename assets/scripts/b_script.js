@@ -110,7 +110,7 @@ $('.custom-input-file').each(function () {
 
   $(this).before('<span class="input-file-label">' + label + '</span>'); // we will display selected file here
 
-  $(this).before('<span class="file-selected"></span>'); // file input change listener 
+  // $(this).before('<span class="file-selected"></span>'); // file input change listener 
 
   $(this).change(function (e) {
     // Get this file input value
@@ -120,7 +120,7 @@ $('.custom-input-file').each(function () {
 
     var filename = val.replace(/^.*[\\\/]/, ''); // Display the filename
 
-    $(this).siblings('.file-selected').text(filename);
+    $(this).siblings('.input-file-label').text(filename);
   });
 }); // Open the file browser when our custom button is clicked.
 

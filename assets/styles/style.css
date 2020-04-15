@@ -4063,12 +4063,10 @@ align-items: stretch;
 justify-content: flex-start;
 }
 .blog_form .form__left {
-width: 50%;
+	flex-grow: 1;
 }
 .blog_form .form__right {
-width: 50%;
-display: flex;
-justify-content: flex-end;
+	display: flex;
 }
 .blog_form input[type=checkbox] + label {
 display: flex;
@@ -4563,9 +4561,10 @@ border-bottom: 0.0520833333vw dashed #0090D6;
 cursor: pointer;
 }
 .job_page__apply .input-file input[type=file] {
-visibility: hidden;
-width: 1px;
-height: 1px;
+	position: absolute;
+	visibility: hidden;
+	width: 1px;
+	height: 1px;
 }
 .job_page__apply .input-file .file-selected {
 color: #0090D6;
