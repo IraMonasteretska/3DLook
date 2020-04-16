@@ -22,7 +22,302 @@
 	<link rel="stylesheet" type="text/css" href="./assets/fonts/Mark/font.css">
 	<link rel="stylesheet" type="text/css" href="./assets/icons/fontello/style.css">
 	<style>
+		body {
+			margin: 0;
+			background-color: #11151A;
+			color: white;
+			font-family: "Mark";
+		}
+		a {
+			text-decoration: none;
+		}
+		.wrapl {
+			max-width: 1440px;
+			margin: 0 auto;
+			display: flex;
+		}
+		.bg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			overflow: hidden;
+		}
+		.bg1 {
+			position: absolute;
+			background-image: url(./assets/img/404.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			width: 645px;
+			height: 624px;
+			top: 187px;
+			left: calc(50% - 181px);
+		}
+		header {
+			position: relative;
+			z-index: 1;
+			padding: 40px 0;
+		}
+		header .wrapl {
+			align-items: center;
+		}
+		header a img {
+			filter: contrast(0) brightness(2);
+		}
+		.icon-arr-l {
+			font-weight: 700;
+			margin-left: 93px;
+			font-size: 16px;
+			line-height: 14px;
+			letter-spacing: -0.342857px;
+			color: #fff;
+			box-sizing: border-box;
+			width: 150px;
+			height: 40px;
+			border-radius: 2px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transition: border-color 0.3s ease, background-color 0.3s ease;
+		}
+		.icon-arr-l:before {
+			font-size: 11px;
+			margin-right: 8px;
+		}
 
+		.w404 {
+			position: absolute;
+			top: 574px;
+			left: calc(50% - 303px);
+			z-index: 1;
+		}
+		.w404 p {
+			font-weight: 800;
+			font-size: 60px;
+			line-height: 76px;
+			margin: 0 0 -3px;
+		}
+		.w404 h1 {
+			font-family: 'Roboto', sans-serif;
+			font-weight: normal;
+			font-size: 21px;
+			line-height: 34px;
+			color: #99A2BD;
+			margin: 0 0 0 17px;
+		}
+		footer {
+			position: absolute;
+			bottom: 60px;
+			left: 0;
+			width: 100%;
+			z-index: 1;
+		}
+		footer .wrapl {
+			flex-direction: column;
+		}
+		footer span {
+			font-weight: 700;
+			margin: 0 0 12px;
+			font-size: 16px;
+			line-height: 22px;
+			letter-spacing: -0.3px;
+		}
+		footer .row {
+			display: flex;
+		}
+		.social {
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			background-color: #fff;
+			cursor: pointer;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-right: 8px;
+			color: #1D252D;
+			transition: background-color 0.3s ease, color 0.3s ease;
+		}
+		.social:last-child {
+			margin-right: 0;
+		}
+		.icon-fb {
+			font-size: 18px;
+		}
+		.icon-tw {
+			font-size: 16px;
+		}
+		.icon-youtube {
+			font-size: 17px;
+		}
+		.social:hover {
+			background-color: #FD574C;
+			color: white;
+		}
+		@media screen and (min-width: 769px) {
+			.wrapl {
+				max-width: 75vw;
+			}
+			.bg1 {
+				width: 33.5938vw;
+				height: 32.5vw;
+				top: 9.7396vw;
+				left: calc(50% - 9.4271vw);
+			}
+			header {
+				padding: 2.08333vw 0.9375vw;
+			}
+			header a:first-child img {
+				width: 7.1354vw;
+				height: 1.0417vw;
+			}
+			.icon-arr-l {
+				margin-left: 4.8438vw;
+				font-size: 0.8333vw;
+				line-height: 0.7292vw;
+				letter-spacing: -0.0179vw;
+				width: 7.8125vw;
+				height: 2.0833vw;
+				border: 0.1042vw solid #fff;
+				border-radius: 0.1042vw;
+			}
+			.icon-arr-l:before {
+				font-size: 0.5729vw;
+				margin-right: 0.4167vw;
+			}
+			.icon-arr-l:hover {
+				border-color: #FD574C;
+				background-color: #FD574C;
+			}
+
+			.w404 {
+				top: 29.8958vw;
+				left: calc(50% - 15.7813vw);
+			}
+			.w404 p {
+				font-size: 3.125vw;
+				line-height: 3.9583vw;
+				margin: 0 0 -0.1563vw;
+			}
+			.w404 h1 {
+				font-size: 1.0938vw;
+				line-height: 1.7708vw;
+				margin: 0 0 0 0.8854vw;
+			}
+			footer {
+				bottom: 3.125vw;
+			}
+			footer span {
+				margin: 0 0 0.625vw;
+				font-size: 0.8333vw;
+				line-height: 1.1458vw;
+				letter-spacing: -0.0156vw;
+			}
+			footer .row {
+				display: flex;
+			}
+			.social {
+				width: 3.125vw;
+				height: 3.125vw;
+				margin-right: 0.4167vw;
+			}
+			.icon-fb {
+				font-size: 0.9375vw;
+			}
+			.icon-tw {
+				font-size: 0.8333vw;
+			}
+			.icon-youtube {
+				font-size: 0.8854vw;
+			}
+		}
+
+		@media screen and (max-width: 768px) {
+			.wrapl {
+				max-width: 375px;
+			}
+			.bg1 {
+				width: 345px;
+				height: 334px;
+				top: 121px;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			header {
+				padding: 30px 0px;
+			}
+			header .wrapl {
+				padding: 0 18px;
+			}
+			.icon-arr-l {
+				margin-left: auto;
+				font-size: 16px;
+				line-height: 14px;
+				letter-spacing: -0.342857px;
+				width: unset;
+				height: 14px;
+				border-radius: 2px;
+			}
+			.icon-arr-l:before {
+				font-size: 11px;
+				margin-right: 8px;
+			}
+			.w404 {
+				top: 495px;
+				left: 50%;
+				transform: translateX(-50%);
+				align-items: center;
+				text-align: center;
+			}
+			.w404 p {
+				font-size: 30px;
+				line-height: 38px;
+				letter-spacing: -1px;
+				margin: 0px;
+			}
+			.w404 h1 {
+				font-size: 16px;
+				line-height: 34px;
+				margin: 0;
+			}
+			footer {
+				bottom: 40px;
+			}
+			footer span {
+				margin: 0 0 12px;
+				font-size: 16px;
+				line-height: 22px;
+				letter-spacing: -0.3px;
+				text-align: center;
+			}
+			footer .row {
+				display: flex;
+				justify-content: center;
+			}
+			.social {
+				width: 60px;
+				height: 60px;
+				margin-right: 8px;
+				color: white;
+				background-color: #ffffff1a;
+			}
+			.icon-fb {
+				font-size: 18px;
+			}
+			.icon-tw {
+				font-size: 16px;
+			}
+			.icon-youtube {
+				font-size: 17px;
+			}
+		}
+		@media screen and (max-height: 720px) {
+			body {
+				position: relative;
+				min-height: 720px;
+			}
+		}
 	</style>
 	<!-- This script is used for DomContentLoaded -->
 	<!-- Example to use: onLoaded.push({ YOUR_CODE }); -->
@@ -30,22 +325,33 @@
 </head>
 <body>
 <header>
-
+	<div class="wrapl">
+		<a href=""><img src="./assets/img/logo.svg" alt="3DLook"></a>
+		<a href="" class="icon-arr-l">Back to Home</a>
+	</div>
 </header>
 
-<section class="404">
-
+<section class="s404">
+	<div class="bg">
+		<div class="bg1"></div>
+	</div>
+	<div class="w404">
+		<p>Whoopsie</p>
+		<h1>Page not found</h1>
+	</div>
 </section>
 
 <footer>
-
+	<div class="wrapl">
+		<span>Follow us</span>
+		<div class="row">
+			<a href="" class="social icon-fb"></a>
+			<a href="" class="social icon-tw"></a>
+			<a href="" class="social icon-youtube"></a>
+		</div>
+	</div>
 </footer>
 <!--b-scripts-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-<!-- <script src="./assets/scripts/AAAA.js"></script> -->
-<script src="./assets/scripts/script.js"></script>
 <!--e-scripts-->
 </body>
 </html>
