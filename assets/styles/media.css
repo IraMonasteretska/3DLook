@@ -209,7 +209,7 @@
 	#mob-top-title:before {
 		content: "";
 		position: absolute;
-		top: 0px;
+		top: 4px;
 		left: 0px;
 		width: 8px;
 		height: 40px;
@@ -2903,9 +2903,13 @@
 	.g-el.g2 {
 		flex-shrink: 0;
 	}
+	.job_page__apply +
+	.job_page__info {
+		padding-top: 40px;
+	}
 	.job_page__info:last-child {
 		flex-direction: row;
-		width: 346px;
+		width: 340px;
 		position: relative;
 		left: -3px;
 		justify-content: space-between;
@@ -3921,146 +3925,444 @@
 		margin: 0;
 	}
 
-		/*-b-blog-form------------*/
+	/*-b-blog-form------------*/
 
-		.b_a__r_p_categoty {
-			font-size: 12px;
-			letter-spacing: -0.4px;
-			line-height: 20px;
-			margin: 0 30px 14px 30px;
-		}
-	
-		.b_a__r_p_title {
-			margin: 0 30px 35px 30px;
-			font-size: 24px;
-			letter-spacing: -0.4px;
-			line-height: 26px;
-		}
-	
-		.blog_form {
-			margin-bottom: 45px;
-			width: 340px;
-			margin: 0 auto;
-		}
-		.blog_form textarea {
-			min-height: 120px;
-			border: none;
-			border-bottom: 1px solid rgba(153, 162, 189, 0.3);
-			border-radius: 2px;
-			background-color: rgba(232, 235, 240, 0.1);
-			padding: 0;
-			font-size: 16px;
-			line-height: 24px;
-			margin-bottom: 30px;
-		}
-		.blog_form textarea::placeholder {
-			color: var(--blue);
-			font-size: 16px;
-			letter-spacing: 0;
-			line-height: 24px;
-		}
-		.blog_form input {
-			width: 100%;
-			height: 40px;
-			padding: 0;
-			border-bottom: 1px solid rgba(153, 162, 189, 0.2);
-		}
-		.blog_form input::placeholder {
-			font-size: 16px;
-		}
-		.blog_form .blog_form_inputs {
-			margin: 0;
-			width: 100%;
-			flex-direction: column;
-		}
-		.blog_form .blog_form_inputs > div {
-			width: 100%;
-			margin: 0 0 30px;
-		}
-		.blog_form .form__row {
-			flex-direction: column;
-		}
-		.blog_form .a-btn {
-			height: 40px;
-			width: 180px;
-			border: 2px solid var(--red);
-			border-radius: 2px;
-			font-size: 16px;
-			letter-spacing: -0.4px;
-			line-height: 20px;
-		}
-		.blog_form .form__left {
-			margin: 0 0 30px;
-			width: 340px;
-			max-width: 340px;
-		}
-		.blog_form input[type=checkbox] + label {
-			font-size: 14px;
-			letter-spacing: 0;
-			line-height: 16px;
-		}
-		.blog_form input[type=checkbox] + label:before {
-			left: -4px;
-			min-height: 20px;
-			min-width: 20px;
-			height: 20px;
-			width: 20px;
-			margin-right: 3px;
-			border-radius: 2px;
-			border: 1px solid rgba(153, 162, 189, 0.6);
-		}
+	.b_a__r_p_categoty {
+		font-size: 12px;
+		letter-spacing: -0.4px;
+		line-height: 20px;
+		margin: 0 30px 14px 30px;
+	}
 
-		.blog_form .form__right {
-			position: relative;
-			left: -4px;
-		}
-	
-		.blog_article__comments_wrapper {
-			margin-bottom: 90px;
-		}
-	
-		.blog_article__comment {
-			padding: 20px 0 14px;
-			border-top: 1px solid rgba(153, 162, 189, 0.2);
-		}
-		.blog_article__comment .comment_reply {
-			margin: 20px 0 20px 10px;
-			padding-left: 18px;
-			border-left: 4px solid rgba(153, 162, 189, 0.2);
-		}
-	
-		.blog_article__comment_avtor {
-			margin-bottom: 8px;
-		}
-	
-		.b_a__c_a_avtor {
-			font-size: 16px;
-			letter-spacing: -0.4px;
-			line-height: 20px;
-		}
-	
-		.b_a__c_a_date {
-			font-size: 14px;
-			line-height: 16px;
-			padding-left: 8px;
-		}
-	
-		.b_a__c_a_text {
-			margin-bottom: 15px;
-		}
-		.b_a__c_a_text .p-medium {
-			font-size: 14px;
-			line-height: 16px;
-			margin-bottom: 0;
-			text-align: left;
-		}
-	
-		.b_a__c_a_reply_link {
-			font-size: 14px;
-			letter-spacing: 0;
-			line-height: 16px;
-		}
-		/*-e-blog-form------------*/
+	.b_a__r_p_title {
+		margin: 0 30px 35px 30px;
+		font-size: 24px;
+		letter-spacing: -0.4px;
+		line-height: 26px;
+	}
+
+	.blog_form {
+		margin-bottom: 45px;
+		width: 340px;
+		margin: 0 auto;
+	}
+	.blog_form textarea {
+		min-height: 120px;
+		border: none;
+		border-bottom: 1px solid rgba(153, 162, 189, 0.3);
+		border-radius: 2px;
+		background-color: rgba(232, 235, 240, 0.1);
+		padding: 0;
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 30px;
+	}
+	.blog_form textarea::placeholder {
+		color: var(--blue);
+		font-size: 16px;
+		letter-spacing: 0;
+		line-height: 24px;
+	}
+	.blog_form input {
+		width: 100%;
+		height: 40px;
+		padding: 0;
+		border-bottom: 1px solid rgba(153, 162, 189, 0.2);
+	}
+	.blog_form input::placeholder {
+		font-size: 16px;
+	}
+	.blog_form .blog_form_inputs {
+		margin: 0;
+		width: 100%;
+		flex-direction: column;
+	}
+	.blog_form .blog_form_inputs > div {
+		width: 100%;
+		margin: 0 0 30px;
+	}
+	.blog_form .form__row {
+		flex-direction: column;
+	}
+	.blog_form .a-btn {
+		height: 40px;
+		width: 180px;
+		border: 2px solid var(--red);
+		border-radius: 2px;
+		font-size: 16px;
+		letter-spacing: -0.4px;
+		line-height: 20px;
+	}
+	.blog_form .form__left {
+		margin: 0 0 30px;
+		width: 340px;
+		max-width: 340px;
+	}
+	.blog_form input[type=checkbox] + label {
+		font-size: 14px;
+		letter-spacing: 0;
+		line-height: 16px;
+	}
+	.blog_form input[type=checkbox] + label:before {
+		left: -4px;
+		min-height: 20px;
+		min-width: 20px;
+		height: 20px;
+		width: 20px;
+		margin-right: 3px;
+		border-radius: 2px;
+		border: 1px solid rgba(153, 162, 189, 0.6);
+	}
+
+	.blog_form .form__right {
+		position: relative;
+		left: 0px;
+	}
+
+	.blog_article__comments_wrapper {
+		margin-bottom: 90px;
+	}
+
+	.blog_article__comment {
+		padding: 20px 0 14px;
+		border-top: 1px solid rgba(153, 162, 189, 0.2);
+	}
+	.blog_article__comment .comment_reply {
+		margin: 20px 0 20px 10px;
+		padding-left: 18px;
+		border-left: 4px solid rgba(153, 162, 189, 0.2);
+	}
+
+	.blog_article__comment_avtor {
+		margin-bottom: 8px;
+	}
+
+	.b_a__c_a_avtor {
+		font-size: 16px;
+		letter-spacing: -0.4px;
+		line-height: 20px;
+	}
+
+	.b_a__c_a_date {
+		font-size: 14px;
+		line-height: 16px;
+		padding-left: 8px;
+	}
+
+	.b_a__c_a_text {
+		margin-bottom: 15px;
+	}
+	.b_a__c_a_text .p-medium {
+		font-size: 14px;
+		line-height: 16px;
+		margin-bottom: 0;
+		text-align: left;
+	}
+
+	.b_a__c_a_reply_link {
+		font-size: 14px;
+		letter-spacing: 0;
+		line-height: 16px;
+	}
+	/*-e-blog-form------------*/
+
+
+
+
+
+	/*--------------------------------------------------------------------------------*/
+	/*-b-job_page-----------------------------*/
+	.job_page__main {
+		align-items: center;
+	}
+	.job_page__main_image {
+		align-items: flex-start;
+		height: 360px;
+	}
+	.job_page__main_image .h-1 {
+		font-size: 40px;
+		font-weight: 800;
+		letter-spacing: -1.5px;
+		line-height: 46px;
+		max-width: 310px;
+		margin: 80px 0 20px;
+	}
+	.job_page__main_image .span_location {
+		font-size: 21px;
+		letter-spacing: 0;
+		line-height: 30px;
+	}
+	.job_page__main_image .span_location img {
+		width: 13px;
+		margin-right: 5px;
+	}
+
+	.job_page__layout {
+		box-sizing: border-box;
+		max-width: 375px;
+		width: 375px;
+		margin: 0 auto;
+		padding: 0;
+		margin-top: 30px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.job_page__main .p-4 {
+		font-size: 21px;
+		line-height: 30px;
+		margin-bottom: 30px;
+		text-align: left;
+		width: 340px;
+	}
+	.job_page__main .h-4-1 {
+		font-size: 34px;
+		letter-spacing: -0.4px;
+		line-height: 26px;
+		margin-top: 20px;
+		margin-bottom: 30px;
+		width: 340px;
+	}
+	.job_page__apply .h-4-1 {
+		margin: 30px 0;
+	}
+	.job_page__main .p-4 + .h-4-1 {
+		margin-top: 0px;
+	}
+
+
+	.job_page__vacancies {
+		display: none;
+	}
+	/* .job_page__vacancies .job_page__vacancies_title {
+		padding-left: 40px;
+		margin-top: -10px;
+	}
+	.job_page__vacancies .h-4 {
+		font-size: 24px;
+		letter-spacing: -0.4px;
+		line-height: 26px;
+	}
+	.job_page__vacancies .selectric-wrapper {
+		top: -4px;
+		margin-left: 10px;
+	}
+	.job_page__vacancies .job_page__vacancies_list {
+		box-shadow: 8px 8px 40px 0 rgba(29, 37, 45, 0.1);
+	}
+	.job_page__vacancies .job_page__vacancies_list .job_page__vacancies_item {
+		padding: 20px;
+	}
+	.job_page__vacancies .job_page__vacancies_list .job_page__vacancies_item:after {
+		bottom: 0vw;
+		left: 20px;
+		width: calc(100% - 40px);
+		height: 1px;
+	}
+	.job_page__vacancies .job_page__vacancies_list .ba_v_title {
+		font-size: 18px;
+		letter-spacing: -0.6px;
+		line-height: 20px;
+	}
+	.job_page__vacancies .job_page__vacancies_list .ba_v_address {
+		font-size: 16px;
+	}
+	.job_page__vacancies .job_page__vacancies_list .ba_v_address img {
+		width: 13px;
+		margin-right: 5px;
+	}
+	.job_page__vacancies .job_page__vacancies_list .ba_v_apply_now {
+		right: 16px;
+		height: 34px;
+		width: 120px;
+		border-radius: 2px;
+		font-size: 14px;
+		letter-spacing: -0.4px;
+	}
+	.job_page__vacancies .btn_more {
+		height: 40px;
+		width: 130px;
+		border-radius: 2px;
+		font-size: 14px;
+		letter-spacing: -0.3px;
+		margin-top: 40px;
+	}
+	.job_page__vacancies .btn_more img {
+		width: 8px;
+		margin-left: 4px;
+	} */
+
+	.job_page__requirements .requirements_title {
+		font-size: 24px;
+		letter-spacing: -0.4px;
+		line-height: 26px;
+		padding-top: 0;
+	}
+	.job_page__requirements .requirements_wrapper {
+		padding-top: 19px;
+		padding-left: 0;
+		padding-bottom: 50px;
+		width: 340px;
+	}
+
+	.check_box {
+		height: 16px;
+		width: 16px;
+		min-width: 16px;
+		border-radius: 50%;
+		margin-top: 7px;
+		margin-right: 14px;
+		background-color: rgba(0, 144, 214, 0.1);
+	}
+	.check_box:after {
+		width: 13px;
+		height: 12px;
+		top: -1px;
+		right: -4px;
+		background-size: 13px;
+	}
+
+	.requirements_item {
+		font-size: 18px;
+		line-height: 30px;
+		margin-bottom: 20px;
+		width: 320px;
+	}
+
+
+	.job_page__offer_wrapper {
+		border-radius: 0;
+		padding: 30px 0;
+		margin-bottom: 0;
+		width: 375px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.job_page__offer_wrapper .job_page__offer_box_wrap {
+		flex-direction: column;
+		width: 340px;
+	}
+	.job_page__offer_wrapper .what_we_offer {
+		height: 30px;
+		font-size: 24px;
+		letter-spacing: -0.4px;
+		line-height: 26px;
+		padding-bottom: 30px;
+		width: 340px;
+		text-align: left;
+	}
+	.job_page__offer_wrapper .job_page__offer_box {
+		width: calc(50% - 40px);
+	}
+
+	.job_page__apply .job_page__apply_confirm {
+		margin-bottom: 20px;
+	}
+	.job_page__apply .blog_form_inputs {
+		margin-bottom: 18px;
+	}
+	.job_page__apply textarea {
+		margin-bottom: 30px !important;
+		background-color: transparent;
+	}
+	.job_page__apply label {
+		font-size: 14px;
+		letter-spacing: 0;
+		line-height: 20px !important;
+		margin-bottom: 10px !important;
+	}
+	.job_page__apply input[type=checkbox] + label:before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: 1px solid rgba(153, 162, 189, 0.6);
+	}
+	.job_page__apply input[type=checkbox]:checked + label:before {
+		border: 1px solid rgba(0, 144, 214, 0.6);
+	}
+	.job_page__apply .btn_blue {
+		height: 50px;
+		width: 180px;
+		border-radius: 2px;
+		font-size: 19px;
+		letter-spacing: -0.4px;
+	}
+	.job_page__apply .custom-input-file-label {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.job_page__apply .custom-input-file-label:before {
+		width: 16px;
+		height: 20px;
+		top: 4px;
+		margin-right: 10px;
+	}
+	.job_page__apply .input-file {
+		border-bottom: 1px dashed #0090D6;
+	}
+	.job_page__apply .input-file input[type=file] {
+		width: 1px;
+		height: 1px;
+	}
+	.job_page__apply .input-file .file-selected {
+		border-bottom: 1px dashed #0090D6;
+	}
+
+	.job_page__info .title-m {
+		font-size: 21px;
+		line-height: 30px;
+	}
+	.job_page__info .job_page__info_boxes .job_page__info_box {
+		margin: 60px 0;
+	}
+	.job_page__info .h_4 {
+		font-size: 24px;
+		letter-spacing: -0.4px;
+		line-height: 26px;
+	}
+	.job_page__info .p_short {
+		max-width: 300px;
+		margin: 0 auto;
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.job_page__info .j_p__i_img {
+		height: 60px;
+	}
+	.job_page__info .j_p__i_img.j_p__img0 img {
+		width: 62px;
+		height: 50px;
+	}
+	.job_page__info .j_p__i_img.j_p__img1 img {
+		width: 66px;
+		height: 54px;
+	}
+	.job_page__info .j_p__i_img.j_p__img2 img {
+		width: 60px;
+		height: 58px;
+	}
+	.job_page__info .j_p__i_img.j_p__img3 img {
+		width: 32px;
+		height: 60px;
+	}
+	.job_page__info .j_p__i_img:before {
+		top: -15px;
+		height: 48px;
+		width: 48px;
+	}
+	.job_page__apply label a {
+		white-space: nowrap;
+		/* margin: 0 4px 0 0; */
+	}
+	.blog_form .job_page__apply_confirm input[type=checkbox] + label { 
+		position: relative;
+		display: block;
+		padding-left: 27px;
+	}
+	/*-e-job_page-----------------------------*/
+/*--------------------------------------------------------------------------------*/
 
 
 }
