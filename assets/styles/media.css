@@ -2586,7 +2586,7 @@
 		top: unset;
 	}
 	.tb-elems:nth-child(n + 2) .tb-grid {
-		/* padding-bottom: 129.9994px; */
+		/* padding-bottom: 130px; */
 	}
 
 	.tb-decor {
@@ -4363,6 +4363,463 @@
 	}
 	/*-e-job_page-----------------------------*/
 /*--------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+	/*--------------------------------------------------------------------------------*/
+	/*-b-partnership--------------------------*/
+	/* .partnership-op {} */
+	.partnership-op h2 {
+		font-size: 40px;
+		line-height: 46px;
+		letter-spacing: -1.5px;
+		font-weight: 800;
+		margin: 60px auto 3px;
+	}
+	.op-slider-hider {
+		height: 154px;
+	}
+	.op-slider {
+		width: 380px;
+	}
+	.op-slide {
+		padding: 27px 0;
+		width: 180px !important;
+		margin: 0 5px;
+	}
+	.op-slide-inner {
+		width: 180px;
+		height: 100px;
+		border: 1px solid var(--blue);
+	}
+	.op-slide img {
+		max-width: 114;
+		max-height: 58px;
+	}
+
+	.op-slide:hover .op-slide-inner {
+		box-shadow: 0px 5px 27px rgba(253, 87, 76, 0.3);
+	}
+	/*-e-op-slider-------*/
+	form.main_s label.label_classic {
+		font-size: 12px;
+		letter-spacing: -0.4px;
+		line-height: 14px;
+		margin-bottom: 30px;
+	}
+	form.main_s label.label_classic input[type=text] {
+		margin: 5px 0;
+	}
+	form.main_s textarea,
+	form.main_s input[type=text] {
+		display: block;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	form.main_s input[type=text] {
+		height: 50px;
+	}
+	form.main_s input[type=checkbox] + label {
+		position: relative;
+		padding-left: 27px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+	form.main_s input[type=checkbox] {
+		display: none;
+	}
+	form.main_s input[type=checkbox] + label:before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		min-height: 20px;
+		min-width: 20px;
+		height: 20px;
+		width: 20px;
+		margin-right: 7px;
+		border-radius: 2px;
+		border: 1px solid rgba(153, 162, 189, 0.6);
+	}
+	form.main_s input[type=checkbox]:checked + label:before {
+		min-height: 20px;
+		min-width: 20px;
+		height: 20px;
+		width: 20px;
+		font-size: 10px;
+		border: 1px solid rgba(253, 87, 76, 0.6);
+	}
+	
+	form.classic {
+		max-width: 340px;
+		margin: 0 auto;
+	}
+	form.classic input[type=text] {
+		border-radius: 4px;
+		border: 1px solid rgba(153, 162, 189, 0.3);
+		box-shadow: 0 0 0 0px rgba(0, 144, 214, 0.3);
+	}
+	form.classic input[type=text]::placeholder {
+		font-size: 21px;
+		letter-spacing: -0.2px;
+		line-height: 30px;
+	}
+	form.classic input[type=text]:focus {
+		border: 1px solid rgba(0, 144, 214, 0.3);
+		box-shadow: 0 0 0 2px rgba(0, 144, 214, 0.5);
+	}
+	form.classic .have_error input[type=text] {
+		border: 1px solid rgba(253, 87, 76, 0.3);
+		box-shadow: 0 0 0 2px rgba(253, 87, 76, 0.5);
+	}
+	form.classic .form_box_info {
+		padding: 6px 0;
+		border: 1px solid rgba(153, 162, 189, 0.3);
+		box-shadow: 0 0 0 0px rgba(0, 144, 214, 0.3);
+		margin-bottom: 28px;
+		border-radius: 2px;
+		background-color: white;
+		height: 200px;
+		max-height: 200px;
+		padding: 12px 17px;
+		box-sizing: border-box;
+		font-size: 21px;
+		line-height: 30px;
+	}
+	form.classic .form_box_info::placeholder {
+		color: rgba(153, 162, 189, 0.7);
+	}
+	form.classic .btn_classic {
+		max-width: 300px;
+	}
+	form.classic .selectric-wrapper {
+		display: block;
+		margin: 5px 0;
+		min-width: 300px;
+		height: 48px;
+	}
+	form.classic .selectric {
+		border: unset;
+		padding-right: calc(14px + 48px);
+		height: 48px;
+		border: 1px solid rgba(153, 162, 189, 0.3);
+		border-radius: 4px;
+	}
+	form.classic .selectric .label {
+		margin-left: 17px;
+		font-size: 16px;
+		color: #91a5b8;
+	}
+	form.classic .selectric .button {
+		width: 48px;
+		height: 48px;
+		line-height: 48px;
+		font-size: 16px;
+	}
+	form.classic .selectric-items {
+		top: calc(100% - 1px);
+		border: 1px solid #91a5b8;
+	}
+	form.classic .selectric-items ul, form.classic .selectric-items li {
+		font-size: 16px;
+	}
+	
+	label.checkbox_classic {
+		font-size: 14px;
+		line-height: 22px !important;
+		margin-bottom: 9px;
+	}
+	label.checkbox_classic a {
+		margin: 0 4px;
+	}
+
+	form.classic .form_classic-r {
+		margin: 19px 0 0;
+		justify-content: flex-start !important;
+	}
+	form.classic .form_classic-r .btn {
+		width: 220px;
+	}
+
+	.ps__container {
+		padding: 28px 0 40px;
+		margin-bottom: 60px;
+	}
+	.ps__container h3 {
+		font-family: "Mark";
+		font-size: 40px;
+		letter-spacing: -1.5px;
+		line-height: 50px;
+		font-weight: 800;
+		max-width: 340px;
+	}
+	.ps__container h3.mrb {
+		margin-bottom: 30px;
+	}
+	
+	.ps__contact_form .f-el {
+		width: 100%;
+		margin: 0;
+	}
+	.ps__contact_form .f-6 {
+		width: 100%;
+	}
+	.f-sm-12 {
+		width: 100% !important;
+	}
+	.cr__text_wrap {
+		max-width: 340px;
+		margin-top: 3px;
+		margin-bottom: 30px;
+	}
+	.cr__text_wrap .subtitle {
+		margin-bottom: 30px;
+	}
+	.cr__text_wrap h4 {
+		font-size: 24px;
+		letter-spacing: -0.4px;
+		line-height: 26px;
+		margin-bottom: 10px;
+	}
+	.cr__text_wrap p {
+		font-size: 16px;
+		line-height: 30px;
+		margin-bottom: 0;
+		text-align: left;
+	}
+	/*-e-partnership--------------------------*/
+	/*--------------------------------------------------------------------------------*/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*--------------------------------------------------------------------------------*/
+	/*-b-request_form-------------------------*/
+	.rd__container {
+		padding-top: 70px;
+	}
+	.rd__container .subtitle {
+		font-size: 25px;
+		letter-spacing: -0.2px;
+		line-height: 34px;
+		max-width: 800px;
+		margin-bottom: 70px;
+	}
+	
+	.rd__contact_form .f-el {
+		width: calc(100% - 100px);
+		margin: 20px 50px;
+	}
+	.rd__contact_form .f-6 {
+		width: calc(50% - 100px);
+	}
+	form.minimal {
+		margin-bottom: 100px;
+		/* Items box */
+	}
+	form.minimal input[type=text] {
+		border-radius: 0px;
+		border-bottom: 2px solid rgba(153, 162, 189, 0.3);
+		padding: 0;
+	}
+	form.minimal input[type=text]::placeholder {
+		font-size: 21px;
+		letter-spacing: -0.2px;
+		line-height: 30px;
+	}
+	form.minimal textarea {
+		display: block;
+		border: 0;
+		border-radius: 0px;
+		border-bottom: 2px solid rgba(153, 162, 189, 0.3);
+		padding: 0;
+		min-height: 80px;
+		font-size: 16px;
+		padding-top: 5px;
+	}
+	form.minimal .error_mess {
+		margin: 4px 0;
+	}
+	form.minimal .label_minimal {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	form.minimal .input_wrapper {
+		padding-top: 30px;
+	}
+	form.minimal .form__field {
+		display: block;
+	}
+	form.minimal .form__label {
+		top: 42px;
+		display: block;
+		font-size: 16px;
+		line-height: 24px;
+	}
+	form.minimal input:not([value=""]) ~ .form__label {
+		top: 10px;
+		color: var(--black);
+	}
+	form.minimal .form__field:focus ~ .form__label {
+		top: 10px;
+		color: var(--black);
+	}
+	form.minimal .form__field:not([value=""]) {
+		top: 10px;
+		color: var(--black);
+	}
+	form.minimal .form__field:focus {
+		padding-bottom: 6px;
+		border-bottom: 2px solid #009788;
+	}
+	form.minimal input[type=text]:focus {
+		border-bottom: 1px solid rgba(0, 144, 214, 0.3);
+	}
+	form.minimal .have_error input[type=text] {
+		border-bottom: 1px solid rgba(253, 87, 76, 0.3);
+	}
+	form.minimal .form_box_info {
+		font-size: 16px;
+		line-height: 22px;
+		padding: 6px 0;
+		border-bottom: 2px solid rgba(153, 162, 189, 0.2);
+		margin-bottom: 20px;
+	}
+	form.minimal .btn_classic {
+		max-width: 300px;
+	}
+	form.minimal .selectric-wrapper {
+		display: block;
+		margin: 5px 0;
+		min-width: 300px;
+		height: 48px;
+	}
+	form.minimal .selectric {
+		padding-right: calc(14px + 48px);
+		height: 48px;
+		border: 0;
+		border-bottom: 2px solid rgba(153, 162, 189, 0.3);
+		border-radius: 0px;
+		padding-left: 0px;
+	}
+	form.minimal .selectric .label {
+		font-size: 16px;
+		margin-left: 0px;
+	}
+	form.minimal .selectric .button {
+		width: 48px;
+		height: 48px;
+		line-height: 48px;
+		font-size: 16px;
+	}
+	form.minimal .selectric .button:after {
+		font-size: 0.8em;
+	}
+	form.minimal .selectric-items {
+		top: calc(100% - 1px);
+		border: 1px solid #91a5b8;
+	}
+	form.minimal .selectric-items ul, form.minimal .selectric-items li {
+		font-size: 16px;
+	}
+	
+	label.form_minimal {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	/*-e-request_form-------------------------*/
+	/*--------------------------------------------------------------------------------*/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*--------------------------------------------------------------------------------*/
+	/*-b-events-------------------------------*/
+	.events__title {
+		font-family: Mark;
+		font-size: 48px;
+		letter-spacing: -1.8px;
+		line-height: 54px;
+		display: block;
+		margin-top: 50px;
+		margin-bottom: 80px;
+	}
+	
+	.events_form h1 {
+		font-size: 48px;
+	}
+	
+	.events__grid {
+		margin-bottom: 50px;
+	}
+	.events__grid .e_pos {
+		padding: 35px 30px;
+	}
+	.events__grid .e_pos:before {
+		width: 800px;
+		/* 26.3% */
+	}
+	.events__grid .e_name {
+		font-size: 24px;
+		letter-spacing: -0.4px;
+		line-height: 26px;
+		display: block;
+		margin-bottom: 15px;
+	}
+	.events__grid .e_date {
+		font-size: 16px;
+		letter-spacing: -0.3px;
+		line-height: 22px;
+		margin-bottom: 14px;
+	}
+	.events__grid .e_location {
+		font-size: 14px;
+		font-weight: 500;
+		letter-spacing: -0.4px;
+		line-height: 26px;
+	}
+	.events__grid .e_location span {
+		display: block;
+	}
+	/*-e-events-------------------------------*/
+	/*--------------------------------------------------------------------------------*/
+
+
 
 
 }
