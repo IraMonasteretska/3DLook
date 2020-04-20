@@ -3751,12 +3751,10 @@
 	/*--------------------------------------------------------------------------------*/
 	/*-b-events-------------------------------*/
 	.events__title {
-		font-family: Mark;
 		font-size: 2.5vw;
 		letter-spacing: -0.0938vw;
 		line-height: 2.8125vw;
-		display: block;
-		margin-top: 2.6042vw;
+		margin-top: 0.8854vw;
 		margin-bottom: 4.1667vw;
 	}
 	
@@ -3778,7 +3776,6 @@
 		font-size: 1.25vw;
 		letter-spacing: -0.0208vw;
 		line-height: 1.3542vw;
-		display: block;
 		margin-bottom: 0.7813vw;
 	}
 	.events__grid .e_date {
@@ -3792,9 +3789,6 @@
 		font-weight: 500;
 		letter-spacing: -0.0208vw;
 		line-height: 1.3542vw;
-	}
-	.events__grid .e_location span {
-		display: block;
 	}
 	/*-e-events-------------------------------*/
 	/*--------------------------------------------------------------------------------*/
