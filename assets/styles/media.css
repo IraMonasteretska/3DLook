@@ -2838,7 +2838,7 @@
 
 
 
-		/*--------------------------------------------------------------------------------*/
+	/*--------------------------------------------------------------------------------*/
 	/*-b-careers------------------------------*/
 	.cr__head_bg .btn {
 		min-width: 200px;
@@ -4362,7 +4362,7 @@
 		padding-left: 27px;
 	}
 	/*-e-job_page-----------------------------*/
-/*--------------------------------------------------------------------------------*/
+	/*--------------------------------------------------------------------------------*/
 
 
 
@@ -4645,6 +4645,127 @@
 	
 	
 	
+
+
+	/*--------------------------------------------------------------------------------*/
+	/*-b-info---------------------------------*/
+	.info__pp_main_bg {
+		padding: 120px 0 0;
+		margin-bottom: 40px;
+		min-height: 362px;
+		box-sizing: border-box;
+	}
+	.info__pp_main_bg .bg {
+		background-position: top 35px center;
+		background-size: 320px;
+	}
+	.info__pp_main_bg h1 {
+		margin: 0 auto 20px;
+	}
+	.info__pp_updated:before {
+		display: none;
+	}
+	.info__pp_updated div {
+		padding: 0 0 0;
+		font-size: 16px;
+		line-height: 22px;
+		margin: auto;
+		text-align: center;
+	}
+
+	.info_pp__content {
+		max-width: 375px;
+	}
+	.info_pp__content p {
+		font-size: 18px;
+		line-height: 30px;
+		padding-bottom: 30px;
+		text-align: left;
+		width: 340px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.info_pp__content u {
+		border-bottom: 1px solid #0090d6;
+		line-height: 1em;
+	}
+	.info_pp__content h4 {
+		font-size: 24px;
+		letter-spacing: -0.4px;
+		line-height: 26px;
+		margin: 0 0 50px;
+		width: 340px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.info_pp__content h4 + .text_list {
+		margin-top: -20px;
+	}
+	.info_pp__content .text_bg {
+		padding: 20px 17px 20px 18px;
+		border-radius: 2px;
+		font-size: 16px;
+		line-height: 25px;
+		margin-bottom: 60px;
+	}
+	.info_pp__content .text_bg > div {
+		padding: 0 0 25px;
+	}
+	.info_pp__content .text_bg > div {
+		padding-bottom: 0;
+	}
+	.info_pp__content .text_list {
+		margin-bottom: 1em;
+		font-size: 18px;
+		line-height: 30px;
+		width: 340px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.info_pp__content .text_list:before {
+		min-width: 8px;
+		width: 8px;
+		height: 8px;
+		margin: 10px 16px 0 0;
+	}
+	.info_pp__content .subtitle {
+		font-size: 21px;
+		letter-spacing: -0.6px;
+		line-height: 30px;
+		margin-bottom: 30px;
+		width: 340px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.info_pp__content a {
+		word-break: break-all;
+		max-width: 340px;
+	}
+	.info_pp__content .p_text_limit {
+		width: 340px;
+		max-width: 340px;
+		margin: 0 auto;
+	}
+	.info_pp__content .text_contact {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 30px;
+		margin-bottom: 90px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 340px;
+	}
+	.info_pp__content .text_contact:last-of-type {
+		margin-bottom: 0;
+	}
+	.info_pp__content + .banner {
+		margin-top: 30px;
+	}
+	/*-e-info---------------------------------*/
+	/*--------------------------------------------------------------------------------*/
+
+
+
 	
 	
 	
