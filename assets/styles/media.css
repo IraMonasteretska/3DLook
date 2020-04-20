@@ -3919,7 +3919,7 @@
 		height: 520px;
 	}
 
-/*--------------------------------------------------------------------------------*/
+	/*--------------------------------------------------------------------------------*/
 	.figcaption {
 		font-size: 14px;
 		line-height: 22px;
@@ -4938,7 +4938,6 @@
 		margin-bottom: 30px;
 	}
 
-	}
 	.events__title {
 		font-family: "Mark";
 		font-size: 40px;
@@ -5010,10 +5009,67 @@
 		font-weight: 800;
 		margin-bottom: 30px;
 	}
-	/*-e-events-------------------------------*/
+
+
 	/*--------------------------------------------------------------------------------*/
-
-
+	/*-b-search-------------------------------*/
+	#search-result {
+		width: 375px;
+		padding: 30px 17px 0px 18px; 
+		box-shadow: unset;
+	}
+	#search-result-title {
+		font-size: 24px;
+		line-height: 26px;
+		letter-spacing: -0.4px;
+		margin-bottom: 16px;
+	}
+	/*-elem-*/
+	.search-result-elem {
+		padding: 14px 0 17px;
+	}
+	.search-result-elem:before {
+		height: 1px;
+	}
+	.sr-date {
+		width: 49px;
+		margin: 0 5px 0 0;
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.sr-text {
+		font-size: 18px;
+		line-height: 24px;
+		letter-spacing: -0.6px;
+	}
+	.sr-text span {
+		margin-left: 17px;
+		font-size: 10px;
+		line-height: 11px;
+	}
+	.sr-text span:before {
+		left: -8px;
+		top: -5px;
+		right: -8px;
+		bottom: -6px;
+		border-radius: 2px;
+	}
+	#search-result .btn {
+		width: 130px;
+		height: 40px;
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: -0.3px;
+		padding-left: 21px;
+		margin: 17px auto 0;
+	}
+	#search-result .btn:before {
+		font-size: 8px;
+		top: 18px;
+		right: 20px;
+	}
+	/*-e-search-------------------------------*/
+	/*--------------------------------------------------------------------------------*/
 
 
 }

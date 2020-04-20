@@ -1784,11 +1784,6 @@ footer p {
 /*--------------------------------------------------------------------------------*/
 
 
-#search-result {
-	display: none;
-}
-
-
 
 
 
@@ -7880,6 +7875,104 @@ label.form_minimal {
 
 
 
+/*--------------------------------------------------------------------------------*/
+/*-b-search-------------------------------*/
+#search-result {
+	font-family: "Mark";
+	width: 750px;
+	padding: 41px 85px 40px 71px; 
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 8px 8px 40px rgba(29, 37, 45, 0.1);
+}
+#search-result-title {
+	font-size: 24px;
+	line-height: 26px;
+	letter-spacing: -0.4px;
+	color: #000;
+	font-weight: 700;
+	margin-bottom: 17px;
+}
+#search-result-elems {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+/*-elem-*/
+.search-result-elem {
+	position: relative;
+	display: flex;
+	width: 100%;
+	padding: 14px 0 17px;
+	box-sizing: border-box;
+}
+.search-result-elem:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	height: 1px;
+	background-color: var(--blue);
+	opacity: 0.2;
+}
+.search-result-elem:last-child:before {
+	display: none;
+}
+.sr-date {
+	width: 49px;
+	margin: 0 5px 0 0;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 600;
+	color: var(--blue);
+}
+.sr-text {
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: -0.6px;
+	font-weight: 500;
+}
+.sr-text span {
+	margin-left: 17px;
+	position: relative;
+	font-size: 10px;
+	line-height: 11px;
+	color: var(--blue);
+	text-transform: uppercase;
+}
+.sr-text span:before {
+	content: "";
+	position: absolute;
+	left: -8px;
+	top: -5px;
+	right: -8px;
+	bottom: -6px;
+	border-radius: 2px;
+	background-color: var(--blue);
+	opacity: 0.1;
+}
+#search-result .btn {
+	width: 130px;
+	height: 40px;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: -0.3px;
+	padding-left: 21px;
+	justify-content: flex-start;
+	margin: 17px auto 0;
+}
+#search-result .btn:before {
+	font-size: 8px;
+	position: absolute;
+	top: 18px;
+	right: 20px;
+	transform: rotate(180deg);
+}
+/*-e-search-------------------------------*/
+/*--------------------------------------------------------------------------------*/
 
 
 
@@ -7905,3 +7998,22 @@ label.form_minimal {
 		display: none;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

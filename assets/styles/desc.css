@@ -3797,6 +3797,81 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+	/*--------------------------------------------------------------------------------*/
+	/*-b-search-------------------------------*/
+	#search-result {
+		width: 39.0625vw;
+		padding: 2.1354vw 4.4271vw 2.0833vw 3.6979vw; 
+		box-shadow: 0.4167vw 0.4167vw 2.0833vw rgba(29, 37, 45, 0.1);
+	}
+	#search-result-title {
+		font-size: 1.25vw;
+		line-height: 1.3542vw;
+		letter-spacing: -0.0208vw;
+		margin-bottom: 0.8854vw;
+	}
+	/*-elem-*/
+	.search-result-elem {
+		padding: 0.7292vw 0 0.8854vw;
+	}
+	.search-result-elem:before {
+		height: 0.0521vw;
+	}
+	.sr-date {
+		width: 2.5521vw;
+		margin: 0 0.2604vw 0 0;
+		font-size: 0.7292vw;
+		line-height: 1.25vw;
+	}
+	.sr-text {
+		font-size: 0.9375vw;
+		line-height: 1.25vw;
+		letter-spacing: -0.0313vw;
+	}
+	.sr-text span {
+		margin-left: 0.8854vw;
+		font-size: 0.5208vw;
+		line-height: 0.5729vw;
+	}
+	.sr-text span:before {
+		left: -0.4167vw;
+		top: -0.2604vw;
+		right: -0.4167vw;
+		bottom: -0.3125vw;
+		border-radius: 0.1042vw;
+	}
+	#search-result .btn {
+		width: 6.7708vw;
+		height: 2.0833vw;
+		font-size: 0.7292vw;
+		line-height: 0.9375vw;
+		letter-spacing: -0.0156vw;
+		padding-left: 1.0938vw;
+		margin: 0.8854vw auto 0;
+	}
+	#search-result .btn:before {
+		font-size: 0.4167vw;
+		top: 0.9375vw;
+		right: 1.0417vw;
+	}
+	/*-e-search-------------------------------*/
+	/*--------------------------------------------------------------------------------*/
+
+
+
+
+
 }
 @media screen and (min-width: 1921px) {
 	html {
