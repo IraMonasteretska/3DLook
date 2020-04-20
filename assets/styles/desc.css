@@ -3621,16 +3621,14 @@
 		margin-bottom: 3.6458vw;
 	}
 	
-	.rd__contact_form .f-el {
-		width: calc(100% - 5.2083vw);
-		margin: 1.0417vw 2.6042vw;
-	}
-	.rd__contact_form .f-6 {
-		width: calc(50% - 5.2083vw);
-	}
+
 	form.minimal {
-		margin-bottom: 5.2083vw;
+		max-width: 53.125vw;
+		margin: 0 auto 5.2083vw;
 		/* Items box */
+	}
+	.formgrid {
+		grid-gap: 2.1875vw 5.2083vw;
 	}
 	form.minimal input[type=text] {
 		border-radius: 0vw;
@@ -3643,11 +3641,7 @@
 		line-height: 1.5625vw;
 	}
 	form.minimal textarea {
-		display: block;
-		border: 0;
-		border-radius: 0vw;
 		border-bottom: 0.1042vw solid rgba(153, 162, 189, 0.3);
-		padding: 0;
 		min-height: 4.1667vw;
 		font-size: 0.8333vw;
 		padding-top: 0.2604vw;
@@ -3659,39 +3653,29 @@
 		font-size: 0.8333vw;
 		line-height: 1.25vw;
 	}
-	form.minimal .input_wrapper {
-		padding-top: 1.5625vw;
-	}
-	form.minimal .form__field {
-		display: block;
-	}
 	form.minimal .form__label {
-		top: 2.1875vw;
-		display: block;
+		top: 0.9375vw;
 		font-size: 0.8333vw;
 		line-height: 1.25vw;
 	}
 	form.minimal input:not([value=""]) ~ .form__label {
-		top: 0.5208vw;
-		color: var(--black);
+		top: -0.7292vw;
 	}
 	form.minimal .form__field:focus ~ .form__label {
-		top: 0.5208vw;
-		color: var(--black);
+		top: -0.7292vw;
 	}
 	form.minimal .form__field:not([value=""]) {
-		top: 0.5208vw;
-		color: var(--black);
+		top: -0.7292vw;
 	}
 	form.minimal .form__field:focus {
 		padding-bottom: 0.3125vw;
 		border-bottom: 0.1042vw solid #009788;
 	}
 	form.minimal input[type=text]:focus {
-		border-bottom: 0.0521vw solid rgba(0, 144, 214, 0.3);
+		border-bottom: 0.1042vw solid rgba(0, 144, 214, 0.3);
 	}
 	form.minimal .have_error input[type=text] {
-		border-bottom: 0.0521vw solid rgba(253, 87, 76, 0.3);
+		border-bottom: 0.1042vw solid rgba(253, 87, 76, 0.3);
 	}
 	form.minimal .form_box_info {
 		font-size: 0.8333vw;
@@ -3704,7 +3688,6 @@
 		max-width: 15.625vw;
 	}
 	form.minimal .selectric-wrapper {
-		display: block;
 		margin: 0.2604vw 0;
 		min-width: 15.625vw;
 		height: 2.5vw;
@@ -3712,14 +3695,12 @@
 	form.minimal .selectric {
 		padding-right: calc(0.7292vw + 2.5vw);
 		height: 2.5vw;
-		border: 0;
 		border-bottom: 0.1042vw solid rgba(153, 162, 189, 0.3);
 		border-radius: 0vw;
 		padding-left: 0vw;
 	}
 	form.minimal .selectric .label {
 		font-size: 0.8333vw;
-		margin-left: 0vw;
 	}
 	form.minimal .selectric .button {
 		width: 2.5vw;
@@ -3729,6 +3710,10 @@
 	}
 	form.minimal .selectric .button:after {
 		font-size: 0.8em;
+	}
+	.textarea_wrapper {
+		margin: 2.1875vw auto 2.6042vw 0;
+		width: 23.9583vw;
 	}
 	form.minimal .selectric-items {
 		top: calc(100% - 0.0521vw);

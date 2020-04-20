@@ -3395,6 +3395,9 @@ display: block !important;
 	height: 100%;
 	overflow: auto;
 }
+.selectric-scroll ul li:first-child {
+	display: none;
+}
 .selectric-above .selectric-items {
 	top: auto;
 	bottom: 100%;
@@ -7519,38 +7522,24 @@ label.checkbox_classic a {
 	margin-bottom: 70px;
 }
 
-.rd__contact_form {
-	width: 100%;
-	display: flex;
-	flex-flow: row wrap;
-	box-sizing: border-box;
-}
-.rd__contact_form .f-el {
-	width: calc(100% - 100px);
-	display: flex;
-	flex-flow: column;
-	margin: 20px 50px;
-}
-.rd__contact_form .f-6 {
-	width: calc(50% - 100px);
-}
 
-@media screen and (max-width: 768px) {
-	.f-el {
-		width: calc(100% - 20px);
-		margin: 10px;
-	}
 
-	.f-sm-12 {
-		width: calc(100% - 20px) !important;
-	}
-}
+
 form.minimal {
-	margin-bottom: 100px;
 	/* Items box */
+	display: flex;
+	flex-direction: column;
+	max-width: 1020px;
+	margin: 0 auto 100px;
+}
+.formgrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 42px 100px;
 }
 form.minimal input[type=text] {
 	border-radius: 0px;
+	border: none;
 	border-bottom: 2px solid rgba(153, 162, 189, 0.3);
 	background-color: #ffffff;
 	transition: box-shadow 0.2s ease;
@@ -7572,11 +7561,16 @@ form.minimal textarea {
 	background-color: #ffffff;
 	transition: box-shadow 0.2s ease;
 	padding: 0;
-	min-height: 80px;
+	min-height: 112px;
 	resize: vertical;
 	font-family: "Roboto";
 	font-size: 16px;
 	padding-top: 5px;
+	box-sizing: border-box;
+}
+form.minimal textarea::placeholder {
+	color: #99a2bd;
+	font-family: "Roboto";
 }
 form.minimal .error_mess {
 	margin: 4px 0;
@@ -7596,7 +7590,6 @@ form.minimal .label_minimal b {
 }
 form.minimal .input_wrapper {
 	position: relative;
-	padding-top: 30px;
 }
 form.minimal .form__field {
 	display: block;
@@ -7605,10 +7598,10 @@ form.minimal .form__field::placeholder {
 	color: transparent;
 }
 form.minimal .form__label {
-	top: 42px;
+	top: 18px;
 	position: absolute;
 	display: block;
-	transition: 0.2s ease;
+	transition: top 0.2s ease, color 0.2s ease;
 	color: #99a2bd;
 	font-family: "Roboto";
 	font-size: 16px;
@@ -7621,26 +7614,27 @@ form.minimal .form__label b {
 	color: var(--red);
 }
 form.minimal input:not([value=""]) ~ .form__label {
-	top: 10px;
-	color: var(--black);
+	top: -14px;
+	/* color: var(--black); */
 }
 form.minimal .form__field:focus ~ .form__label {
-	top: 10px;
+	top: -14px;
 	color: var(--black);
 }
 form.minimal .form__field:not([value=""]) {
-	top: 10px;
-	color: var(--black);
+	top: -14px;
+	/* color: var(--black); */
 }
 form.minimal .form__field:focus {
 	padding-bottom: 6px;
 	border-bottom: 2px solid #009788;
 }
 form.minimal input[type=text]:focus {
-	border-bottom: 1px solid rgba(0, 144, 214, 0.3);
+	border-bottom: 2px solid rgba(0, 144, 214, 0.3);
 }
 form.minimal .have_error input[type=text] {
-	border-bottom: 1px solid rgba(253, 87, 76, 0.3);
+	border: none;
+	border-bottom: 2px solid rgba(253, 87, 76, 0.3);
 }
 form.minimal .form_box_info {
 	color: rgba(29, 37, 45, 0.6);
@@ -7701,6 +7695,10 @@ form.minimal .selectric .button:after {
 	width: 100%;
 	height: 100%;
 	font-size: 0.8em;
+}
+.textarea_wrapper {
+	margin: 42px auto 50px 0;
+	width: 460px;
 }
 form.minimal .selectric-open .selectric {
 	border-color: rgba(29, 37, 45, 0.5);

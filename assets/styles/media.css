@@ -4778,25 +4778,35 @@
 	/*--------------------------------------------------------------------------------*/
 	/*-b-request_form-------------------------*/
 	.rd__container {
-		padding-top: 70px;
+		padding-top: 40px;
+		width: 340px;
+		margin: 0 auto;
+	}
+	.rd__container h1 {
+		margin: 0 auto 16px;
 	}
 	.rd__container .subtitle {
-		font-size: 25px;
-		letter-spacing: -0.2px;
-		line-height: 34px;
+		font-size: 16px;
+		line-height: 22px;
+		letter-spacing: 0px;
 		max-width: 800px;
-		margin-bottom: 70px;
+		margin-bottom: 60px;
 	}
 	
-	.rd__contact_form .f-el {
-		width: calc(100% - 100px);
-		margin: 20px 50px;
+
+	form.minimal .input_wrapper.textarea_wrapper {
+		/* position: absolute; */
+		/* bottom: 0; */
+		max-width: 100%;
+		width: unset;
+		margin: 40px auto 50px;
 	}
-	.rd__contact_form .f-6 {
-		width: calc(50% - 100px);
+	.formgrid {
+		grid-template-columns: 1fr;
+		grid-gap: 40px;
 	}
 	form.minimal {
-		margin-bottom: 100px;
+		margin-bottom: 80px;
 		/* Items box */
 	}
 	form.minimal input[type=text] {
@@ -4810,7 +4820,6 @@
 		line-height: 30px;
 	}
 	form.minimal textarea {
-		display: block;
 		border: 0;
 		border-radius: 0px;
 		border-bottom: 2px solid rgba(153, 162, 189, 0.3);
@@ -4826,28 +4835,21 @@
 		font-size: 16px;
 		line-height: 24px;
 	}
-	form.minimal .input_wrapper {
-		padding-top: 30px;
-	}
-	form.minimal .form__field {
-		display: block;
-	}
 	form.minimal .form__label {
-		top: 42px;
-		display: block;
+		top: 18px;
 		font-size: 16px;
 		line-height: 24px;
 	}
 	form.minimal input:not([value=""]) ~ .form__label {
-		top: 10px;
+		top: -14px;
 		color: var(--black);
 	}
 	form.minimal .form__field:focus ~ .form__label {
-		top: 10px;
+		top: -14px;
 		color: var(--black);
 	}
 	form.minimal .form__field:not([value=""]) {
-		top: 10px;
+		top: -14px;
 		color: var(--black);
 	}
 	form.minimal .form__field:focus {
@@ -4855,10 +4857,10 @@
 		border-bottom: 2px solid #009788;
 	}
 	form.minimal input[type=text]:focus {
-		border-bottom: 1px solid rgba(0, 144, 214, 0.3);
+		border-bottom: 2px solid rgba(0, 144, 214, 0.3);
 	}
 	form.minimal .have_error input[type=text] {
-		border-bottom: 1px solid rgba(253, 87, 76, 0.3);
+		border-bottom: 2px solid rgba(253, 87, 76, 0.3);
 	}
 	form.minimal .form_box_info {
 		font-size: 16px;
@@ -4868,10 +4870,9 @@
 		margin-bottom: 20px;
 	}
 	form.minimal .btn_classic {
-		max-width: 300px;
+		max-width: 220px;
 	}
 	form.minimal .selectric-wrapper {
-		display: block;
 		margin: 5px 0;
 		min-width: 300px;
 		height: 48px;
