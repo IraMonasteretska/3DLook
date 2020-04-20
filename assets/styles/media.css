@@ -4374,6 +4374,10 @@
 
 	/*--------------------------------------------------------------------------------*/
 	/*-b-partnership--------------------------*/
+	.s-ins.s-ins-partnership {
+		/* padding: 30px 0 206px; */
+		padding: 30px 0 146px;
+	}
 	/* .partnership-op {} */
 	.partnership-op h2 {
 		font-size: 40px;
@@ -4406,7 +4410,44 @@
 	.op-slide:hover .op-slide-inner {
 		box-shadow: 0px 5px 27px rgba(253, 87, 76, 0.3);
 	}
+	/*-b-slider-MOB-*/
+	.s-ins-partnership .slider .s-elem {
+		width: 340px !important;
+		height: 540px;
+		background-color: white;
+		border-radius: 20px;
+	}
+	.s-ins-partnership .slider .s-elem:before {
+		width: 800px;
+		height: 800px;
+		background-color: var(--black);
+		opacity: 1;
+		top: 340px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.s-ins-partnership .slider .s-elem-circle, 
+	.s-ins-partnership .slider .s-elem:hover .s-elem-circle {
+		position: absolute;
+		top: 442px;
+		transition: unset;
+		transform: translateY(-50%);
+	}
+	.s-ins-partnership .slider .s-elem-img {
+		margin: 99px auto auto;
+		width: 150px;
+		height: 150px;
+	}
+	.s-ins-partnership .slider .s-c-title {
+		font-size: 32px;
+		line-height: 40px;
+	}
+	.s-ins.s-ins-partnership .slider-arrows {
+		display: flex;
+	}
+	/*-e-slider-MOB-*/
 	/*-e-op-slider-------*/
+
 	form.main_s label.label_classic {
 		font-size: 12px;
 		letter-spacing: -0.4px;
