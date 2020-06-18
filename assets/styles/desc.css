@@ -4137,7 +4137,6 @@
 	/* .smbbenefits {} */
 	.smbbenefits h3 {
 		letter-spacing: -0.0938vw;
-		font-weight: 800;
 		font-size: 2.5vw;
 		line-height: 2.8125vw;
 	}
@@ -4157,6 +4156,8 @@
 	.smbben-img {
 		top: 5.5729vw;
 		left: 6.6146vw;
+		max-width: 4.6875vw;
+		max-height: 4.6875vw;
 	}
 	.smbben-item h4 {
 		margin: 8.75vw auto 0;

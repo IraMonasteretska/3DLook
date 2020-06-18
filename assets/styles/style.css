@@ -8469,8 +8469,8 @@ label.form_minimal {
 	position: absolute;
 	top: 107px;
 	left: 127px;
-	max-width: 100px;
-	max-height: 100px;
+	max-width: 90px;
+	max-height: 90px;
 	transform: translate(-50%, -50%);
 }
 .smbben-item h4 {
@@ -8619,6 +8619,7 @@ label.form_minimal {
 	background-size: cover;
 }
 .smblafmf h3 {
+	font-family: "Mark";
 	font-weight: 800;
 	font-size: 48px;
 	line-height: 54px;

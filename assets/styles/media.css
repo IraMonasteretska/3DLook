@@ -5210,6 +5210,10 @@
 	.sect7trial {
 		min-height: 317px;
 	}
+	.sect7trial .bg1 {
+		background-image: unset !important;
+		background-color: var(--gray);
+	}
 	.sect7trial .wrap {
 		top: 0;
 		box-sizing: border-box;
@@ -5235,38 +5239,60 @@
 	/*-e-sect7trial-----------------*/
 
 	/*-b-smbsimple------------------*/
-
+	.smbsimple .wrap {
+		flex-direction: column;
+	}
 	.smbsimple h3 {
-		font-size: 48px;
-		line-height: 54px;
+		font-size: 24px;
+		line-height: 30px;
 		letter-spacing: -1.8px;
-		margin: 200px auto 82px;
+		margin: 69px auto 82px;
 	}
 
 	.smbsimple-item {
-		width: 430px;
+		width: 100%;
+		/* flex-direction: row; */
+		padding-left: 114px;
+		box-sizing: border-box;
+	}
+	.smbsimple-item h4 {
+		margin: 0 auto 20px 0;
+		text-align: left;
+	}
+	.smbsimple-item p {
+		text-align: left;
+		margin: 0 0 40px;
+	}
+	.smbsimple-item-img {
+		position: absolute;
+		left: 0;
+		top: 0;
 	}
 	.smbsimple-item-img img {
-		width: 124px;
-		height: 133px;
+		position: absolute;
+		top: 10px;
+		left: 12px;
+		width: 74px;
+		height: 74px;
 	}
 	.smbsimple-item-img:before {
-		top: -9px;
-		left: -51px;
-		width: 110px;
-		height: 110px;
+		top: 2px;
+		left: 0px;
+		width: 57px;
+		height: 57px;
 	}
 	.smbsimple-item-img.phone img {
 		width: 66px;
 	}
 	.smbsimple-item-img.dashboardsvg img {
-		width: 99px;
+		width: 64px;
 	}
 	/*-e-smbsimple------------------*/
 
 	/*-b-smbswitch------------------*/
 	.smbswitch {
-		min-height: 1317px;
+		min-height: 0;
+		padding-bottom: 90px;
 	}
 	.smbswitch h2 {
 		margin: 0 auto 40px;
@@ -5276,18 +5302,31 @@
 		box-shadow: 2px 2px 8px rgba(150, 252, 213, 0.195258);
 	}
 	.smbswitch .trigger-wrap {
-		margin: 91px auto 46px;
-		padding-left: 92px;
+		margin: 51px auto 25px;
+		padding-left: 0px;
+	}
+	.smbswitch .trigger-wrap span {
+		width: 108px;
+	}
+	.smbswitch .trigger-wrap span:first-child {
+		text-align: right;
+		padding-bottom: 3px;
 	}
 
 	.smbswitch-wrap {
-		width: 1180px;
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	/*-item-*/
 	.smbsw-i {
-		width: 380px;
+		width: 335px;
 		padding: 40px 0;
+		margin-bottom: 60px;
+	}
+	.smbsw-i:last-child {
+		margin-bottom: 0;
 	}
 	.smbsw-i-title {
 		letter-spacing: -0.4px;
@@ -5358,78 +5397,87 @@
 	/*-b-smbbenefits----------------*/
 	/* .smbbenefits {} */
 	.smbbenefits h3 {
-		letter-spacing: -1.8px;
-		font-weight: 800;
-		font-size: 48px;
-		line-height: 54px;
+		letter-spacing: 0px;
+		font-size: 24px;
+		line-height: 30px;
+		margin: 69px auto 56px;
 	}
 	.smbben-wrap {
-		width: 1550px;
-		margin: 0 auto 184px;
+		width: 100%;
+		max-width: 375px;
+		margin: 0 0 78px;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 	.smbben-item {
-		width: 270px;
+		width: 50%;
+		flex-shrink: 0;
 	}
 	.smbben-item:before {
 		top: 30px;
 		left: 66px;
-		width: 90px;
-		height: 90px;
+		width: 45px;
+		height: 45px;
 	}
 	.smbben-img {
-		top: 107px;
-		left: 127px;
+		top: 56px;
+		left: 94px;
+		max-width: 50px;
+		max-height: 50px;
 	}
 	.smbben-item h4 {
-		margin: 168px auto 0;
+		margin: 98px auto 32px;
 		letter-spacing: -0.4px;
-		font-size: 24px;
-		line-height: 26px;
+		font-size: 16px;
+		line-height: 28px;
+		font-weight: 500;
+		max-width: 150px;
 	}
 	/*-e-smbbenefits----------------*/
 
 	/*-b-smbwhat--------------------*/
 	.smbwhat h3 {
 		font-weight: 800;
-		font-size: 48px;
-		line-height: 54px;
-		letter-spacing: -1.8px;
+		font-size: 24px;
+		line-height: 30px;
+		letter-spacing: 0px;
 		margin: 0 auto 62px;
+		max-width: 250px;
 	}
 	.smbwhat-wrap {
-		width: 1180px;
-		padding: 0 0 152px;
+		width: 100%;
+		padding: 0 0 78px;
+		flex-wrap: wrap;
 	}
 	.smbwhat-wrap .smbbg {
 		top: -53px;
 		left: -74px;
 	}
 	.smbwhat .bg1 {
-		top: -180px;
-		left: calc(50% - 394px);
-		width: 1173px;
-		height: 1170px;
+		background-image: unset !important;
 	}
 	.smbwhat-i {
-		width: 380px;
-		height: 520px;
+		width: 335px;
+		max-width: 100%;
+		height: 570px;
 		box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.4);
+		margin: 0 auto 60px;
 	}
 	.smbwhat-i:after {
-		left: 30px;
-		right: 30px;
-		height: 30px;
+		display: none;
 	}
 	.smbwhat-i img {
-		bottom: 115px;
+		top: auto;
+		bottom: 0;
+		clip-path: circle(350px at 50% 544px);
 	}
 	.smb-i-content {
-		top: 330px;
-		padding: 66px 30px 30px;
+		position: static;
+		top: 0;
+		padding: 47px 30px 30px;
 	}
 	.smb-i-content:before {
-		width: 880px;
-		height: 880px;
+		display: none;
 	}
 	.smb-i-title {
 		font-size: 24px;
@@ -5455,17 +5503,21 @@
 
 	/*-b-smblafmf-------------------*/
 	.smblafmf {
-		min-height: 496px;
+		min-height: 339px;
+		margin-bottom: 55px;
 	}
 	.smblafmf h3 {
 		font-weight: 800;
-		font-size: 48px;
-		line-height: 54px;
-		letter-spacing: -1.8px;
-		margin: 171px auto 40px;
+		font-size: 24px;
+		line-height: 30px;
+		letter-spacing: 0;
+		max-width: 302px;
+		margin: 108px auto 30px;
 	}
 	.smblafmf .btn {
-		width: 368px;
+		width: 310px;
+		height: 60px;
+		margin-bottom: 111px;
 	}
 	.smblafmf .btn:before {
 		font-size: 10px;
