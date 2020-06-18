@@ -5071,4 +5071,408 @@
 	/*--------------------------------------------------------------------------------*/
 
 
+
+
+
+
+
+
+
+
+
+
+		/*-b-forsmb-----------------------------------------*/
+	/*-b-smbmain--------------------*/
+	.smbmain {
+		min-height: 767px;
+	}
+	.smbmain .wrap {
+		flex-direction: column;
+	}
+	.smbmain .bg1 {
+		left: 0;
+		width: 100%;
+		top: 0;
+		height: 100%;
+		background-size: cover;
+		background-position: bottom center;
+	}
+	.smbmain .col:first-child {
+		padding: 43px 0 0;
+		width: 320px;
+		margin: 0 auto;
+	}
+	.smbmain h5 {
+		font-size: 20px;
+		line-height: 26px;
+		letter-spacing: 1px;
+		margin: 0 0 36px;
+	}
+	.smbmain h1 {
+		font-size: 40px;
+		line-height: 45px;
+		letter-spacing: -2px;
+		margin: 0 0 31px;
+		text-align: left;
+	}
+	.smbmain h4 {
+		font-size: 20px;
+		line-height: 30px;
+		letter-spacing: -0.2px;
+		max-width: 600px;
+		margin: 0 0 40px;
+		font-weight: 400;
+	}
+	.smbmain .btn {
+		width: 298px;
+	}
+	.smbmain .btn:before {
+		font-size: 10px;
+		margin: 3px 0 0 6px;
+	}
+	.smbmain img {
+		position: static;
+		top: unset;
+		left: unset;
+		width: 310px;
+		height: 162px;
+		margin: 42px auto 0;
+	}
+	/*-e-smbmain--------------------*/
+
+	/*-b-smbsecond------------------*/
+	.smbsecond {
+		padding: 0 0 45px;
+	}
+	.smbsecond-1, 
+	.smbsecond-3 {
+		flex-direction: column;
+	}
+	.smbsecond-2 {
+		flex-direction: column-reverse;
+	}
+
+	.smbsecond h3 {
+		font-size: 24px;
+		line-height: 30px;
+		letter-spacing: 0px;
+		margin: 0;
+	}
+	.smbsecond p {
+		font-size: 16px;
+		line-height: 28px;
+		letter-spacing: -0.2px;
+		margin: 20px 0 0;
+		text-align: left;
+	}
+
+	.smbbg {
+		display: none;
+	}
+	.smbsecond-1 img,
+	.smbsecond-2 img,
+	.smbsecond-3 img {
+		position: static;
+		flex-shrink: 0;
+		object-fit: contain;
+	}
+
+	.smbsecond-1 img {
+		width: 268px;
+		height: 174px;
+		margin: 0 auto 0;
+	}
+	.smbsecond-1 .col,
+	.smbsecond-2 .col,
+	.smbsecond-3 .col {
+		margin: 16px auto 0;
+		width: 335px;
+	}
+
+	.smbsecond-2 img {
+		width: 364px;
+		height: 243px;
+	}
+
+	.smbsecond-3 img {
+		width: 369px;
+		height: 246px;
+	}
+
+	.smbsecond-3 img.mob {
+		transform: translateX(-26px);
+	}
+
+
+	/*-e-smbsecond------------------*/
+
+	/*-b-sect7trial-----------------*/
+	.sect7trial {
+		min-height: 317px;
+	}
+	.sect7trial .wrap {
+		top: 0;
+		box-sizing: border-box;
+		padding: 46px 0 51px;
+		width: 320px;
+	}
+	.sect7trial h4 {
+		font-family: 'Roboto', sans-serif;
+		margin: 133px;
+		margin: 0 auto 40px;
+		letter-spacing: 0px;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 28px;
+	}
+	.sect7trial .btn {
+		width: 310px;
+	}
+	.sect7trial .btn:before {
+		font-size: 10px;
+		margin: 3px 0 0 6px;
+	}
+	/*-e-sect7trial-----------------*/
+
+	/*-b-smbsimple------------------*/
+
+	.smbsimple h3 {
+		font-size: 48px;
+		line-height: 54px;
+		letter-spacing: -1.8px;
+		margin: 200px auto 82px;
+	}
+
+	.smbsimple-item {
+		width: 430px;
+	}
+	.smbsimple-item-img img {
+		width: 124px;
+		height: 133px;
+	}
+	.smbsimple-item-img:before {
+		top: -9px;
+		left: -51px;
+		width: 110px;
+		height: 110px;
+	}
+	.smbsimple-item-img.phone img {
+		width: 66px;
+	}
+	.smbsimple-item-img.dashboardsvg img {
+		width: 99px;
+	}
+	/*-e-smbsimple------------------*/
+
+	/*-b-smbswitch------------------*/
+	.smbswitch {
+		min-height: 1317px;
+	}
+	.smbswitch h2 {
+		margin: 0 auto 40px;
+	}
+
+	.trigger-wrap.white .icon-check {
+		box-shadow: 2px 2px 8px rgba(150, 252, 213, 0.195258);
+	}
+	.smbswitch .trigger-wrap {
+		margin: 91px auto 46px;
+		padding-left: 92px;
+	}
+
+	.smbswitch-wrap {
+		width: 1180px;
+	}
+
+	/*-item-*/
+	.smbsw-i {
+		width: 380px;
+		padding: 40px 0;
+	}
+	.smbsw-i-title {
+		letter-spacing: -0.4px;
+		font-size: 28px;
+		line-height: 26px;
+	}
+	.smbsw-i-img {
+		width: 280px;
+		height: 280px;
+	}
+	.smbsw-i-img .c025 {
+		padding: 0 0 35px 35px; 
+	}
+	.smbsw-i-num {
+		margin: 100px auto 3px;
+		letter-spacing: -1.8px;
+		font-size: 48px;
+		line-height: 54px;
+	}
+	.smbsw-i-subnum {
+		letter-spacing: -0.4px;
+		font-size: 14px;
+		line-height: 20px;
+		max-width: 145px;
+	}
+
+	.smbsw-i-price {
+		font-size: 28px;
+		letter-spacing: -1.8px;
+		margin: 0 0 6px;
+	}
+	.smbsw-i-subprice {
+		letter-spacing: -0.4px;
+		font-size: 14px;
+		line-height: 20px;
+		margin: 0 0 26px;
+	}
+	.smbsw-i .btn {
+		width: 280px;
+		margin-bottom: 46px;
+	}
+	.smbsw-i-noprice {
+		font-size: 16px;
+		line-height: 24px;
+		margin: -12px 0 20px;
+		max-width: 280px;
+	}
+	.smbsw-i .btn:before {
+		font-size: 10px;
+		margin: 3px 0 0 6px;
+	}
+	.smbsw-i-ul {
+		padding: 0 0 0 22px;
+		margin: 0 45px 0;
+	}
+	.smbsw-i-ul li {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.smbsw-i-ul li:before {
+		top: 6px;
+		width: 12px;
+		height: 10px;
+		left: -22px;
+	}
+	/*-e-smbswitch------------------*/
+
+	/*-b-smbbenefits----------------*/
+	/* .smbbenefits {} */
+	.smbbenefits h3 {
+		letter-spacing: -1.8px;
+		font-weight: 800;
+		font-size: 48px;
+		line-height: 54px;
+	}
+	.smbben-wrap {
+		width: 1550px;
+		margin: 0 auto 184px;
+	}
+	.smbben-item {
+		width: 270px;
+	}
+	.smbben-item:before {
+		top: 30px;
+		left: 66px;
+		width: 90px;
+		height: 90px;
+	}
+	.smbben-img {
+		top: 107px;
+		left: 127px;
+	}
+	.smbben-item h4 {
+		margin: 168px auto 0;
+		letter-spacing: -0.4px;
+		font-size: 24px;
+		line-height: 26px;
+	}
+	/*-e-smbbenefits----------------*/
+
+	/*-b-smbwhat--------------------*/
+	.smbwhat h3 {
+		font-weight: 800;
+		font-size: 48px;
+		line-height: 54px;
+		letter-spacing: -1.8px;
+		margin: 0 auto 62px;
+	}
+	.smbwhat-wrap {
+		width: 1180px;
+		padding: 0 0 152px;
+	}
+	.smbwhat-wrap .smbbg {
+		top: -53px;
+		left: -74px;
+	}
+	.smbwhat .bg1 {
+		top: -180px;
+		left: calc(50% - 394px);
+		width: 1173px;
+		height: 1170px;
+	}
+	.smbwhat-i {
+		width: 380px;
+		height: 520px;
+		box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.4);
+	}
+	.smbwhat-i:after {
+		left: 30px;
+		right: 30px;
+		height: 30px;
+	}
+	.smbwhat-i img {
+		bottom: 115px;
+	}
+	.smb-i-content {
+		top: 330px;
+		padding: 66px 30px 30px;
+	}
+	.smb-i-content:before {
+		width: 880px;
+		height: 880px;
+	}
+	.smb-i-title {
+		font-size: 24px;
+		line-height: 26px;
+		letter-spacing: -0.4px;
+		margin: 0 0 20px;
+	}
+	.smb-i-text {
+		font-size: 16px;
+		line-height: 22px;
+	}
+	/*-hover-*/
+	.smb-i-name {
+		font-size: 19px;
+		line-height: 12px;
+		letter-spacing: -0.4px;
+		margin: 30px 0 12px;
+	}
+	.smb-i-pos {
+		font-size: 15px;
+	}
+	/*-e-smbwhat--------------------*/
+
+	/*-b-smblafmf-------------------*/
+	.smblafmf {
+		min-height: 496px;
+	}
+	.smblafmf h3 {
+		font-weight: 800;
+		font-size: 48px;
+		line-height: 54px;
+		letter-spacing: -1.8px;
+		margin: 171px auto 40px;
+	}
+	.smblafmf .btn {
+		width: 368px;
+	}
+	.smblafmf .btn:before {
+		font-size: 10px;
+		margin: 3px 0 0 6px;
+	}
+	/*-e-smblafmf-------------------*/
+	/*-e-forsmb-----------------------------------------*/
+
+
 }
