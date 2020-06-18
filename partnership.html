@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<!-- Open Graph -->
+	<meta name="og:type" content="website">
+	<meta name="og:title" content="3DLook">
+	<meta name="og:description" content="">
+	<meta name="og:url" content="">
+	<meta name="og:site_name" content="3DLook">
+	<meta name="og:locale" content="uk_UA">
+	<!-- <meta name="og:image" content="url"> -->
+	<!-- Open Graph -->
+	<!-- <meta name="theme-color" content="#000000"> -->
+	<!-- <link rel="shortcut icon" href=""> -->
+	<title>3DLook</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./assets/fonts/Mark/font.css">
+	<link rel="stylesheet" type="text/css" href="./assets/fonts/HelveticaNeue/font.css">
+	<link rel="stylesheet" type="text/css" href="./assets/icons/fontello/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/desc.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/media.css">
+
+
+
+
+	<!-- Bogdan styles -->
+	<!-- <link rel="stylesheet" type="text/css" href="./assets/styles/b_styles.css"> -->
+	
+	<!-- This script is used for DomContentLoaded -->
+	<!-- Example to use: onLoaded.push({ YOUR_CODE }); -->
+	<script>var onLoaded=[],onResize=[];</script>
+</head>
+<body>
+<!-- mobile top menu -->
+<div id="mob-top" class="">
+	<button type="button" class="cross" id="close-mob-top"></button>
+	<span id="mob-top-title">Homescreen</span>
+	<nav id="mob-top-nav">
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">Solutions</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">3d Model Generation</a></li>
+			</ul>
+		</div>
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">Technology</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">1Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">1Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">13d Model Generation</a></li>
+			</ul>
+		</div>
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">Resources</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">2Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">2Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">33d Model Generation</a></li>
+			</ul>
+		</div>
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">Careers</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">3Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">3Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">33d Model Generation</a></li>
+			</ul>
+		</div>
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">About</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">4Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">4Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">43d Model Generation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<button type="button" class="btn red">Request a Demo</button>
+</div>
+
+<!-- eclipse -->
+<div id="eclipse"></div>
+
+<!-- search-result -->
+<div id="search-result" class="">
+	<span id="search-result-title">Search results: <span>11</span></span>
+	<button type="button" class="btn black icon-arr-t">View more</button>
+</div>
+
+<!-- body -->
+<header>
+	<div class="wrap">
+		<a class="logo" href="">
+			<img src="./assets/img/logo.svg">
+		</a>
+		<div id="top-center">
+			<nav id="top-nav">
+				<a href="">Body data platform</a>
+				<a href="">Technology</a>
+				<a href="">Resources</a>
+				<a href="">About us</a>
+			</nav>
+			<div id="search-wrap" class="">
+				<form>
+					<input id="search-input" type="text" placeholder="Search..." name="search">
+					<button id="search" class="icon-search" type="submit"></button>
+					<button id="search-clean" class="close" type="button"></button>
+				</form>
+			</div>
+		</div>
+		<div id="header-mob">
+			<a class="icon-googleplay" href=""></a>
+			<a class="icon-appstore" href=""></a>
+			<button type="button" class="burger" id="open-mob-top">
+				<span class="burger-el bel1"></span>
+				<span class="burger-el bel2"></span>
+				<span class="burger-el bel3"></span>
+			</button>
+		</div>
+		<button class="btn transparent red" type="button" id="h-req-quote">Request a Quote</button>
+	</div>
+</header>
+
+
+
+
+<section class="main-oval blog main-partnership">
+	<div class="bg">
+		<div class="bg1"></div>
+	</div>
+	<div class="wrap">
+		<h1>Partnership</h1>
+		<p>We love to work with partners who are excited about transforming retail, delivering great customer experience, and believe we can help fashion make a positive environmental footprint on the world</p>
+		<button type="button" class="btn red">Become a Partner</button>
+	</div>
+</section>
+
+
+
+<section class="s-ins s-ins-partnership">
+	<div class="bg">
+		<div class="bg1"></div>
+	</div>
+	<div class="wrapl">
+		<h2>We're ready when you are</h2>
+		<p>If you're looking for a mutually beneficial partnership and feel like your product could be a great match with ours, please contact us. We'd love to hear your ideas!</p>
+		<div class="slider-wrap">
+			<div class="slider-dots-num" id="s-dots"></div>
+			<div class="slider-arrows">
+				<div class="slider-arrow icon-arr-r" id="ms-next"></div>
+				<div class="slider-arrow icon-arr-l" id="ms-prev"></div>
+			</div>
+			<div class="slider-hider">
+				<div class="slider">
+
+					<div class="s-elem">
+						<a class="s-elem-circle" href="">
+							<div class="s-c-title">Size recommendation and returns</div>
+							<div class="s-c-text">We combine body data with product and transactional data to deliver powerful insights for design, manufacturing, planning and marketing teams</div>
+						</a>
+						<div class="s-elem-img">
+							<img class="desc" src="./assets/img/colored/s-fit-preference.svg" alt="">
+						</div>
+					</div>
+
+					<div class="s-elem">
+						<a class="s-elem-circle" href="">
+							<div class="s-c-title">Size recommendation</div>
+							<div class="s-c-text">We combine body data with product and transactional data to deliver powerful insights for design, manufacturing, planning and marketing teams</div>
+						</a>
+						<div class="s-elem-img">
+							<img class="desc" src="./assets/img/colored/s-fit-preference.svg" alt="">
+						</div>
+					</div>
+
+					<div class="s-elem">
+						<a class="s-elem-circle" href="">
+							<div class="s-c-title">Size recommendation</div>
+							<div class="s-c-text">We combine body data with product and transactional data to deliver powerful insights for design, manufacturing, planning and marketing teams</div>
+						</a>
+						<div class="s-elem-img">
+							<img class="desc" src="./assets/img/colored/s-fit-preference.svg" alt="">
+						</div>
+					</div>
+
+					<div class="s-elem">
+						<a class="s-elem-circle" href="">
+							<div class="s-c-title">Size recommendation and returns</div>
+							<div class="s-c-text">We combine body data with product and transactional data to deliver powerful insights for design, manufacturing, planning and marketing teams</div>
+						</a>
+						<div class="s-elem-img">
+							<img class="desc" src="./assets/img/colored/s-fit-preference.svg" alt="">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="partnership-op">
+	<div class="wrapl">
+		<h2>Our partners</h2>
+	</div>
+	<div class="op-slider-hider">
+		<div class="op-slider">
+
+			<!-- Min 7 elements -->
+			<div class="op-slide" data-title="Browzwear" data-subtitle="3D Fashion Design Software" data-text="Browzwear brings the power of 3D to fashion design, development, marketing and collaboration with a comprehensive suite of easy-to-use solutions to get your creative designs to market faster than ever before.">
+				<a href="" class="op-slide-inner">
+					<img src="./assets/img/partnership/browzwear.png" alt="Bowzwear logo">
+				</a>
+			</div>
+			<div class="op-slide" data-title="2Browzwear" data-subtitle="23D Fashion Design Software" data-text="2Browzwear brings the power of 3D to fashion design, development, marketing and collaboration with a comprehensive suite of easy-to-use solutions to get your creative designs to market faster than ever before.">
+				<a href="" class="op-slide-inner">
+					<img src="./assets/img/partnership/browzwear.png" alt="Bowzwear logo">
+				</a>
+			</div>
+			<div class="op-slide" data-title="3Browzwear" data-subtitle="33D Fashion Design Software" data-text="3Browzwear brings the power of 3D to fashion design, development, marketing and collaboration with a comprehensive suite of easy-to-use solutions to get your creative designs to market faster than ever before.">
+				<a href="" class="op-slide-inner">
+					<img src="./assets/img/partnership/browzwear.png" alt="Bowzwear logo">
+				</a>
+			</div>
+			<div class="op-slide" data-title="4Browzwear" data-subtitle="43D Fashion Design Software" data-text="4Browzwear brings the power of 3D to fashion design, development, marketing and collaboration with a comprehensive suite of easy-to-use solutions to get your creative designs to market faster than ever before.">
+				<a href="" class="op-slide-inner">
+					<img src="./assets/img/partnership/browzwear.png" alt="Bowzwear logo">
+				</a>
+			</div>
+			<div class="op-slide" data-title="5Browzwear" data-subtitle="53D Fashion Design Software" data-text="5Browzwear brings the power of 3D to fashion design, development, marketing and collaboration with a comprehensive suite of easy-to-use solutions to get your creative designs to market faster than ever before.">
+				<a href="" class="op-slide-inner">
+					<img src="./assets/img/partnership/browzwear.png" alt="Bowzwear logo">
+				</a>
+			</div>
+			<div class="op-slide" data-title="6Browzwear" data-subtitle="63D Fashion Design Software" data-text="6Browzwear brings the power of 3D to fashion design, development, marketing and collaboration with a comprehensive suite of easy-to-use solutions to get your creative designs to market faster than ever before.">
+				<a href="" class="op-slide-inner">
+					<img src="./assets/img/partnership/browzwear.png" alt="Bowzwear logo">
+				</a>
+			</div>
+			<div class="op-slide" data-title="7Browzwear" data-subtitle="73D Fashion Design Software" data-text="7Browzwear brings the power of 3D to fashion design, development, marketing and collaboration with a comprehensive suite of easy-to-use solutions to get your creative designs to market faster than ever before.">
+				<a href="" class="op-slide-inner">
+					<img src="./assets/img/partnership/browzwear.png" alt="Bowzwear logo">
+				</a>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<section class="cr__text_wrap">
+	<div class="wrapl" id="op-wrap">
+		<div class="subtitle" id="op-title">Browzwear</div>
+		<h4 id="op-subtitle">3D Fashion Design Software</h4>
+		<p id="op-text">Browzwear brings the power of 3D to fashion design, development, marketing and collaboration with a comprehensive suite of easy-to-use solutions to get your creative designs to market faster than ever before.</p>
+	</div>
+</section>
+
+
+<section class="ps__container">
+
+	<h3>Want to become a partner? </h3>
+	<h3 class="mrb">Contact us!</h3>
+
+	<div class="wrapl">
+
+		<form class="main_s classic">
+			<div class="ps__contact_form">
+				<div class="f-el f-sm-12 f-6">
+					<label class="label_classic have_error">
+						Name
+						<input type="text" placeholder="Your Name*">
+						<div class="error_mess">Some error</div>
+					</label>
+					<label class="label_classic">
+						Company
+						<input type="text" placeholder="Your Company*">
+					</label>
+					<label class="label_classic">
+						Position
+						<input type="text" placeholder="Your position*">
+					</label>
+					
+				</div>
+				<div class="f-el f-sm-12 f-6">
+					<label class="label_classic have_error">
+						Email
+						<input type="text" placeholder="Your Business Email*">
+						<div class="error_mess">Email not valid</div>
+					</label>
+					<label class="label_classic">
+						WEBSITE
+						<input type="text" placeholder="Company Website*">
+					</label>
+					<label class="label_classic">
+						TYPE OF BUSINESS
+						<select>
+							<option value="">- - -</option>
+							<option value="">- - -</option>
+							<option value="">- - -</option>
+						</select>
+					</label>
+				</div>
+			</div>
+			<div class="ps__contact_form">
+				<div class="f-el f-sm-12 f-6">
+					<textarea class="form_box_info" name="" placeholder="Please describe why you want to become a partner of 3DLOOK*"></textarea>
+				</div>
+			</div>
+			<div class="ps__contact_form">
+				<div class="f-el f-sm-12 f-6">
+					<input type="checkbox" id="checkbox_confirm1">
+					<label class="checkbox_classic" for="checkbox_confirm1">
+						I agree to the <a href="#"> Terms and Conditions </a> and <a href="#">Privacy Policy*</a>
+					</label>
+
+					<input type="checkbox" id="checkbox_confirm2">
+					<label class="checkbox_classic" for="checkbox_confirm2">
+						I confirm that I'm 16 years of age or older*
+					</label>
+				</div>
+				<div class="f-el f-sm-12 f-6 form_classic-r form_classic-sm-c">
+					<button class="btn black btn_classic">Send Message</button>
+				</div>
+			</div>
+		</form>
+
+	</div>
+
+</section>
+
+
+<section class="banner">
+	<div class="wrapl">
+		<div class="block">
+			<img src="" alt="">
+			<a href="" class="btn red">Careers</a>
+		</div>
+	</div>
+</section>
+
+
+<footer>
+	<div id="footer-msg">
+		<div class="btnr blue icon-intercom" id="f-msg"></div>
+		<div class="btnr black icon-arr-t" id="f-arr"></div>
+	</div>
+	<div class="wrap">
+		<div class="col" id="footer-1">
+			<a class="logo" href="">
+				<img src="./assets/img/logo.svg">
+			</a>
+			<div class="address">
+				<label>Office:</label>
+				<address>55 East 3rd Avenue San Mateo, CA 94401</address>
+			</div>
+			<div class="address">
+				<label>Email:</label>
+				<a href="mailto:hello@3dlook.me">hello@3dlook.me</a>
+			</div>
+			<button class="btn transparent red" type="button">Request a Quote</button>
+		</div>
+		<div id="copyright">© 2019 3DLOOK.ME<span>, design by <a href="https://deco.agency/uk/">deco.agency</a></span></div>
+		<div class="col" id="footer-2">
+			<div class="footer-rlnks">
+				<div class="grid">
+					<a href="">Body data platform</a>
+					<a href="">Resources</a>
+					<a href="">Technology</a>
+					<a href="">About Us</a>
+				</div>
+			</div>
+			<div class="socials">
+				<a class="social icon-fb" href="" target="_blank"></a>
+				<a class="social icon-insta" href="" target="_blank"></a>
+				<a class="social icon-tw" href="" target="_blank"></a>
+				<a class="social icon-in" href="" target="_blank"></a>
+				<a class="social icon-youtube" href="" target="_blank"></a>
+			</div>
+		</div>
+		<div id="footer-pptc">
+			<a href="">Privacy</a>
+			<a href="">Terms and conditions</a>
+		</div>
+		<div class="col" id="footer-3">
+			<div class="footer-title">Blog Posts</div>
+			<div class="footer-blog">
+				<div class="footer-blog-title">Reuters</div>
+				<div class="footer-blog-text">The Technology 202: This venture capitalist is warning Congress not to hurt startups in its antirust crusade</div>
+			</div>
+			<div class="footer-blog">
+				<div class="footer-blog-title">Reuters</div>
+				<div class="footer-blog-text">The Technology 202: This venture capitalist is warning Congress not to hurt startups in</div>
+			</div>
+			<div class="footer-blog">
+				<div class="footer-blog-title">Reuters</div>
+				<div class="footer-blog-text">The Technology 202: This venture capitalist is warning Congress not to hurt startups in</div>
+			</div>
+		</div>
+		<div class="col" id="footer-4">
+			<div class="footer-title">Newsletter</div>
+			<form>
+				<div class="input">
+					<input type="text" name="email" placeholder="E-mail">
+				</div>
+				<button class="btn red" type="submit">SUBSCRIBE</button>
+			</form>
+			<p>3DLOOK INC. is a company located outside of the European Union. In order to comply with Art. 27 EU GDPR, GDPR-Rep.eu has been nominated as our represenative in the European Union.</p>
+			<p>If you want to make use of your data privacy rights, please visit: <a href="">Our public Privacy dashboard</a></p>
+		</div>
+	</div>
+</footer>
+<!--b-scripts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="./assets/scripts/partnership.js"></script>
+<script src="./assets/scripts/script.js"></script>
+
+<!-- Bogdan scripts -->
+	<script src="./assets/scripts/b_script.js"></script>
+<!--  -->
+
+<!--e-scripts-->
+</body>
+</html>
+
+
+
+
