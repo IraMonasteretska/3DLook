@@ -3872,6 +3872,396 @@
 
 
 
+
+/*-b-forsmb-----------------------------------------*/
+/*-b-smbmain--------------------*/
+.smbmain {
+	min-height: 49.2188vw;
+}
+.smbmain .bg1 {
+	left: -0.2083vw;
+	right: -0.1563vw;
+	top: 0;
+	height: 49.2188vw;
+}
+.smbmain .col:first-child {
+	padding: 14.5313vw 0 0;
+}
+.smbmain h5 {
+	font-size: 1.0417vw;
+	line-height: 1.3542vw;
+	letter-spacing: 0.0521vw;
+	margin: 0 0 0.5208vw;
+}
+.smbmain h1 {
+	font-size: 3.125vw;
+	line-height: 3.9583vw;
+	letter-spacing: -0.1042vw;
+	margin: 0 0 0.5208vw;
+}
+.smbmain h4 {
+	font-size: 1.3021vw;
+	line-height: 1.7708vw;
+	letter-spacing: -0.0104vw;
+	max-width: 31.25vw;
+	margin: 0 0 2.5vw;
+}
+.smbmain .btn {
+	width: 15.5208vw;
+}
+.smbmain .btn:before {
+	font-size: 0.5208vw;
+	margin: 0.1563vw 0 0 0.3125vw;
+}
+.smbmain img {
+	top: 11.0417vw;
+	left: calc(50% + 7.1875vw);
+	width: 39.9479vw;
+	height: 20.2604vw;
+}
+/*-e-smbmain--------------------*/
+
+/*-b-smbsecond------------------*/
+.smbsecond {
+	padding: 0 0 17.5521vw;
+}
+
+.smbsecond h3 {
+	font-size: 2.5vw;
+	line-height: 2.8125vw;
+	letter-spacing: -0.0938vw;
+	margin: 0;
+}
+.smbsecond p {
+	font-size: 1.3021vw;
+	line-height: 1.7708vw;
+	letter-spacing: -0.0104vw;
+	margin: 1.3021vw 0 0;
+}
+
+.smbbg {
+	width: 10.5208vw;
+	height: 10.625vw;
+	z-index: -1;
+}
+.smbsecond-1 .smbbg {
+	top: -2.9688vw;
+	left: -2.4479vw;
+}
+.smbsecond-1 img {
+	top: 5.3646vw;
+	right: calc(50% - 11.1458vw);
+	width: 51.25vw;
+	height: 33.125vw;
+}
+.smbsecond-1 .col {
+	margin: 8.75vw 0 0 auto;
+	width: 24.7396vw;
+}
+
+.smbsecond-2 .smbbg {
+	top: -7.1875vw;
+	left: -5.4167vw;
+}
+.smbsecond-2 .col {
+	margin: 26.6667vw auto 0 0;
+	width: 29.5833vw;
+}
+.smbsecond-2 img {
+	top: 12.5521vw;
+	left: calc(50% - 14.6875vw);
+	width: 63.5938vw;
+	height: 43.4896vw;
+}
+
+.smbsecond-3 .col {
+	margin: 30.0521vw 0 0 auto;
+	width: 27.8125vw;
+}
+.smbsecond-3 img {
+	top: 6.9792vw;
+	right: calc(50% - 7.6563vw);
+	width: 57.7083vw;
+	height: 62.1875vw;
+}
+
+
+/*-e-smbsecond------------------*/
+
+/*-b-sect7trial-----------------*/
+.sect7trial {
+	min-height: 22.3438vw;
+}
+.sect7trial .wrap {
+	top: 6.9792vw;
+	padding: 0 0 10.3646vw;
+	width: 48.75vw;
+}
+.sect7trial h4 {
+	margin: 6.9271vw;
+	margin: 0 auto 2.0833vw;
+	letter-spacing: -0.0938vw;
+	font-size: 1.7708vw;
+	line-height: 2.2917vw;
+}
+.sect7trial .btn {
+	width: 16.1458vw;
+}
+.sect7trial .btn:before {
+	font-size: 0.5208vw;
+	margin: 0.1563vw 0 0 0.3125vw;
+}
+/*-e-sect7trial-----------------*/
+
+/*-b-smbsimple------------------*/
+
+.smbsimple h3 {
+	font-size: 2.5vw;
+	line-height: 2.8125vw;
+	letter-spacing: -0.0938vw;
+	margin: 10.4167vw auto 4.2708vw;
+}
+
+.smbsimple-item {
+	width: 22.3958vw;
+}
+.smbsimple-item-img img {
+	width: 6.4583vw;
+	height: 6.9271vw;
+}
+.smbsimple-item-img:before {
+	top: -0.4688vw;
+	left: -2.6563vw;
+	width: 5.7292vw;
+	height: 5.7292vw;
+}
+.smbsimple-item-img.phone img {
+	width: 3.4375vw;
+}
+.smbsimple-item-img.dashboardsvg img {
+	width: 5.1563vw;
+}
+/*-e-smbsimple------------------*/
+
+/*-b-smbswitch------------------*/
+.smbswitch {
+	min-height: 68.5938vw;
+}
+.smbswitch h2 {
+	margin: 0 auto 2.0833vw;
+}
+
+.trigger-wrap.white .icon-check {
+	box-shadow: 0.1042vw 0.1042vw 0.4167vw rgba(150, 252, 213, 0.195258);
+}
+.smbswitch .trigger-wrap {
+	margin: 4.7396vw auto 2.3958vw;
+	padding-left: 4.7917vw;
+}
+
+.smbswitch-wrap {
+	width: 61.4583vw;
+}
+
+/*-item-*/
+.smbsw-i {
+	width: 19.7917vw;
+	padding: 2.0833vw 0;
+}
+.smbsw-i-title {
+	letter-spacing: -0.0208vw;
+	font-size: 1.4583vw;
+	line-height: 1.3542vw;
+}
+.smbsw-i-img {
+	width: 14.5833vw;
+	height: 14.5833vw;
+}
+.smbsw-i-img .c025 {
+	padding: 0 0 1.8229vw 1.8229vw; 
+}
+.smbsw-i-num {
+	margin: 5.2083vw auto 0.1563vw;
+	letter-spacing: -0.0938vw;
+	font-size: 2.5vw;
+	line-height: 2.8125vw;
+}
+.smbsw-i-subnum {
+	letter-spacing: -0.0208vw;
+	font-size: 0.7292vw;
+	line-height: 1.0417vw;
+	max-width: 7.5521vw;
+}
+
+.smbsw-i-price {
+	font-size: 1.4583vw;
+	letter-spacing: -0.0938vw;
+	margin: 0 0 0.3125vw;
+}
+.smbsw-i-subprice {
+	letter-spacing: -0.0208vw;
+	font-size: 0.7292vw;
+	line-height: 1.0417vw;
+	margin: 0 0 1.3542vw;
+}
+.smbsw-i .btn {
+	width: 14.5833vw;
+	margin-bottom: 2.3958vw;
+}
+.smbsw-i-noprice {
+	font-size: 0.8333vw;
+	line-height: 1.25vw;
+	margin: -0.625vw 0 1.0417vw;
+	max-width: 14.5833vw;
+}
+.smbsw-i .btn:before {
+	font-size: 0.5208vw;
+	margin: 0.1563vw 0 0 0.3125vw;
+}
+.smbsw-i-ul {
+	padding: 0 0 0 1.1458vw;
+	margin: 0 2.3438vw 0;
+}
+.smbsw-i-ul li {
+	font-size: 0.8333vw;
+	line-height: 1.25vw;
+}
+.smbsw-i-ul li:before {
+	top: 0.3125vw;
+	width: 0.625vw;
+	height: 0.5208vw;
+	left: -1.1458vw;
+}
+/*-e-smbswitch------------------*/
+
+/*-b-smbbenefits----------------*/
+/* .smbbenefits {} */
+.smbbenefits h3 {
+	letter-spacing: -0.0938vw;
+	font-weight: 800;
+	font-size: 2.5vw;
+	line-height: 2.8125vw;
+}
+.smbben-wrap {
+	width: 80.7292vw;
+	margin: 0 auto 9.5833vw;
+}
+.smbben-item {
+	width: 14.0625vw;
+}
+.smbben-item:before {
+	top: 1.5625vw;
+	left: 3.4375vw;
+	width: 4.6875vw;
+	height: 4.6875vw;
+}
+.smbben-img {
+	top: 5.5729vw;
+	left: 6.6146vw;
+	max-width: 5.2083vw;
+	max-height: 5.2083vw;
+}
+.smbben-item h4 {
+	margin: 8.75vw auto 0;
+	letter-spacing: -0.0208vw;
+	font-size: 1.25vw;
+	line-height: 1.3542vw;
+}
+/*-e-smbbenefits----------------*/
+
+/*-b-smbwhat--------------------*/
+.smbwhat h3 {
+	font-weight: 800;
+	font-size: 2.5vw;
+	line-height: 2.8125vw;
+	letter-spacing: -0.0938vw;
+	margin: 0 auto 3.2292vw;
+}
+.smbwhat-wrap {
+	width: 61.4583vw;
+	padding: 0 0 7.9167vw;
+}
+.smbwhat-wrap .smbbg {
+	top: -2.7604vw;
+	left: -3.8542vw;
+}
+.smbwhat .bg1 {
+    top: -9.375vw;
+    left: calc(50% - 20.5208vw);
+	width: 61.0938vw;
+	height: 60.9375vw;
+}
+.smbwhat-i {
+	width: 19.7917vw;
+	height: 27.0833vw;
+	box-shadow: 0vw 0.2083vw 3.125vw rgba(0, 0, 0, 0.4);
+}
+.smbwhat-i:after {
+	left: 1.5625vw;
+	right: 1.5625vw;
+	height: 1.5625vw;
+}
+.smbwhat-i img {
+	bottom: 5.9896vw;
+}
+.smb-i-content {
+	top: 17.1875vw;
+	padding: 3.4375vw 1.5625vw 1.5625vw;
+}
+.smb-i-content:before {
+	width: 45.8333vw;
+	height: 45.8333vw;
+}
+.smb-i-title {
+	font-size: 1.25vw;
+	line-height: 1.3542vw;
+	letter-spacing: -0.0208vw;
+	margin: 0 0 1.0417vw;
+}
+.smb-i-text {
+	font-size: 0.8333vw;
+	line-height: 1.1458vw;
+}
+/*-hover-*/
+.smb-i-name {
+	font-size: 0.9896vw;
+	line-height: 0.625vw;
+	letter-spacing: -0.0208vw;
+	margin: 1.5625vw 0 0.625vw;
+}
+.smb-i-pos {
+	font-size: 0.7813vw;
+}
+/*-e-smbwhat--------------------*/
+
+/*-b-smblafmf-------------------*/
+.smblafmf {
+	min-height: 25.8333vw;
+}
+.smblafmf h3 {
+	font-weight: 800;
+	font-size: 2.5vw;
+	line-height: 2.8125vw;
+	letter-spacing: -0.0938vw;
+	margin: 8.9063vw auto 2.0833vw;
+}
+.smblafmf .btn {
+	width: 19.1667vw;
+}
+.smblafmf .btn:before {
+	font-size: 0.5208vw;
+	margin: 0.1563vw 0 0 0.3125vw;
+}
+/*-e-smblafmf-------------------*/
+/*-e-forsmb-----------------------------------------*/
+
+
+
+
+
+
+
+
 }
 @media screen and (min-width: 1921px) {
 	html {
