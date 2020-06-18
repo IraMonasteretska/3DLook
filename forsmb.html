@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<!-- Open Graph -->
+	<meta name="og:type" content="website">
+	<meta name="og:title" content="3DLook">
+	<meta name="og:description" content="">
+	<meta name="og:url" content="">
+	<meta name="og:site_name" content="3DLook">
+	<meta name="og:locale" content="uk_UA">
+	<!-- <meta name="og:image" content="url"> -->
+	<!-- Open Graph -->
+	<!-- <meta name="theme-color" content="#000000"> -->
+	<!-- <link rel="shortcut icon" href=""> -->
+	<title>3DLook</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./assets/fonts/Mark/font.css">
+	<link rel="stylesheet" type="text/css" href="./assets/fonts/HelveticaNeue/font.css">
+	<link rel="stylesheet" type="text/css" href="./assets/icons/fontello/style.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/desc.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/media.css">
+	<!-- This script is used for DomContentLoaded -->
+	<!-- Example to use: onLoaded.push({ YOUR_CODE }); -->
+	<script>var onLoaded=[],onResize=[];</script>
+</head>
+<body>
+<!-- mobile top menu -->
+<div id="mob-top" class="">
+	<button type="button" class="cross" id="close-mob-top"></button>
+	<span id="mob-top-title">Homescreen</span>
+	<nav id="mob-top-nav">
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">Solutions</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">3d Model Generation</a></li>
+			</ul>
+		</div>
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">Technology</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">1Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">1Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">13d Model Generation</a></li>
+			</ul>
+		</div>
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">Resources</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">2Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">2Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">33d Model Generation</a></li>
+			</ul>
+		</div>
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">Careers</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">3Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">3Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">33d Model Generation</a></li>
+			</ul>
+		</div>
+		<div class="mob-top-link hidden">
+			<div class="hider-row">
+				<a class="mt-link" href="">About</a>
+				<div class="icon-arr-t"></div>
+			</div>
+			<ul class="hider">
+				<li><a class="mt-sublink" href="">4Human Body Measuring</a></li>
+				<li><a class="mt-sublink" href="">4Size and Fit Recommendations</a></li>
+				<li><a class="mt-sublink" href="">43d Model Generation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<button type="button" class="btn red">Request a Demo</button>
+</div>
+
+<!-- eclipse -->
+<div id="eclipse"></div>
+
+<header>
+	<div class="wrap">
+		<a class="logo" href="">
+			<img src="./assets/img/logo.svg">
+		</a>
+		<div id="top-center">
+			<nav id="top-nav">
+				<a href="">Body data platform</a>
+				<a href="">Technology</a>
+				<a href="">Resources</a>
+				<a href="">About us</a>
+			</nav>
+			<div id="search-wrap" class="">
+				<form>
+					<input id="search-input" type="text" placeholder="Search..." name="search">
+					<button id="search" class="icon-search" type="submit"></button>
+					<button id="search-clean" class="close" type="button"></button>
+				</form>
+			</div>
+		</div>
+		<div id="header-mob">
+			<a class="icon-googleplay" href=""></a>
+			<a class="icon-appstore" href=""></a>
+			<button type="button" class="burger" id="open-mob-top">
+				<span class="burger-el bel1"></span>
+				<span class="burger-el bel2"></span>
+				<span class="burger-el bel3"></span>
+			</button>
+		</div>
+		<button class="btn transparent red" type="button" id="h-req-quote">Request a Quote</button>
+	</div>
+</header>
+
+<!-- begin-smb---------------------------------------- -->
+
+<section class="smbmain smb">
+	<div class="bg">
+		<div class="bg1" style="background-image: url(./assets/img/smb/mainbg.svg);"></div>
+	</div>
+	<div class="wrap">
+		<div class="col">
+			<h5>For made-to-measure businesses</h5>
+			<h1>Contactless Body Measuring</h1>
+			<h4>Get precise body measurement of your customers remotely — with just 2 photos. Easy as 1,2,3.</h4>
+			<a class="btn white icon-arr-r" href="">Get my 7-day free trial</a>
+		</div>
+		<img src="./assets/img/smb/smb1.png">
+	</div>
+</section>
+
+<section class="smbsecond">
+<div class="wrap">
+	<div class="smbsecond-1">
+		<img src="./assets/img/smb/map.png" alt="map">
+		<div class="col">
+			<div class="smbbg" style="background-image: url(./assets/img/smb/triangle-dots.svg);"></div>
+			<h3>Contactless and safe</h3>
+			<h3>Expand your global reach</h3>
+			<p>Since no physical presence of your customer is needed right in front of you, the measurement process is totally safe and superbly fast. What’s more, with 3DLOOK you can serve customers no matter where they are and which time zone they have.</p>
+		</div>
+	</div>
+
+	<div class="smbsecond-2">
+		<div class="col">
+			<div class="smbbg" style="background-image: url(./assets/img/smb/triangle-dots.svg);"></div>
+			<h3>Easy for your customers</h3>
+			<h3>Easy for you</h3>
+			<p>Send a personal measurement link to your customers directly from your 3DLOOK workspace or from your website via widget. Your customer then takes 2 photos with any smartphone on any background, and in under a minute—you get the customer body data. Can’t get any easier than that.</p>
+		</div>
+		<img src="./assets/img/smb/Group418.png" alt="laptop">
+	</div>
+
+	<div class="smbsecond-3">
+		<img src="./assets/img/smb/Group403.png" alt="laptop">
+		<div class="col">
+			<h3>Precision at its finest</h3>
+			<h3>Accurate customer body data</h3>
+			<p>You get all the measurements of your customers on your own personal dashboard. Our sophisticated technology extracts up to 65 measurements, most of which are ISO 8559-1 compatible. Need more? You can also export your customer’s 3D body avatar into any fashion design software!</p>
+		</div>
+	</div>
+</div>
+</section>
+
+<section class="sect7trial">
+	<div class="bg">
+		<div class="bg1" style="background-image: url(./assets/img/smb/bg2.svg);"></div>
+	</div>
+	<div class="wrap">
+		<h4>Get rid of the extra costs and time needed to manually measure your customers while providing a safe personalized service and an amazing client experience</h4>
+		<a href="" class="btn extrared icon-arr-r">Get my 7-day free trial</a>
+	</div>
+</section>
+
+<section class="smbsimple">
+	<h3>Simple as 1-2-3</h3>
+	<div class="wrap">
+
+		<div class="smbsimple-item">
+			<div class="smbsimple-item-img">
+				<img  src="./assets/img/smb/rocket.svg" alt="">
+			</div>
+			<h4>Register for a free trial</h4>
+			<p>Register for a completely risk-free trial and you’ll be all set!  After that, you can start sending measurement links to your customers by email or phone directly from your dashboard, or use a widget at your website. Ready to go!</p>
+		</div>
+
+		<div class="smbsimple-item">
+			<div class="smbsimple-item-img phone">
+				<img src="./assets/img/smb/phone.svg" alt="">
+			</div>
+			<h4>Measure your customers</h4>
+			<p>Your customers measure themselves so you don’t have to. Instantly, with only 2 photos, avoiding any physical contact. All they need is a smartphone and the link you’ve sent them.</p>
+		</div>
+
+		<div class="smbsimple-item">
+			<div class="smbsimple-item-img dashboardsvg">
+				<img src="./assets/img/smb/dashboard.svg" alt="">
+			</div>
+			<h4>Check your dashboard</h4>
+			<p>View your customer’s measurements in your personal easy-to-navigate dashboard in less than a minute. From here you can start creating the fittest custom clothing for all your clients. </p>
+		</div>
+
+	</div>
+</section>
+
+<section class="smbswitch">
+	<div class="bg">
+		<div class="bg1" style="background-image: url(./assets/img/smb/bgswitch.svg);"></div>
+	</div>
+	<div class="trigger-wrap white">
+		<span>Monthly</span>
+		<div class="trigger-bg">
+			<div class="icon-check"></div>
+		</div>
+		<span>Yearly (2 months free)</span>
+	</div>
+	<h2>Contactless Body Measuring</h2>
+	<div class="smbswitch-wrap">
+
+		<div class="smbsw-i">
+			<span class="smbsw-i-title">Starter</span>
+			<div class="smbsw-i-img">
+				<img class="c025" src="./assets/img/smb/circle1-4.svg" alt="25%">
+				<span class="smbsw-i-num">50</span>
+				<span class="smbsw-i-subnum">Measured Customers per Month</span>
+			</div>
+			<span class="smbsw-i-price">$99</span>
+			<span class="smbsw-i-subprice">Monthly</span>
+			<a class="btn extrared icon-arr-r" href="">Try for free</a>
+			<ul class="smbsw-i-ul">
+				<li><b>Up to 50</b> measured customers per month</li>
+				<li><b>65</b> measurements</li>
+				<li>Sending measurement links by email or phone</li>
+				<li>Simple and clean dashboard</li>
+				<li>Data Export CSV</li>
+			</ul>
+		</div>
+
+		<div class="smbsw-i">
+			<span class="smbsw-i-title">Business</span>
+			<div class="smbsw-i-img">
+				<img class="c075" src="./assets/img/smb/circle3-4.svg" alt="75%">
+				<span class="smbsw-i-num">250</span>
+				<span class="smbsw-i-subnum">Measured Customers per Month</span>
+			</div>
+			<span class="smbsw-i-price">$99</span>
+			<span class="smbsw-i-subprice">Monthly</span>
+			<a class="btn extrared icon-arr-r" href="">Try for free</a>
+			<ul class="smbsw-i-ul">
+				<li><b>Up to 250</b> measured customers per month</li>
+				<li><b>65</b> measurements</li>
+				<li>Sending measurement links by email or phone</li>
+				<li>Simple and clean dashboard</li>
+				<li>Data Export CSV</li>
+				<li>Web widget integration with your website</li>
+				<li>3D Body Avatar compatible with any fashion design software</li>
+			</ul>
+		</div>
+
+		<div class="smbsw-i">
+			<span class="smbsw-i-title">Enterprice</span>
+			<div class="smbsw-i-img c100">
+				<img class="c100" src="./assets/img/smb/circle4-4.svg" alt="100%">
+				<span class="smbsw-i-num">>250</span>
+				<span class="smbsw-i-subnum">Measured Customers per Month</span>
+			</div>
+			<span class="smbsw-i-noprice">Are you measurig more than <b>250 customers</b> per month, or do you need additional features?</span>
+			<a class="btn extrared icon-arr-r" href="">Contact our sales team</a>
+			<ul class="smbsw-i-ul">
+				<li><b>More than 250</b> measured customers per month</li>
+				<li><b>65+</b> measurements</li>
+				<li>Sending measurement links by email or phone</li>
+				<li>Simple and clean dashboard</li>
+				<li>Data Export CSV</li>
+				<li>Web widget integration with your website</li>
+				<li>3D Body Avatar compatible with any fashion design software</li>
+				<li>Custom integration options</li>
+				<li>API access</li>
+				<li>Dedicated support</li>
+			</ul>
+		</div>
+
+	</div>
+</section>
+
+<section class="smbbenefits">
+	<h3>Benefits</h3>
+	<div class="smbben-wrap">
+		<div class="smbben-item">
+			<img class="smbben-img" src="./assets/img/smb/" alt="hand">
+			<h4>Contactless and safe</h4>
+		</div>
+		<div class="smbben-item">
+			<img class="smbben-img" src="./assets/img/smb/" alt="time">
+			<h4>Contactless and safe</h4>
+		</div>
+		<div class="smbben-item">
+			<img class="smbben-img" src="./assets/img/smb/" alt="dashboard2">
+			<h4>Contactless and safe</h4>
+		</div>
+		<div class="smbben-item">
+			<img class="smbben-img" src="./assets/img/smb/" alt="person">
+			<h4>Contactless and safe</h4>
+		</div>
+		<div class="smbben-item">
+			<img class="smbben-img" src="./assets/img/smb/" alt="chat">
+			<h4>Contactless and safe</h4>
+		</div>
+	</div>
+</section>
+
+<section class="smbwhat">
+	<div class="bg">
+		<div class="bg1" style="background-image: url(./assets/img/smb/amorphic-gray.svg);"></div>
+	</div>
+	<h3>What our customers are saying</h3>
+	<div class="smbwhat-wrap">
+		<div class="smbwhat-i">
+			<img src="./assets/img/smb/o1.png">
+			<div class="smb-i-content">
+				<span class="smb-i-title">Hiploose</span>
+				<span class="smb-i-title">Hiploose</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="bg">
+		<div class="bg1" style="background-image: url(./assets/img/smb/Group397.svg);"></div>
+	</div>
+
+</section>
+
+<!-- end-smb---------------------------------------- -->
+
+<footer>
+	<div id="footer-msg">
+		<div class="btnr blue icon-intercom" id="f-msg"></div>
+		<div class="btnr black icon-arr-t" id="f-arr"></div>
+	</div>
+	<div class="wrap">
+		<div class="col" id="footer-1">
+			<a class="logo" href="">
+				<img src="./assets/img/logo.svg">
+			</a>
+			<div class="address">
+				<label>Office:</label>
+				<address>55 East 3rd Avenue San Mateo, CA 94401</address>
+			</div>
+			<div class="address">
+				<label>Email:</label>
+				<a href="mailto:hello@3dlook.me">hello@3dlook.me</a>
+			</div>
+			<button class="btn transparent red" type="button">Request a Quote</button>
+		</div>
+		<div id="copyright">© 2019 3DLOOK.ME<span>, design by <a href="https://deco.agency/uk/">deco.agency</a></span></div>
+		<div class="col" id="footer-2">
+			<div class="footer-rlnks">
+				<div class="grid">
+					<a href="">Body data platform</a>
+					<a href="">Resources</a>
+					<a href="">Technology</a>
+					<a href="">About Us</a>
+				</div>
+			</div>
+			<div class="socials">
+				<a class="social icon-fb" href="" target="_blank"></a>
+				<a class="social icon-insta" href="" target="_blank"></a>
+				<a class="social icon-tw" href="" target="_blank"></a>
+				<a class="social icon-in" href="" target="_blank"></a>
+				<a class="social icon-youtube" href="" target="_blank"></a>
+			</div>
+		</div>
+		<div id="footer-pptc">
+			<a href="">Privacy</a>
+			<a href="">Terms and conditions</a>
+		</div>
+		<div class="col" id="footer-3">
+			<div class="footer-title">Blog Posts</div>
+			<div class="footer-blog">
+				<div class="footer-blog-title">Reuters</div>
+				<div class="footer-blog-text">The Technology 202: This venture capitalist is warning Congress not to hurt startups in its antirust crusade</div>
+			</div>
+			<div class="footer-blog">
+				<div class="footer-blog-title">Reuters</div>
+				<div class="footer-blog-text">The Technology 202: This venture capitalist is warning Congress not to hurt startups in</div>
+			</div>
+			<div class="footer-blog">
+				<div class="footer-blog-title">Reuters</div>
+				<div class="footer-blog-text">The Technology 202: This venture capitalist is warning Congress not to hurt startups in</div>
+			</div>
+		</div>
+		<div class="col" id="footer-4">
+			<div class="footer-title">Newsletter</div>
+			<form>
+				<div class="input">
+					<input type="text" name="email" placeholder="E-mail">
+				</div>
+				<button class="btn red" type="submit">SUBSCRIBE</button>
+			</form>
+			<p>3DLOOK INC. is a company located outside of the European Union. In order to comply with Art. 27 EU GDPR, GDPR-Rep.eu has been nominated as our represenative in the European Union.</p>
+			<p>If you want to make use of your data privacy rights, please visit: <a href="">Our public Privacy dashboard</a></p>
+		</div>
+	</div>
+</footer>
+<!--b-scripts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script>
+	onLoaded.push(function() {
+	var checked = true;
+	var triggerWrap = document.getElementsByClassName("trigger-wrap")[0];
+	var trigger = document.getElementsByClassName("trigger-bg")[0];
+	var pricesTime = document.getElementsByClassName("mbpt");
+	var prices = document.getElementsByClassName("mbpp");
+	trigger.onclick = function() {
+		if (checked) {
+			triggerWrap.classList.remove("active");
+			for (var i = 0; i < pricesTime.length; i++) {
+				const ci = i;
+				pricesTime[ci].innerHTML = "year";
+				prices[ci].innerHTML = prices[ci].dataset.yprice;
+			}
+			checked = false;
+		} else {
+			triggerWrap.classList.add("active");
+			for (var i = 0; i < pricesTime.length; i++) {
+				const ci = i;
+				pricesTime[ci].innerHTML = "month";
+				prices[ci].innerHTML = prices[ci].dataset.mprice;
+			}
+			checked = true;
+		}
+	}
+});
+</script>
+<script src="./assets/scripts/script.js"></script>
+<!--e-scripts-->
+</body>
+</html>
