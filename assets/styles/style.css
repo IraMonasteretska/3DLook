@@ -19,6 +19,7 @@ body {
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
 	color: var(--black);
+	overflow: hidden scroll;
 }
 section {
 	position: relative;
@@ -363,6 +364,11 @@ header .logo {
 	box-shadow: 8px 8px 40px rgba(29, 37, 45, 0.1);
 	transition: transform 0.4s ease, width 0.4s ease, box-shadow 0.1s ease 0s;
 }
+#search-wrap.wider.focus form,
+#search-wrap input {
+	width: 800px;
+}
+
 .icon-search {
 	position: absolute;
 	top: 0;
@@ -8313,6 +8319,7 @@ label.form_minimal {
 
 /*-item-*/
 .smbsw-i {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -8320,6 +8327,39 @@ label.form_minimal {
 	padding: 40px 0;
 	background-color: #fff;
 	font-family: "Mark";
+}
+.smbsw-i-red {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 109px;
+	height: 92px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	line-height: 25px;
+	letter-spacing: -0.7px;
+	font-weight: bold;
+	padding: 0 0 10px 12px;
+}
+.smbsw-i-red span {
+	position: relative;
+	z-index: 2;
+}
+.smbsw-i-red:before {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	background-color: #FF4033;
+	width: 200px;
+	height: 180px;
+	bottom: 0;
+	left: 0;
 }
 .smbsw-i-title {
 	font-family: "Mark";

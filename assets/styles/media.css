@@ -84,14 +84,20 @@
 	/*-b-header---------------------*/
 	header {
 		order: 0;
-		height: 80px;
+		height: 60px;
+		padding: 0;
 	}
 	header:before {
 		bottom: -1px;
 		height: 1px;
 	}
+	header .logo {
+		height: 15.4px;
+		width: 122px;
+		padding-top: 2px;
+	}
 	header .wrap {
-		padding: 0 20px 0 18px;
+		padding: 0 20px 0 2px;
 		box-sizing: border-box;
 	}
 	#top-center {
@@ -120,6 +126,23 @@
 	#header-mob .icon-appstore {
 		font-size: 24px;
 		margin: auto 27px auto 0;
+	}
+
+	#smb-header-btn {
+		height: 60px;
+		width: 186px;
+		max-width: 186px;
+		width: 49.6vw;
+		flex-direction: row-reverse;
+		flex-shrink: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 0;
+	}
+	#smb-header-btn:before {
+		font-size: 10px;
+		margin: 3px 0 0 6px;
 	}
 	
 	/*-burger-*/
