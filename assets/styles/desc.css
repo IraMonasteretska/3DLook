@@ -97,6 +97,11 @@
 		width: 3.125vw;
 		height: 2.0833vw;
 	}
+	
+	#search-wrap.wider.focus form,
+	#search-wrap input {
+		width: 41.6667vw;
+	}
 	#search-wrap form {
 		width: 3.125vw;
 		height: 2.0833vw;
@@ -116,7 +121,7 @@
 		font-size: 0.938vw;
 	}
 	#search-wrap input {
-		width: 39.063vw;
+		/* width: 39.063vw; */
 		padding: 0.417vw 2.083vw 0.469vw 3.698vw;
 	}
 	#search-clean {
@@ -4067,6 +4072,18 @@
 		width: 19.7917vw;
 		padding: 2.0833vw 0;
 	}
+	.smbsw-i-red {
+		width: 5.6771vw;
+		height: 4.7917vw;
+		font-size: 1.0417vw;
+		line-height: 1.3021vw;
+		letter-spacing: -0.0365vw;
+		padding: 0 0 0.5208vw 0.625vw;
+	}
+	.smbsw-i-red:before {
+		width: 10.4167vw;
+		height: 9.375vw;
+	}
 	.smbsw-i-title {
 		letter-spacing: -0.0208vw;
 		font-size: 1.4583vw;
@@ -4197,7 +4214,7 @@
 	.smbwhat-i:after {
 		left: 1.5625vw;
 		right: 1.5625vw;
-		height: 1.5625vw;
+		height: 1.6625vw;
 	}
 	.smbwhat-i img {
 		bottom: 5.9896vw;
