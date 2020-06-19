@@ -132,6 +132,9 @@
 	header .socials {
 		margin: 0 1.042vw 0 0;
 	}
+	header .logo img {
+		width: 7.1354vw;
+	}
 	.social {
 		margin: 0 0.313vw 0 0;
 		width: 2.604vw;

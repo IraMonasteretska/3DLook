@@ -182,6 +182,22 @@
 		display: flex;
 		flex-direction: column;
 	}
+	#mob-top.white {
+		background-color: #fff;
+		color: var(--black);
+	}
+	#mob-top.white a {
+		color: var(--black);
+		font-weight: 800;
+	}
+	#mob-top.white .mob-top-link {
+		background-color: #fff;
+	}
+	#mob-top.white .mob-top-link .hider {
+		background-color: var(--gray);
+	}
+
+
 	#mob-top.active {
 		transform: translateY(0%);
 	}
@@ -216,6 +232,10 @@
 		top: 28px;
 		/* left: calc(50% + 142px); */
 		right: 19px;
+	}
+	#mob-top.white .cross:before,
+	#mob-top.white .cross:after {
+		background-color: var(--black);
 	}
 
 	#mob-top-title,
