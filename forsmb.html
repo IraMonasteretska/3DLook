@@ -173,12 +173,12 @@
 			<h3>Easy for you</h3>
 			<p>Send a personal measurement link to your customers directly from your 3DLOOK workspace or from your website via widget. Your customer then takes 2 photos with any smartphone on any background, and in under a minute—you get the customer body data. Can’t get any easier than that.</p>
 		</div>
-		<img src="./assets/img/smb/Group418.png" alt="laptop">
+		<img class="desc" src="./assets/img/smb/Group418.png" alt="laptop">
+		<img class="mob" src="./assets/img/smb/Group403m.png" alt="laptop">
 	</div>
 
 	<div class="smbsecond-3">
-		<img class="desc" src="./assets/img/smb/Group403.png" alt="laptop">
-		<img class="mob" src="./assets/img/smb/Group403m.jpg" alt="laptop">
+		<img src="./assets/img/smb/Group403.png" alt="laptop">
 		<div class="col">
 			<h3>Precision at its finest</h3>
 			<h3>Accurate customer body data</h3>
@@ -240,11 +240,11 @@
 		</div>
 		<span>Yearly (2 months free)</span>
 	</div>
-	<h2>Contactless Body Measuring</h2>
+	<h2>Mobile Tailor</h2>
 	<div class="smbswitch-wrap">
 
 		<div class="smbsw-i">
-			<div class="smbsw-i-red"><span>2 month free</span></div>
+			<div class="smbsw-i-red" style="display: none;"><span>2 month free</span></div>
 			<span class="smbsw-i-title">Starter</span>
 			<div class="smbsw-i-img">
 				<img class="c025" src="./assets/img/smb/circle1-4.svg" alt="25%">
@@ -264,7 +264,7 @@
 		</div>
 
 		<div class="smbsw-i">
-			<div class="smbsw-i-red"><span>2 month free</span></div>
+			<div class="smbsw-i-red" style="display: none;"><span>2 month free</span></div>
 			<span class="smbsw-i-title">Business</span>
 			<div class="smbsw-i-img">
 				<img class="c075" src="./assets/img/smb/circle3-4.svg" alt="75%">
@@ -286,7 +286,7 @@
 		</div>
 
 		<div class="smbsw-i">
-			<span class="smbsw-i-title">Enterprice</span>
+			<span class="smbsw-i-title">Enterprise</span>
 			<div class="smbsw-i-img c100">
 				<img class="c100" src="./assets/img/smb/circle4-4.svg" alt="100%">
 				<span class="smbsw-i-num">>250</span>
@@ -382,8 +382,8 @@
 	<div class="bg">
 		<div class="bg1" style="background-image: url(./assets/img/smb/Group397.svg);"></div>
 	</div>
-	<h3>Looking around for more features?</h3>
-	<a class="btn white icon-arr-r">Check out our other products</a>
+	<h3>Ready to get started?</h3>
+	<a class="btn white icon-arr-r">Get my 7-day free trial</a>
 </section>
 
 <!-- end-smb---------------------------------------- -->
@@ -463,19 +463,27 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script>
+var smbSwitchData = undefined;
 onLoaded.push(function() {
 	var checked = false;
 	var triggerWrap = document.getElementsByClassName("trigger-wrap")[0];
 	var trigger = document.getElementsByClassName("trigger-bg")[0];
 	var pricesTime = document.getElementsByClassName("smbsw-i-subprice");
 	var prices = document.getElementsByClassName("smbsw-i-price");
+	var red = document.getElementsByClassName("smbsw-i-red");
+	smbSwitchData = new Array(pricesTime.length);
+	for (var i = 0; i < pricesTime.length; i++) {
+		const ci = i;
+		smbSwitchData[ci] = [prices[ci].dataset.mprice, prices[ci].dataset.yprice]
+	}
 	trigger.onclick = function() {
 		if (checked) {
 			triggerWrap.classList.remove("active");
 			for (var i = 0; i < pricesTime.length; i++) {
 				const ci = i;
 				pricesTime[ci].innerHTML = "Monthly";
-				prices[ci].innerHTML = prices[ci].dataset.mprice;
+				prices[ci].innerHTML = smbSwitchData[ci][0];
+				red[ci].style.display = "none";
 			}
 			checked = false;
 		} else {
@@ -483,7 +491,8 @@ onLoaded.push(function() {
 			for (var i = 0; i < pricesTime.length; i++) {
 				const ci = i;
 				pricesTime[ci].innerHTML = "Yearly";
-				prices[ci].innerHTML = prices[ci].dataset.yprice;
+				prices[ci].innerHTML = smbSwitchData[ci][1];
+				red[ci].style.display = "flex";
 			}
 			checked = true;
 		}
