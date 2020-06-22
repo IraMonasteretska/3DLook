@@ -5517,7 +5517,7 @@
 		margin: 0 0 25px;
 		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
 	}
-	.smbwhat-i:before {
+	/* .smbwhat-i:before {
 		content: "";
 		position: absolute;
 		z-index: 3;
@@ -5529,7 +5529,7 @@
 	}
 	.smbwhat-i:hover:before {
 		transform: translateY(100%);
-	}
+	} */
 	.smbwhat-i:last-child {
 		margin: 0;
 	}
@@ -5544,6 +5544,7 @@
 	.smb-i-content {
 		top: 290px;
 		padding: 58px 28px 28px;
+		pointer-events: none;
 	}
 	.smb-i-content:before {
 		width: 880px;
@@ -5556,9 +5557,15 @@
 	}
 	/*-hover-*/
 	.smbwhat-i:hover .smb-i-content {
+		top: 290px;
+	}
+	.smbwhat-i.active .smb-i-content {
 		top: 0;
 	}
 	.smbwhat-i:hover .smb-i-content:before {
+		border-radius: 50%;
+	}
+	.smbwhat-i.active .smb-i-content:before {
 		border-radius: 0%;
 	}
 	.smb-i-name {

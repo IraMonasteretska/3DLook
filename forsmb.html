@@ -498,6 +498,23 @@ onLoaded.push(function() {
 		}
 	}
 });
+onLoaded.push(function() {
+	if (Info.vw > 768) return;
+	var elems = document.getElementsByClassName("smbwhat-i");
+	for (var i = 0; i < elems.length; i++) {
+		const ci = i;
+		elems[ci].onclick = function() {
+			console.log("asdsa", ci)
+			this.classList.toggle("active");
+			for (var j = 0; j < elems.length; j++) {
+				const cj = j;
+				if (ci == cj) continue;
+				elems[cj].classList.remove("active")
+				
+			}
+		}
+	}
+});
 </script>
 <script src="./assets/scripts/script.js"></script>
 <!--e-scripts-->
