@@ -8034,7 +8034,7 @@ label.form_minimal {
 	background-position: center;
 }
 .smbmain .col:first-child {
-	padding: 279px 0 0;
+	padding: 259px 0 0;
 }
 .smbmain h5 {
 	font-family: 'Roboto', sans-serif;
@@ -8043,14 +8043,14 @@ label.form_minimal {
 	line-height: 26px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	margin: 0 0 10px;
+	margin: 0 0 20px;
 }
 .smbmain h1 {
 	font-weight: bold;
 	font-size: 60px;
 	line-height: 76px;
 	letter-spacing: -2px;
-	margin: 0 0 10px;
+	margin: 0 0 20px;
 }
 .smbmain h4 {
 	font-family: 'Roboto', sans-serif;
@@ -8160,7 +8160,7 @@ label.form_minimal {
 
 .smbsecond-3 .col {
 	margin: 577px 0 0 auto;
-	width: 534px;
+	width: 512px;
 }
 .smbsecond-3 img {
 	position: absolute;
@@ -8503,7 +8503,7 @@ label.form_minimal {
 	content: "";
 	position: absolute;
 	top: 30px;
-	left: 66px;
+	left: 78px;
 	width: 90px;
 	height: 90px;
 	border-radius: 50%;
@@ -8511,14 +8511,18 @@ label.form_minimal {
 }
 .smbben-img {
 	position: absolute;
-	top: 107px;
-	left: 127px;
+	top: 80px;
+	left: 144px;
 	max-width: 90px;
 	max-height: 90px;
 	transform: translate(-50%, -50%);
 }
+.smbben-item:first-child img {
+	max-height: 100px;
+}
 .smbben-item h4 {
-	margin: 168px auto 0;
+	font-family: "Mark";
+	margin: 174px auto 0;
 	text-align: center;
 	letter-spacing: -0.4px;
 	font-weight: bold;

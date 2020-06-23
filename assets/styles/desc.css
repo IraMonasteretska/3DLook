@@ -3893,19 +3893,19 @@
 		height: 49.2188vw;
 	}
 	.smbmain .col:first-child {
-		padding: 14.5313vw 0 0;
+		padding: 13.4896vw 0 0;
 	}
 	.smbmain h5 {
 		font-size: 1.0417vw;
 		line-height: 1.3542vw;
 		letter-spacing: 0.0521vw;
-		margin: 0 0 0.5208vw;
+		margin: 0 0 1.0417vw;
 	}
 	.smbmain h1 {
 		font-size: 3.125vw;
 		line-height: 3.9583vw;
 		letter-spacing: -0.1042vw;
-		margin: 0 0 0.5208vw;
+		margin: 0 0 1.0417vw;
 	}
 	.smbmain h4 {
 		font-size: 1.3021vw;
@@ -3984,7 +3984,7 @@
 
 	.smbsecond-3 .col {
 		margin: 30.0521vw 0 0 auto;
-		width: 27.8125vw;
+		width: 26.6667vw;
 	}
 	.smbsecond-3 img {
 		top: 7.9167vw;
@@ -4169,18 +4169,21 @@
 	}
 	.smbben-item:before {
 		top: 1.5625vw;
-		left: 3.4375vw;
+		left: 4.0625vw;
 		width: 4.6875vw;
 		height: 4.6875vw;
 	}
 	.smbben-img {
-		top: 5.5729vw;
-		left: 6.6146vw;
+		top: 4.1667vw;
+		left: 7.5vw;
 		max-width: 4.6875vw;
 		max-height: 4.6875vw;
 	}
+	.smbben-item:first-child img {
+		max-height: 5.2083vw;
+	}
 	.smbben-item h4 {
-		margin: 8.75vw auto 0;
+		margin: 9.0625vw auto 0;
 		letter-spacing: -0.0208vw;
 		font-size: 1.25vw;
 		line-height: 1.3542vw;
