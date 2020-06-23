@@ -319,7 +319,6 @@ header .logo {
 	margin: auto 0;
 	width: 150px;
 	height: 25px;
-
 }
 .logo {
 	display: flex;
@@ -1272,6 +1271,7 @@ header .btn {
 	padding: 66px 30px 30px;
 	transition: top 0.3s ease;
 	cursor: pointer;
+	pointer-events: none;
 }
 .smb-i-content:before {
 	content: "";
@@ -1445,7 +1445,7 @@ footer address {
 }
 /*-fcol3-*/
 /*-fcol4-*/
-.footercol2 {
+.footercol4 {
 	margin: 0;
 }
 
