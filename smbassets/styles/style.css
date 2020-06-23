@@ -301,7 +301,8 @@ header {
 	transform: translateY(-100%);
 	transition: transform 0.3s ease, background-color 0.3s ease;
     font-size: 15px;
-    line-height: 21px;
+	line-height: 21px;
+	z-index: 10;
 }
 header .wrap {
 	max-width: 100%;
@@ -316,9 +317,7 @@ header.active.top {
 	background-color: transparent;
 }
 header .logo {
-	margin: auto 0;
-	width: 150px;
-	height: 25px;
+	margin: auto 0 10px;
 }
 .logo {
 	display: flex;
@@ -328,6 +327,10 @@ header .logo {
 	transition: filter 0.3s ease;
 	width: 105px;
 	height: 24px;
+}
+footer .logo img {
+	width: 150px;
+	height: 25px;
 }
 header.active .logo img {
 	filter: contrast(1) brightness(1);
@@ -1405,6 +1408,10 @@ footer {
 	font-weight:400;
 	color: #f2f2f2;
 }
+.fcol2a a {
+	color: #f2f2f2;
+	text-decoration: underline;
+}
 
 .footer1 h4 {
 	font-family: inherit;
@@ -1418,7 +1425,7 @@ footer {
 
 /*-fcol1-*/
 .footercol1 .logo {
-	margin: 0 0 20px;
+	margin: 0 0 26px;
 }
 .footercol1 .fcol2a{
 	padding: 0 0 20px;
@@ -1477,6 +1484,18 @@ footer address {
 	margin-top: 3px;
 	font-family: 'Raleway', sans-serif;
 	color: #f2f2f2;
+}
+
+.fblog-elem {
+	position: relative;
+	display: flex;
+	padding: 0 0 4px;
+	margin: 0 0 15px;
+	font-size: 16px;
+	font-weight: 700;
+}
+.fblog-img {
+	position: absolute;
 }
 /*-e-footer----------------------*/
 
