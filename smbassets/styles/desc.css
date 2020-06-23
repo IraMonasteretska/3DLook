@@ -74,15 +74,67 @@
 
 
 
-	/*-b-header---------------------*/
-	header {
-		height: 4.375vw;
-		padding: 2.083vw 0;
-	}
-	#top-center {
-		/* margin-right: 10vw; */
-	}
-	#top-nav a {
+/*-b-header---------------------*/
+header {
+	height: 4.375vw;
+	padding: 2.0833vw 0;
+	font-size: 0.7813vw;
+	line-height: 1.0938vw;
+}
+header .wrap {
+	width: 68.75vw;
+}
+header .logo {
+	width: 7.8125vw;
+	height: 1.3021vw;
+}
+.logo img {
+	width: 5.4688vw;
+	height: 1.25vw;
+}
+
+#top-center {
+	width: 57.8125vw;
+}
+
+
+.htdiv {
+	margin: auto 0.8333vw;
+}
+#top-nav .hsdiv:before {
+	bottom: -0.625vw;
+	height: 1.7708vw;
+}
+.htdiv > a:before {
+	bottom: -0.1042vw;
+	right: calc(100% + 0.0521vw);
+	height: 0.1042vw;
+}
+.hsulo {
+	top: 2.7604vw;
+	left: -1.0417vw;
+}
+.hsul {
+	width: 12.5vw;
+	padding: 1.0417vw;
+}
+.hsul li {
+	margin-bottom: 0.2083vw;
+}
+#top-nav .hsul a {
+	padding: 0.3125vw;
+}
+
+
+
+header .btn {
+	font-size: 0.8333vw;
+	width: 7.6563vw;
+	height: 1.875vw;
+	margin: auto 0.8333vw;
+	border-radius: 0.2083vw;
+}
+/*-e-header---------------------*/
 		
 
 
