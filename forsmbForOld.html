@@ -58,7 +58,7 @@
 <!-- End Google Tag Manager (noscript) -->
 
 <div id="smbmobmenu">
-	<button id="smbclose1" type="btn">
+	<button id="smbclose1" type="button">
 		<span class="smbclose1"></span>
 		<span class="smbclose2"></span>
 	</button>
@@ -673,6 +673,35 @@ function smbf6() {
 				anim = false;
 				header.style.top = 0;
 			}, 800);
+		}
+	}
+	runMobTopAccordion(
+		"hhh",
+		"icon-arr-t",
+		"hider",
+	);
+}
+function runMobTopAccordion(parentsName, btnName, hidingName) {
+	var parents = document.getElementsByClassName(parentsName);
+	for (var i = 0; i < parents.length; i++) {
+		const ci = i
+		var btn = parents[ci].getElementsByClassName(btnName)[0];
+		if (btn == undefined) continue;
+		var hid = parents[ci].getElementsByClassName(hidingName)[0];
+		var li = hid.getElementsByTagName("li");
+		var h = 0;
+		for (let j = 0; j < li.length; j++) {
+			const cj = j;
+			h += li[cj].getBoundingClientRect().height;
+		}
+		hid.style.height = h + li.length * 24 + "px";
+		btn.onclick = function() {
+			this.closest("." + parentsName).classList.toggle("hidden");
+			for (var j = 0; j < parents.length; j++) {
+				const cj = j;
+				if (ci == cj) continue;
+				parents[cj].classList.add("hidden");
+			}
 		}
 	}
 }
