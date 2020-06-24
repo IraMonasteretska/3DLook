@@ -34,6 +34,9 @@
 	<!-- Open Graph -->
 	<!-- <meta name="theme-color" content="#000000"> -->
 	<!-- <link rel="shortcut icon" href=""> -->
+	<!--Shortcut icon-->
+	<?php if(!empty($options['favicon']) && !empty($options['favicon']['url'])) { ?>
+	<link rel="shortcut icon" href="<?php echo nectar_options_img($options['favicon']); ?>" /><?php } ?>
 	<title>Mobile Tailor | 3DLOOK</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -48,75 +51,85 @@
 	<!-- Example to use: onLoaded.push({ YOUR_CODE }); -->
 	<script>var onLoaded=[],onResize=[];</script>
 </head>
-<body>
+<body class="menu">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW77M7K"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<!-- mobile top menu -->
-<div id="mob-top" class="white">
-	<button type="button" class="cross" id="close-mob-top"></button>
-	<span id="mob-top-title">Homescreen</span>
-	<nav id="mob-top-nav">
-		<div class="mob-top-link hidden">
+<div id="smbmobmenu">
+	<button id="smbclose1" type="btn">
+		<span class="smbclose1"></span>
+		<span class="smbclose2"></span>
+	</button>
+	<nav class="mob-nav">
+		
+		<div class="mob-top-link hhh hidden">
 			<div class="hider-row">
-				<a class="mt-link" href="https://3dlook.me/#solutions">Solutions</a>
+				<a class="mt-link" href="">Solutions</a>
 				<div class="icon-arr-t"></div>
 			</div>
 			<ul class="hider">
-				<li><a class="mt-sublink" href="https://3dlook.me/saia-mtm/">Human Body Measuring</a></li>
-				<li><a class="mt-sublink" href="https://3dlook.me/saia/">Size and Fit Recommendations</a></li>
-				<li><a class="mt-sublink" href="https://3dlook.me/virtual-dressing/">3D Model Generation</a></li>
+				<li><a href="https://3dlook.me/saia-mtm/">Mobile Railor</a></li>
+				<li><a href="https://3dlook.me/saia/">Size and Fit Recommendations</a></li>
+				<li><a href="https://3dlook.me/virtual-dressing/">3D Model Generation</a></li>
 			</ul>
 		</div>
-		<div class="mob-top-link hidden">
+		
+		<div class="mob-top-link">
 			<div class="hider-row">
-				<a class="mt-link" href="https://3dlook.me/3dlook-technology/">Technology</a>
-				<!-- <div class="icon-arr-t"></div> -->
+				<a class="mt-link" href="">Technology</a>
 			</div>
-			<!-- <ul class="hider">
-				<li><a class="mt-sublink" href="">1Human Body Measuring</a></li>
-				<li><a class="mt-sublink" href="">1Size and Fit Recommendations</a></li>
-				<li><a class="mt-sublink" href="">13d Model Generation</a></li>
-			</ul> -->
 		</div>
-		<div class="mob-top-link hidden">
+		
+		<div class="mob-top-link hhh hidden">
 			<div class="hider-row">
 				<a class="mt-link" href="">Resources</a>
 				<div class="icon-arr-t"></div>
 			</div>
 			<ul class="hider">
-				<li><a class="mt-sublink" href="https://3dlook.me/blog/">Blog</a></li>
-				<li><a class="mt-sublink" href="https://saia.3dlook.me/docs/">Documentation</a></li>
+				<li><a href="https://3dlook.me/blog/">Blog</a></li>
+				<li><a href="https://saia.3dlook.me/docs/">Documentation</a></li>
 			</ul>
 		</div>
-		<div class="mob-top-link hidden">
+		
+		<div class="mob-top-link hhh hidden">
 			<div class="hider-row">
-				<a class="mt-link" href="#">Careers</a>
+				<a class="mt-link" href="">Careers</a>
 				<div class="icon-arr-t"></div>
 			</div>
 			<ul class="hider">
-				<li><a class="mt-sublink" href="https://3dlook.me/careers/">Careers</a></li>
-				<li><a class="mt-sublink" href="https://3dlook.me/our-culture/">Our Culture</a></li>
+				<li><a href="https://3dlook.me/careers/">Careers</a></li>
+				<li><a href="https://3dlook.me/our-culture/">Our Culture</a></li>
 			</ul>
 		</div>
-		<div class="mob-top-link hidden">
+		
+		<div class="mob-top-link hhh hidden">
 			<div class="hider-row">
 				<a class="mt-link" href="">About</a>
 				<div class="icon-arr-t"></div>
 			</div>
 			<ul class="hider">
-				<li><a class="mt-sublink" href="https://3dlook.me/about_3dlook/">About 3DLOOK</a></li>
-				<li><a class="mt-sublink" href="https://3dlook.me/partners/">Partners</a></li>
+				<li><a href="https://3dlook.me/about_3dlook/">About 3DLOOK</a></li>
+				<li><a href="https://3dlook.me/partners/">Partners</a></li>
 			</ul>
 		</div>
+		
+		<div class="mob-top-link hhh">
+			<div class="hider-row">
+				<a class="mt-link" href="https://3dlook.me/request-a-quote/">Request a Demo</a>
+			</div>
+		</div>
+
 	</nav>
-	<a href="https://3dlook.me/request-a-quote/" class="btn red">Request a Demo</a>
 </div>
 
-<!-- eclipse -->
-<div id="eclipse"></div>
+</div>
+
+
+<div class="fullwrap">
+	<div class="fullwrap-inner">
+
 
 <header class="top active">
 	<div class="wrap">
@@ -130,7 +143,7 @@
 					<a style="cursor: pointer" href="https://3dlook.me/#solutions">Solutions</a>
 					<div class="hsulo">
 						<ul class="hsul">
-							<li><a href="https://3dlook.me/saia-mtm/">Human Body Measuring</a></li>
+							<li><a href="https://3dlook.me/saia-mtm/">Mobile Railor</a></li>
 							<li><a href="https://3dlook.me/saia/">Size and Fit Recommendations</a></li>
 							<li><a href="https://3dlook.me/virtual-dressing/">3D Model Generation</a></li>
 						</ul>
@@ -399,32 +412,32 @@
 
 		<div class="smbwhat-i">
 			<img src="./smbassets/img/smb/o1.jpg">
-			<a class="smb-i-content" href="">
+			<div class="smb-i-content">
 				<span class="smb-i-title">RedThread</span>
 				<span class="smb-i-text">The 3DLOOK mobile scanning technology enables us to so scale on-demand manufacturing and deliver a perfect fit to our customer's door without an in-person visit or measuring tape! The team is incredible to work with - they are responsive, curious, and committed to creating the world's best mobile scanning measurement technology.</span>
 				<span class="smb-i-name">Meghan Litchfield</span>
 				<span class="smb-i-pos">CEO & Founder</span>
-			</a>
+			</div>
 		</div>
 
 		<div class="smbwhat-i">
 			<img src="./smbassets/img/smb/o2.jpg">
-			<a class="smb-i-content" href="">
+			<div class="smb-i-content">
 				<span class="smb-i-title">Hiploose</span>
 				<span class="smb-i-text">3DLOOK has significantly improved the Hiploose client engagement model by not only streamlining the measurement process & record management but also by overcoming several challenges whether it be scheduling for face-to-face meetings or removing social distancing challenges with respect to the current COVID-19 pandemic. 3DLOOK customer service, professionalism, innovation, and their interface with our staff has been nothing short of top-notch!</span>
 				<span class="smb-i-name">Brian Walker</span>
 				<span class="smb-i-pos">CEO</span>
-			</a>
+			</div>
 		</div>
 
 		<div class="smbwhat-i">
 			<img src="./smbassets/img/smb/o3.jpg">
-			<a class="smb-i-content" href="">
+			<div class="smb-i-content">
 				<span class="smb-i-title">Go Custom NYC</span>
 				<span class="smb-i-text">In the past, we used both body scans and hand measuring just to be on the safe side. But one day my stylist came to our client sans a measuring tape, and the 3DLOOK technology was our only hope. We made our first shirt solely upon the 3DLOOK scan, and it came out PERFECT. Now my stylists collect scans with every single set of measurements.</span>
 				<span class="smb-i-name">Candace Jones</span>
 				<span class="smb-i-pos">Founder</span>
-			</a>
+			</div>
 		</div>
 
 	</div>
@@ -466,22 +479,30 @@
 
 		<div class="footercol footercol3">
 			<h4>READ OUR BLOG!</h4>
+
 			<a class="fblog-elem" href="https://3dlook.me/blog/top-3-ways-for-made-to-measure-businesses-to-thrive-in-a-covid-world/">
-				<img class="fblog-img">
+				<img class="fblog-img" src="https://3dlook.me/wp-content/uploads/2020/06/banner-2-dark.jpg">
 				<span class="fblog-title">Top 3 Ways for Made-to-Measure Businesses to Thrive in a COVID World</span>
 				<span class="fblog-date">June 11, 2020</span>
 			</a>
+
+			<a class="fblog-elem" href="https://3dlook.me/blog/mobile-tailor-is-here/">
+				<img class="fblog-img" src="">
+				<span class="fblog-title">Mobile Tailor is here!</span>
+				<span class="fblog-date">June 23, 2020</span>
+			</a>
+
 		</div>
 
 		<div class="footercol footercol4">
 			<h4>SUBSCRIBE TO OUR MAILING LIST</h4>
 			<form action="https://3dlook.us18.list-manage.com/subscribe/post?u=f5e2e5a53238438f033ff3908&amp;id=bcf85f75db" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
-				<div class="finput">
-					<span class="finput-top">Your Email (required)</span>
+				<div class="finput" id="fismb">
 					<input type="email" name="EMAIL">
+					<span class="finput-top">Your Email (required)</span>
 					<span class="finput-back">Your Email (required)</span>
-					<button type="submit" class="btn blue">Subscribe</button>
 				</div>
+				<button type="submit" class="btn blue">Subscribe</button>
 			</form>
 		</div>
 		
@@ -500,6 +521,10 @@
 		</div>
 	</div>
 </footer>
+
+
+</div> <!-- end-fullwrap-inner-->
+</div> <!-- end-fullwrap-->
 <!--b-scripts-->
 
 <script>
@@ -508,6 +533,8 @@ document.addEventListener("DOMContentLoaded", function() {
 	smbf2();
 	smbf3();
 	smbf4();
+	smbf5();
+	smbf6();
 });
 var smbSwitchData = undefined;
 function smbf1() {
@@ -573,20 +600,77 @@ function smbf3() {
 var prevscrollsmb = 0;
 function smbf4() {
 	var elem = document.getElementsByTagName("header")[0];
-	window.addEventListener('scroll', function() {
-		console.log(pageYOffset)
-		if (pageYOffset < 10) {
+	if (window.innerWidth < 768) return;
+	document.getElementsByClassName("fullwrap")[0].addEventListener('scroll', function() {
+		if (this.scrollTop < 10) {
 			elem.classList.add("top");
 		} else {
 			elem.classList.remove("top");
 		}
-		if (prevscrollsmb > pageYOffset) {
+		if (prevscrollsmb > this.scrollTop) {
 			elem.classList.add("active");
 		} else {
 			elem.classList.remove("active");
 		}
-		prevscrollsmb = pageYOffset
+		prevscrollsmb = this.scrollTop
 	})
+}
+function smbf5() {
+	var act = false;
+	var inputW = document.getElementById("fismb");
+	if (!inputW) return;
+	var input = inputW.getElementsByTagName("input")[0];
+	input.onkeyup = function() {
+		if (this.value.length != 0) {
+			if (!act) {
+				this.inputW.classList.add("active");
+				act = true;
+			} else {
+				this.inputW.classList.remove("active");
+				act = false;
+			}
+		}
+	}
+}
+function smbf6() {
+	var opened = false;
+	var anim = false;
+	var btn = document.getElementById("open-mob-top");
+	var close = document.getElementById("smbclose1");
+	var wrap = document.getElementsByClassName("fullwrap")[0];
+	btn.onclick = function() {
+		if (anim) return;
+		if (!opened) {
+			opened = true;
+			anim = true;
+			document.body.classList.add("menu");
+			setTimeout(function() {
+				anim = false;
+			}, 800);
+		}
+	}
+	wrap.onclick = function() {
+		if (anim) return;
+		if (opened) {
+			opened = false;
+			anim = true;
+			document.body.classList.remove("menu");
+			setTimeout(function() {
+				anim = false;
+			}, 800);
+		}
+	}
+	close.onclick = function() {
+		if (anim) return;
+		if (opened) {
+			opened = false;
+			anim = true;
+			document.body.classList.remove("menu");
+			setTimeout(function() {
+				anim = false;
+			}, 800);
+		}
+	}
 }
 </script>
 <!--e-scripts-->
