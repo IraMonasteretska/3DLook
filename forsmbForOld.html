@@ -51,7 +51,7 @@
 	<!-- Example to use: onLoaded.push({ YOUR_CODE }); -->
 	<script>var onLoaded=[],onResize=[];</script>
 </head>
-<body class="menu">
+<body class="">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW77M7K"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -487,7 +487,7 @@
 			</a>
 
 			<a class="fblog-elem" href="https://3dlook.me/blog/mobile-tailor-is-here/">
-				<img class="fblog-img" src="">
+				<img class="fblog-img" src="https://3dlook.me/wp-content/uploads/2020/06/test-4-1.jpg">
 				<span class="fblog-title">Mobile Tailor is here!</span>
 				<span class="fblog-date">June 23, 2020</span>
 			</a>
@@ -635,6 +635,7 @@ function smbf5() {
 function smbf6() {
 	var opened = false;
 	var anim = false;
+	var header = document.getElementsByTagName("header")[0];
 	var btn = document.getElementById("open-mob-top");
 	var close = document.getElementById("smbclose1");
 	var wrap = document.getElementsByClassName("fullwrap")[0];
@@ -644,6 +645,7 @@ function smbf6() {
 			opened = true;
 			anim = true;
 			document.body.classList.add("menu");
+			header.style.top = wrap.scrollTop / 1.007 + "px";
 			setTimeout(function() {
 				anim = false;
 			}, 800);
@@ -657,6 +659,7 @@ function smbf6() {
 			document.body.classList.remove("menu");
 			setTimeout(function() {
 				anim = false;
+				header.style.top = 0;
 			}, 800);
 		}
 	}
@@ -668,6 +671,7 @@ function smbf6() {
 			document.body.classList.remove("menu");
 			setTimeout(function() {
 				anim = false;
+				header.style.top = 0;
 			}, 800);
 		}
 	}
