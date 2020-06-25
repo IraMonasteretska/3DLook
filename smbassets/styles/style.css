@@ -375,7 +375,8 @@ header.active.top .logo img {
 #top-center {
 	position: relative;
 	display: flex;
-	width: 1110px;
+	/* width: 1110px; */
+			flex-grow: 1;
 	justify-content: center;
 }
 #top-nav {
@@ -730,12 +731,15 @@ header .btn {
 	min-height: 945px;
 	color: #fff;
 }
+.smbmain .wrap {
+	max-width: 1440px;
+}
 .smbmain .bg1 {
 	left: -4px;
 	right: -3px;
 	top: -4px;
 	height: 945px;
-	background-position: center;
+	background-position: top center;
 }
 .smbmain .col:first-child {
 	padding: 259px 0 0;

@@ -90,7 +90,6 @@
 	    left: 0;
 	    height: 100%;
 	}
-	}
 	.mob-nav {
 		position: absolute;
 		top: 44.57%;
@@ -1214,5 +1213,42 @@
 	/*-e-smblafmf-------------------*/
 	/*-e-forsmb-----------------------------------------*/
 
-
+	.trigger-bg {
+		width:60px;
+		height:34px;
+		border-radius:50px
+	}
+	.trigger-bg .icon-check {
+		width: 24px;
+		height: 24px;
+		top: 5px;
+		left: 5px;
+		font-size: 10px;
+	}
+	.trigger-wrap span {
+		margin: auto 10px;
+		font-size: 16px;
+		line-height: 20px;
+		letter-spacing: -0.2px;
+	}
+	.trigger-wrap.active .icon-check {
+		transform: translateX(26px);
+	}
+	.smbsw-i-red {
+		width: 109px;
+		height: 92px;
+		font-size: 20px;
+		line-height: 25px;
+		letter-spacing: -0.7px;
+		padding: 0 0 10px 12px;
+	}
+	.smbsw-i-red:before {
+		width: 200px;
+		height: 180px;
+		bottom: 0;
+		left: 0;
+	}
+	.smbben-wrap {
+		margin: 0 auto 78px;
+	}
 }
